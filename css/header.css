@@ -69,6 +69,7 @@
 }
 
 .header-container-desktop .header-nav {
+  padding: 5px;
   background-color: #ffd333;
 }
 
@@ -173,6 +174,29 @@
   width: 80%;
 }
 
+.header-container-desktop .cart-btn, .header-container-desktop .wishlist-btn, .header-container-mobile .cart-btn, .header-container-mobile .wishlist-btn {
+  font-size: 16px;
+}
+
+.header-container-desktop .cart-btn .wishlist-circle, .header-container-desktop .wishlist-btn .wishlist-circle, .header-container-mobile .cart-btn .wishlist-circle, .header-container-mobile .wishlist-btn .wishlist-circle {
+  left: 38px;
+}
+
+.header-container-desktop .cart-btn .cart-circle, .header-container-desktop .wishlist-btn .cart-circle, .header-container-mobile .cart-btn .cart-circle, .header-container-mobile .wishlist-btn .cart-circle {
+  right: 5px;
+}
+
+.header-container-desktop .cart-btn .product-circle-number, .header-container-desktop .wishlist-btn .product-circle-number, .header-container-mobile .cart-btn .product-circle-number, .header-container-mobile .wishlist-btn .product-circle-number {
+  position: absolute;
+  top: 1px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 500px;
+  font-size: 10px;
+  padding: 2px;
+}
+
 .header-container-mobile .mobile-bar {
   height: 60px;
   background-color: #ffd333;
@@ -180,6 +204,7 @@
 
 .header-container-mobile .mobile-bar .mobile-bar-icon {
   font-size: 25px;
+  color: #3d464d;
 }
 
 .header-container-mobile .mobile-bar .top-panel-logo {
@@ -203,5 +228,19 @@
   height: 100%;
   width: 100%;
   background-position-x: right;
+}
+
+.header-container-mobile .mobile-bar .wishlist-btn .wishlist-circle-responsive, .header-container-mobile .mobile-bar .cart-btn .wishlist-circle-responsive {
+  top: -5px;
+  left: 50px;
+  padding-right: 4px;
+  padding-top: 2.5px;
+}
+
+.header-container-mobile .mobile-bar .wishlist-btn .cart-circle-responsive, .header-container-mobile .mobile-bar .cart-btn .cart-circle-responsive {
+  top: -5px;
+  right: 5px;
+  padding-right: 4px;
+  padding-top: 2px;
 }
 /*# sourceMappingURL=header.css.map */
