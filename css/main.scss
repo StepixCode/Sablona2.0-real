@@ -1,0 +1,10 @@
+@import "shared/_variables.scss";
+@import "shared/_typography.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+.clearing{
+    clear: both;
+}

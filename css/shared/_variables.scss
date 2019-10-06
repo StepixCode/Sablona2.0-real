@@ -1,0 +1,110 @@
+/// <reference path="../../Bundles/variables.scss" />
+/// <reference path="../../Bundles/mixins.scss" />
+
+
+// COLOR SETTINGS
+$color-primary: rgb(255, 211, 51);
+$color-secondary: rgb(61, 70, 77);
+
+$color-light-smoke: rgb(247, 247, 247);
+$color-smoke: rgb(240,240,240);
+$color-dark-smoke: rgb(115, 115, 115);
+
+$color-btn-hover: rgb(221, 201, 128);
+$color-link-hover: rgb(26, 102, 255);
+
+$color-danger: red;
+$color-warning: orange;
+$color-success: lightgreen ;
+$color-info: lightblue;
+
+
+
+//Header
+$nav-font-weight: 700;
+$top-bar-height: 32px;
+$mobile-bar-height: 60px;
+$top-panel-height: 100px;
+$top-bar-font-size: 14px;
+
+
+
+
+//text
+$base-txt-color: rgb(92, 107, 115);;
+$base-heading-color: $color-secondary;
+
+//setting colors for bootstrap components, like buttons etc.
+$primary: $color-primary;
+$secondary: $color-secondary;
+$success: $color-success;
+$info: $color-info;
+$warning: $color-warning;
+$danger: $color-danger;
+
+
+//BUTTONS SETTINGS (also sets input height)
+
+//default-size
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1.5rem;
+//small-size
+$input-btn-padding-y-sm: .375rem;
+$input-btn-padding-x-sm: .75rem;
+//large-size
+$input-btn-padding-y-lg: 0.9rem;
+$input-btn-padding-x-lg: 2rem;
+
+
+
+
+// TYPOGRAPHY SETTINGS
+
+// Global textual link color
+$link-color: $color-primary;
+// Link hover color
+$link-hover-color: $color-secondary;
+// Link hover decoration.
+$link-hover-decoration: underline;
+
+
+/*Fonts*/
+$font-family-base: "Roboto", sans-serif;
+
+$line-height-base: 1.4;
+$headings-line-height: 1.2;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+/*Bootstrap setting*/
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (xs: 0, sm: 440px, md: 766px, lg: 1279px, xl: 1360px, xxl: 1660px);
+$container-max-widths: ( sm: 440px, md: 700px, lg: 1250px, xl: 1300px, xxl: 1600px);
+
+//section spacing
+$base-section-padding: calc(2rem + 1.5vw);
+$base-section-margin: $base-section-padding;
+$small-section-padding: calc(1rem + 1vw);
+$small-section-margin: $small-section-padding;
+
+
+//Transitions
+$transition-time: 0.3s;
+.transition-all {
+    -moz-transition: all $transition-time ease-in;
+    -webkit-transition: all $transition-time ease-in;
+    -o-transition: all $transition-time ease-in;
+    transition: all $transition-time ease-in;
+}
+
+
+
+

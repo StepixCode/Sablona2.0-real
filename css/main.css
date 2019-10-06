@@ -1,0 +1,33 @@
+/*Fonts*/
+/*Bootstrap setting*/
+.transition-all, a {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+/*Fonts*/
+/*Bootstrap setting*/
+.transition-all, a {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+a {
+  text-decoration: none;
+  color: #737373;
+}
+
+a:hover {
+  color: #1a66ff;
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearing {
+  clear: both;
+}
+/*# sourceMappingURL=main.css.map */
