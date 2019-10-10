@@ -76,7 +76,7 @@
             display: inline-block;
             .dropdown-menu{
                 border-radius: 0;
-                margin-top: -1px;
+                margin-top: 3.5px;
                 font-weight: $nav-font-weight - 200;
                 min-width: 300px;
                 .dropdown-item{
@@ -116,6 +116,50 @@
                 min-width: 600px;
                 transform: translate(0);
             }
+        }
+        .cart-dropdown{
+            .cart-dropdown-menu{
+                .cart-dropdown-item{
+                    margin-bottom: 15px;
+                }
+                .cart-menu-photo{
+                    display: flex;
+                    align-items: center;
+                }
+                .cart-menu-product{
+                    .cart-menu-product-name{
+                        a{
+                            
+                        }
+                        h5{
+                            font-size: 15px;
+                            margin-bottom: 0;
+                            &:hover{
+                                color: $color-link-hover;
+                                @extend .transition-all;
+                            }
+                        }
+                    }
+                    .cart-menu-product-descript{
+                        font-size: 12px;
+                        color: $color-dark-smoke;
+    
+                    }
+                    .cart-menu-product-price{
+                        margin-top: 8px;
+                        font-size: 15px;
+                    }
+                }
+                .cart-dropdown-cancel{
+                    a{
+                        color: $color-dark-smoke;
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                }
+
+            } 
         }
     }
 }
@@ -169,7 +213,7 @@
             background-color: white;
             border-radius: 500px;
             font-size: 10px;
-            padding: 2px;
+            padding: 3px;
         }
         
     }
@@ -202,14 +246,14 @@
             .wishlist-circle-responsive{
                 top: -5px;
                 left: 50px;
-                padding-right: 4px;
-                padding-top: 2.5px;
+                padding-right: 4.5px;
+                padding-top: 3px;
             }
             .cart-circle-responsive{
                 top: -5px;
                 right: 5px;
-                padding-right: 4px;
-                padding-top: 2px;
+                padding-right: 4.5px;
+                padding-top: 3px;
             }
         }
         
