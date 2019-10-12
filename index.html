@@ -23,7 +23,7 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body class="h-100">
       <header>
         <div class="header-container-desktop d-lg-block d-none">
             <div class="header-top-bar">
@@ -153,7 +153,7 @@
                             <a class="btn navigation-link" href="">Nějaký úžasný článek</a>
                         </div>
 
-                        <div class="col-2">
+                        <div class="col text-right">
                             <a class="btn wishlist-btn" href=""><i class=" mr-2 fas fa-heart"><div class="product-circle-number wishlist-circle">5</div></i></a>
                             <div class="dropdown cart-dropdown">
                                 <a class="btn cart-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart"><div class="product-circle-number cart-circle">1</div> </i></a>
@@ -205,6 +205,31 @@
                                                 <a href="#"> <i class="fas fa-times"></i> </a>
                                             </div>
                                         </div>
+
+                                        <div class="dropdown-divider"></div>
+                                        <div class="row cart-dropdown-final">
+                                            <div class="col">
+                                                <table class="table table-light cart-dropdown-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-left">Součet</td><td class="text-right">6000 CZK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">Doprava</td><td class="text-right">100 CZK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">Daň</td><td class="text-right">0 CZK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left">Celkem</td><td class="text-right">6100 CZK</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a class="btn-standard mt-2">Do košíku</a></td><td><a class="btn-standard mt-2">Zaplatit</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +242,77 @@
         <div class="header-container-mobile d-lg-none">
             <nav class="navbar navbar-expand-lg navbar-light mobile-bar">
                 <div id="my-nav" class="collapse navbar-collapse">
-                        
+                    <div class="navbar-nav mr-auto">
+                        <div class="navbar-nav-header navigation-link"> 
+                            <span class="nav-header-heading">MENU</span> 
+                            <button class="navbar-toggler btn float-right mr-3" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="mobile-bar-icon fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Nějaká položka</a>
+                                <a class="dropdown-item" href="#">Kategorie</a>
+                                <a class="dropdown-item" href="#">Položka plná úžasnosti</a>
+                                <a class="dropdown-item" href="#">Prostě text</a>
+                                <a class="dropdown-item" href="#">Další kategorie</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                            <div class="dropdown-menu">
+                                <div class="container-fluid">
+                                    <div class="row dropdown-category-row">
+                                        <div class="col-12 dropdown-category-group">
+                                            <a class="dropdown-item dropdown-item-heading" href="#">Název kategorie</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Podkategorie</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Nějaká další</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Podkategorie plná úžasnosti</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Další podkategorie</a>
+                                        </div>
+                                        <div class="col-12 dropdown-category-group">
+                                            <a class="dropdown-item dropdown-item-heading" href="#">Název kategorie</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Podkategorie</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Nějaká další</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Další podkategorie</a>
+                                        </div>
+                                    </div>
+                                    <div class="row dropdown-category-row">
+                                        <div class="col-12 dropdown-category-group">
+                                            <a class="dropdown-item dropdown-item-heading" href="#">Název kategorie</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Podkategorie</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Nějaká další</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Další podkategorie</a>
+                                        </div>
+                                        <div class="col-12 dropdown-category-group">
+                                            <a class="dropdown-item dropdown-item-heading" href="#">Název kategorie</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Podkategorie</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Nějaká další</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Podkategorie plná úžasnosti</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Podkategorie plná úžasnosti</a>
+                                            <a class="dropdown-item dropdown-sub-item" href="#">Další podkategorie</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Nějaká položka</a>
+                                <a class="dropdown-item" href="#">Kategorie</a>
+                                <a class="dropdown-item" href="#">Položka plná úžasnosti</a>
+                                <a class="dropdown-item" href="#">Prostě text</a>
+                                <a class="dropdown-item" href="#">Další kategorie</a>
+                            </div>
+                        </div>
+                        <a class="btn navigation-link" href="">Nějaký úžasný článek</a>
+                    </div>
                 </div>
                 <div class="container h-100">
                     <div class="row h-100 w-100">

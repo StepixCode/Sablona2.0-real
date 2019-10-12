@@ -1,5 +1,9 @@
 @import "shared/_variables.scss";
 @import "shared/_typography.scss";
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
 
 *{
     box-sizing: border-box;

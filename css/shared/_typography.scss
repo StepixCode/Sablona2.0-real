@@ -9,3 +9,18 @@ a{
         text-decoration: none;
     }
 }
+.btn-standard{
+    background-color: $primary;
+    color: $secondary !important;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    height: 35px;
+    min-width: 70px;
+    display: block;
+    cursor: pointer;
+    @extend .transition-all;
+    &:hover{
+        background-color: $color-btn-hover;
+    }
+}

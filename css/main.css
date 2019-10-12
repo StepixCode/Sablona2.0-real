@@ -1,13 +1,13 @@
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, a {
+.transition-all, a, .btn-standard {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, a {
+.transition-all, a, .btn-standard {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -20,6 +20,27 @@ a {
 a:hover {
   color: #1a66ff;
   text-decoration: none;
+}
+
+.btn-standard {
+  background-color: #ffd333;
+  color: #3d464d !important;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px;
+  height: 35px;
+  min-width: 70px;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-standard:hover {
+  background-color: #ddc980;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 * {
