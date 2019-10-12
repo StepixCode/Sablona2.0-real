@@ -1,0 +1,42 @@
+/*Fonts*/
+/*Bootstrap setting*/
+.transition-all {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.homepage-carousel .slide, .homepage-carousel .slide-one {
+  background-size: cover;
+  background-position: center;
+  background-color: #3d464d;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.homepage-carousel .slide-one {
+  background-image: url("../images/slides/slide1.jpg");
+}
+
+.homepage-card-row .homepage-card {
+  text-align: center;
+}
+
+.homepage-card-row .homepage-card .homepage-card-wrapper {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.homepage-card-row .homepage-card .homepage-card-wrapper .homepage-card-image {
+  background-image: url("../images/icons/freeShipping.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+}
+
+.homepage-card-row .homepage-card .homepage-card-wrapper .homepage-card-title {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #3d464d;
+}
+/*# sourceMappingURL=homepage.css.map */

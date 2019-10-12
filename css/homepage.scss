@@ -1,0 +1,42 @@
+@import "shared/_variables";
+
+
+.homepage-carousel{
+    .slide{
+        background-size: cover;
+        background-position: center;
+        background-color: $secondary;
+        background-repeat: no-repeat;
+        min-height: 400px;
+    }
+    .slide-one{
+        @extend .slide;
+        background-image: url("../images/slides/slide1.jpg");
+    }
+}
+
+
+.homepage-card-row{
+    
+    .homepage-card{
+        text-align: center;
+        .homepage-card-wrapper{
+            background-color: $color-smoke;
+            padding: 20px;
+            .homepage-card-image{
+                background-image: url("../images/icons/freeShipping.png");
+                background-size: 100px;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 40px;
+            }
+            .homepage-card-title{
+                margin-top: 10px;
+                font-weight: 700;
+                color: $secondary;
+            }
+        }
+    }
+
+}
+
