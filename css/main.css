@@ -22,6 +22,28 @@ a:hover {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #3d464d;
+}
+
+.title-with-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-with-divider .divider {
+  margin-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 3px;
+  background-color: #f0f0f0;
+}
+
 .btn-standard {
   background-color: #ffd333;
   color: #3d464d !important;

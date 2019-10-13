@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/productLayout.css">
 
     <title>Hello, world!</title>
   </head>
@@ -350,10 +351,12 @@
 
 
       <main>
-            <section>
-                <div class="container mt-5 p-0">
-                    <div class="row carousel-row p-0">
-                        <div class="col p-0">
+        <!--Homepage welcome section with carousel-->
+        <section class="homepage-header">
+            <article>
+                <div class="container mt-5">
+                    <div class="row carousel-row">
+                        <div class="col">
                             <div class="homepage-carousel owl-carousel owl-theme">
                                 <div class="item slide-one"></div>
                                 <div class="item"><h4>2</h4></div>
@@ -370,29 +373,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row homepage-card-row">
-                        <div class="col-6 col-lg-3 pl-lg-0 pl-md-0 pr-lg-4 mt-3 homepage-card left-card">
+
+                    <div class="row homepage-card-row card-version-one">
+                        <div class="col-6 col-lg-3 pr-0 pl-3 homepage-card one">
                             <div class="homepage-card-wrapper">
                                 <div class="homepage-card-image"></div>
                                 <div class="homepage-card-title"> Doprava zdarma</div>
                                 <div class="homepage-card-text"> Pro objednávky nad 1000 CZK </div>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3 pr-md-0 mt-3 homepage-card">
+                        <div class="col-6 col-lg-3 pr-lg-0 pl-0   homepage-card two">
                             <div class="homepage-card-wrapper">
                                 <div class="homepage-card-image"></div>
                                 <div class="homepage-card-title"> Doprava zdarma</div>
                                 <div class="homepage-card-text"> Pro objednávky nad 1000 CZK </div>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3 pl-md-0 pl-lg-4 mt-3 homepage-card">
+                        <div class="col-6 col-lg-3 pl-lg-0 pr-0 homepage-card three">
                             <div class="homepage-card-wrapper">
                                 <div class="homepage-card-image"></div>
                                 <div class="homepage-card-title"> Doprava zdarma</div>
                                 <div class="homepage-card-text"> Pro objednávky nad 1000 CZK </div>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3 pr-lg-0 pr-md-0 mt-3 homepage-card right-card">
+                        <div class="col-6 col-lg-3 pl-0  homepage-card four">
                             <div class="homepage-card-wrapper">
                                 <div class="homepage-card-image"></div>
                                 <div class="homepage-card-title"> Doprava zdarma</div>
@@ -400,13 +404,316 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-      </main>
-      
-      <footer>
 
-      </footer>
+                    <!--Druhá verze--
+                    <div class="row homepage-card-row card-version-two">
+                        <div class="col-6 col-lg-3 pr-lg-4 mt-3 one homepage-card">
+                            <div class="homepage-card-wrapper">
+                                <div class="homepage-card-image"></div>
+                                <div class="homepage-card-title"> Doprava zdarma</div>
+                                <div class="homepage-card-text"> Pro objednávky nad 1000 CZK </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 mt-3 homepage-card two">
+                            <div class="homepage-card-wrapper">
+                                <div class="homepage-card-image"></div>
+                                <div class="homepage-card-title"> Doprava zdarma</div>
+                                <div class="homepage-card-text"> Pro objednávky nad 1000 CZK </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 pl-lg-4 mt-3 homepage-card three">
+                            <div class="homepage-card-wrapper">
+                                <div class="homepage-card-image"></div>
+                                <div class="homepage-card-title"> Doprava zdarma</div>
+                                <div class="homepage-card-text"> Pro objednávky nad 1000 CZK </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 mt-3 homepage-card right-card four">
+                            <div class="homepage-card-wrapper">
+                                <div class="homepage-card-image"></div>
+                                <div class="homepage-card-title"> Doprava zdarma</div>
+                                <div class="homepage-card-text"> Pro objednávky nad 1000 CZK </div>
+                            </div>
+                        </div>
+                    </div>
+                    <--Druhá verze-->
+
+                </div>
+            </article>        
+        </section>
+        <!--Homepage product section (bestsellers,featured products...)-->
+        <section class="homepage-products">
+            <article class="featured-products">
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title-with-divider">
+                                <h3>Dostupné výrobky</h3>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Single row of products-->
+                    <div class="row product-row">
+                        
+                        <!--Single product-->
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Single product-->
+
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Single row of products-->
+
+                    <div class="row product-row">       
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 product">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="product-photo" href="#">
+                                        <div class="product-photo-wrapper">
+                                            <img class="img-fluid" src="images/product.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <a class="product-title" href="#"><h5>Electric Planer Brandix KL370090G 300 Watts</h5></a> 
+                                    <div class="reviews">
+                                        <span class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <span class="reviews-number">5 Hodnocení</span>
+                                    </div>
+                                    <div class="price"> 1000 CZK</div>
+                                    <div class="product-hidden-bar">
+                                        <a class="btn-standard add-to-cart">Do košíku</a>
+                                        <span class="product-icon-group">
+                                            <a class="btn add-to-wishlist"><i class="fas fa-heart"></i></a>
+                                            <a class="btn add-to-compare"><i class="fas fa-chart-bar"></i></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+      
+    <footer>
+
+    </footer>
 
 
 

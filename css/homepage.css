@@ -17,26 +17,56 @@
   background-image: url("../images/slides/slide1.jpg");
 }
 
+.homepage-card-row {
+  margin-top: 15px;
+}
+
 .homepage-card-row .homepage-card {
   text-align: center;
 }
 
-.homepage-card-row .homepage-card .homepage-card-wrapper {
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-
-.homepage-card-row .homepage-card .homepage-card-wrapper .homepage-card-image {
-  background-image: url("../images/icons/freeShipping.png");
-  background-size: 100px;
+.homepage-card-row .homepage-card .homepage-card-image {
+  background-size: 90px;
   background-repeat: no-repeat;
   background-position: center;
-  height: 40px;
+  height: 30px;
+  max-width: 100%;
 }
 
-.homepage-card-row .homepage-card .homepage-card-wrapper .homepage-card-title {
+.homepage-card-row .homepage-card .homepage-card-title {
   margin-top: 10px;
   font-weight: 700;
   color: #3d464d;
+}
+
+.homepage-card-row .homepage-card .homepage-card-text {
+  font-size: 14px;
+}
+
+.homepage-card-row .one .homepage-card-image {
+  background-image: url("../images/icons/freeShipping.png");
+}
+
+.homepage-card-row .two .homepage-card-image {
+  background-image: url("../images/icons/freeShipping.png");
+}
+
+.homepage-card-row .three .homepage-card-image {
+  background-image: url("../images/icons/freeShipping.png");
+}
+
+.homepage-card-row .four .homepage-card-image {
+  background-image: url("../images/icons/freeShipping.png");
+}
+
+.homepage-card-row.card-version-one .homepage-card .homepage-card-wrapper {
+  background-color: #f7f7f7;
+  border: 1px solid #f0f0f0;
+  padding: 15px;
+}
+
+.homepage-card-row.card-version-two .homepage-card .homepage-card-wrapper {
+  padding: 15px;
+  background-color: #f7f7f7;
 }
 /*# sourceMappingURL=homepage.css.map */

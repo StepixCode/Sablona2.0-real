@@ -16,27 +16,65 @@
 }
 
 
+
 .homepage-card-row{
-    
+    margin-top: 15px;
     .homepage-card{
         text-align: center;
-        .homepage-card-wrapper{
-            background-color: $color-smoke;
-            padding: 20px;
-            .homepage-card-image{
-                background-image: url("../images/icons/freeShipping.png");
-                background-size: 100px;
-                background-repeat: no-repeat;
-                background-position: center;
-                height: 40px;
-            }
-            .homepage-card-title{
-                margin-top: 10px;
-                font-weight: 700;
-                color: $secondary;
-            }
+        .homepage-card-image{
+            background-size:  90px;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            max-width: 100%;
+        }
+        .homepage-card-title{
+            margin-top: 10px;
+            font-weight: 700;
+            color: $secondary;
+        }
+        .homepage-card-text{
+            font-size: $font-small;
         }
     }
+    .one{
+        .homepage-card-image{
+            background-image: url("../images/icons/freeShipping.png");
+        }
+    }
+    .two{
+        .homepage-card-image{
+            background-image: url("../images/icons/freeShipping.png");
+        }
+    }
+    .three{
+        .homepage-card-image{
+            background-image: url("../images/icons/freeShipping.png");
+        }
+    }
+    .four{
+        .homepage-card-image{
+            background-image: url("../images/icons/freeShipping.png");
+        }
+    }
+}
 
+.homepage-card-row.card-version-one{
+    .homepage-card{
+        .homepage-card-wrapper{
+            background-color: $color-light-smoke;
+            border: 1px solid $color-smoke;
+            padding: 15px;
+        }
+    }
+    
+}
+.homepage-card-row.card-version-two{
+    .homepage-card{
+        .homepage-card-wrapper{
+            padding: 15px;
+            background-color: $color-light-smoke;
+        }
+    }
 }
 

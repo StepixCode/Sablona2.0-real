@@ -1,0 +1,92 @@
+@import "shared/_variables.scss";
+
+
+.rating-stars{
+    i{
+        color: $color-rating-stars;
+    }
+}
+
+.product-row{
+    margin-top: 15px;
+    height: 335px;
+    overflow: visible;
+}
+
+//Single product
+.product{
+    .card{
+        position: absolute;
+        border: 2px solid $color-smoke;
+        border-radius: 0;
+        height: 300px;
+        overflow: hidden;
+        @extend .transition-all;
+        &:hover{
+            border-color: $primary;
+            height: 335px;
+        }
+        .product-photo{
+            display: block;
+            .product-photo-wrapper{
+                max-width: 75%;
+                margin: auto;
+            }
+        }
+        .product-title{
+            h5{
+                font-size: $product-title-size;
+                color: $secondary;
+            }
+            margin: 0;
+        }
+        .product-title:hover h5{
+            color: $color-link-hover;
+        }
+        .reviews{
+            .rating-stars{
+                i{
+                    font-size: $font-small;
+                }
+            }
+            .reviews-number{
+                color: $color-dark-smoke;
+                font-size: $font-small;
+            }
+        }
+        .price{
+            margin-top: 5px;
+            color: $secondary;
+            font-weight: 700;
+        }
+        .product-hidden-bar{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .add-to-cart{
+                width: 100px;
+                height: 25px;
+                line-height: 15px;
+                font-size: $font-small;
+                display: inline-block;
+            }
+            .product-icon-group{
+                a{
+                    padding: 5px;
+                    display: inline-block;
+                    &:hover{
+                        background-color: $color-smoke;
+                    }
+                    i{
+                        color: $color-smoke;
+                    }
+                }
+                a:hover i{
+                    color: $color-dark-smoke;
+                }
+            }
+        }
+    }
+    
+}
