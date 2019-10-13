@@ -1,6 +1,8 @@
 /// <reference path="../../Bundles/variables.scss" />
 /// <reference path="../../Bundles/mixins.scss" />
 
+@import "../bootstrap/mixins/breakpoints";
+
 
 // COLOR SETTINGS
 $color-primary: rgb(255, 211, 51);
@@ -31,6 +33,7 @@ $top-panel-height: 100px;
 
 //ProductLayout
 $product-title-size: 15px;
+$product-card-height: 350px;
 
 
 
@@ -91,7 +94,7 @@ $font-weight-bold: 700;
 $grid-columns: 12;
 $grid-gutter-width: 30px;
 
-$grid-breakpoints: (xs: 0, sm: 440px, md: 766px, lg: 1279px, xl: 1360px, xxl: 1660px);
+$grid-breakpoints: (xs: 0, sm: 440px, md: 766px, lg: 992px, xl: 1360px, xxl: 1660px);
 $container-max-widths: ( sm: 440px, md: 700px, lg: 1250px, xl: 1300px, xxl: 1600px);
 
 //section spacing

@@ -9,8 +9,19 @@
 
 .product-row{
     margin-top: 15px;
-    height: 335px;
+    height: $product-card-height + 40px;
     overflow: visible;
+    @include media-breakpoint-down(md) { 
+        height: ($product-card-height + 50px) * 2;
+        margin-top: 0;
+    }
+}
+.three-product-row{
+    height: ($product-card-height + 55px) * 2;
+    margin-top: 0;
+    @include media-breakpoint-down(md) { 
+        height: ($product-card-height + 50px) * 3;
+    }
 }
 
 //Single product
@@ -19,18 +30,24 @@
         position: absolute;
         border: 2px solid $color-smoke;
         border-radius: 0;
-        height: 300px;
+        height: $product-card-height;
         overflow: hidden;
         @extend .transition-all;
+        @include media-breakpoint-down(md) { 
+            height: $product-card-height + 40px;
+        }
         &:hover{
             border-color: $primary;
-            height: 335px;
+            height: $product-card-height + 40px;
         }
         .product-photo{
             display: block;
             .product-photo-wrapper{
-                max-width: 75%;
+                max-width: 170px;
                 margin: auto;
+                @include media-breakpoint-down(md) { 
+                    max-width: 50%;
+                }
             }
         }
         .product-title{
@@ -59,8 +76,10 @@
             color: $secondary;
             font-weight: 700;
         }
+        .visible{
+            height: $product-card-height - 22px;
+        }
         .product-hidden-bar{
-            margin-top: 5px;
             display: flex;
             align-items: center;
             justify-content: space-between;
