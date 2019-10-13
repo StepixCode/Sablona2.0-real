@@ -78,3 +78,47 @@
     }
 }
 
+.featured-products{
+    .title-with-divider{
+        .filtres{
+            @include media-breakpoint-down(md){
+                position: absolute;
+                top: 50px;
+                right: 5px;
+            }
+            a{
+                border: 2px solid white;
+                border-radius: 500px;
+                color: $secondary;
+                padding: 0 10px 0 10px;
+                font-weight: 700;
+                &:hover{
+                    border-color:  $color-dark-smoke;
+                }
+            }
+            a.active{
+                border-color: $primary;
+            }
+        }
+    }
+}
+
+#customNav-featured-products{
+        button{
+            border: none;
+            background-color: $color-smoke;
+            height: 30px;
+            width: 40px;
+            margin: 2.5px;
+            &:hover{
+                background-color: $primary;
+            }
+            i{
+                color: $color-dark-smoke;
+                font-size: 25px;
+            }
+        } 
+        button:hover i{
+            color: $secondary;
+        }
+}

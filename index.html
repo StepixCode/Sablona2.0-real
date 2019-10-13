@@ -452,6 +452,12 @@
                             <div class="title-with-divider">
                                 <h3>Dostupné výrobky</h3>
                                 <div class="divider"></div>
+                                <div class="filtres">
+                                    <a class="active" href="#">Vše</a>
+                                    <a href="#">Ruční nářadí</a>
+                                    <a href="#">Elektrické nářadí</a>
+                                </div>
+                                <div id="customNav-featured-products" class="owl-nav"></div>
                             </div>
                         </div>
                     </div>
@@ -1464,7 +1470,8 @@
     <script src="js/owl.carousel.min.js"></script>
     
     <script>
-        $('.homepage-carousel').owlCarousel({
+    //Homepage carousel
+    $('.homepage-carousel').owlCarousel({
         loop:true,
         margin:10,
         responsiveClass:true,
@@ -1484,33 +1491,40 @@
             1000:{
                 items:1,
                 nav:false,
-                loop:false,
+                loop:true,
                 dots: true,
             }
         }
     })
+    
+    //Featured products carousel
     $('.featured-products-carousel').owlCarousel({
         loop:true,
         margin:10,
         responsiveClass:true,
+        navContainer: '#customNav-featured-products',
+        navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        ],
         nav: true,
-        dots: true,
+        dots: false,
         responsive:{
             0:{
                 items:1,
-                nav:false,
-                dots: true,
+                nav:true,
+                dots: false,
             },
             600:{
                 items:1,
-                nav:false,
-                dots: true,
+                nav:true,
+                dots: false,
             },
             1000:{
                 items:1,
-                nav:false,
+                nav:true,
                 loop:false,
-                dots: true,
+                dots: false,
             }
         }
     })
