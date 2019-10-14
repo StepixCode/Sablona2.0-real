@@ -17,9 +17,9 @@
 
 
 
-.homepage-card-row{
+.homepage-card-row,.categories-card-row{
     margin-top: 15px;
-    .homepage-card{
+    .homepage-card,.categories-card{
         text-align: center;
         .homepage-card-image{
             background-size:  90px;
@@ -28,12 +28,12 @@
             height: 30px;
             max-width: 100%;
         }
-        .homepage-card-title{
+        .homepage-card-title,.categories-card-title{
             margin-top: 10px;
             font-weight: 700;
             color: $secondary;
         }
-        .homepage-card-text{
+        .homepage-card-text,.categories-card-text{
             font-size: $font-small;
         }
     }
@@ -59,9 +59,9 @@
     }
 }
 
-.homepage-card-row.card-version-one{
-    .homepage-card{
-        .homepage-card-wrapper{
+.homepage-card-row.card-version-one,.categories-card-row{
+    .homepage-card,.categories-card{
+        .homepage-card-wrapper,.categories-card-wrapper{
             background-color: $color-light-smoke;
             border: 1px solid $color-smoke;
             padding: 15px;
@@ -77,6 +77,57 @@
         }
     }
 }
+.categories-card-row{
+    .categories-card{
+        text-align: left;
+        .categories-card-wrapper{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border: 2px solid $color-smoke;
+            .categories-card-info{
+                width: 50%;
+                display: inline-block;
+                padding-left: 10px;
+                .categories-card-title{
+                    a{
+                       color: $secondary;
+                       &:hover{
+                           color: $color-link-hover;
+                       }
+                    }
+                }
+            }
+            .categories-card-image-wrapper{
+                width: 40% !important;
+                display: inline-block;
+                .categories-card-image{
+                    background-size:  contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 70px;
+                    max-width: 100%;
+                }
+            }
+        }  
+    }
+}
+.one{
+    .categories-card-image{
+        background-image: url("../images/product.jpg");
+    }
+}
+.two{
+    .categories-card-image{
+        background-image: url("../images/product.jpg");
+    }
+}
+.three{
+    .categories-card-image{
+        background-image: url("../images/product.jpg");
+    }
+}
+
 
 .featured-products{
     .title-with-divider{

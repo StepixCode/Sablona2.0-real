@@ -17,15 +17,15 @@
   background-image: url("../images/slides/slide1.jpg");
 }
 
-.homepage-card-row {
+.homepage-card-row, .categories-card-row {
   margin-top: 15px;
 }
 
-.homepage-card-row .homepage-card {
+.homepage-card-row .homepage-card, .homepage-card-row .categories-card, .categories-card-row .homepage-card, .categories-card-row .categories-card {
   text-align: center;
 }
 
-.homepage-card-row .homepage-card .homepage-card-image {
+.homepage-card-row .homepage-card .homepage-card-image, .homepage-card-row .categories-card .homepage-card-image, .categories-card-row .homepage-card .homepage-card-image, .categories-card-row .categories-card .homepage-card-image {
   background-size: 90px;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,33 +33,33 @@
   max-width: 100%;
 }
 
-.homepage-card-row .homepage-card .homepage-card-title {
+.homepage-card-row .homepage-card .homepage-card-title, .homepage-card-row .homepage-card .categories-card-title, .homepage-card-row .categories-card .homepage-card-title, .homepage-card-row .categories-card .categories-card-title, .categories-card-row .homepage-card .homepage-card-title, .categories-card-row .homepage-card .categories-card-title, .categories-card-row .categories-card .homepage-card-title, .categories-card-row .categories-card .categories-card-title {
   margin-top: 10px;
   font-weight: 700;
   color: #3d464d;
 }
 
-.homepage-card-row .homepage-card .homepage-card-text {
+.homepage-card-row .homepage-card .homepage-card-text, .homepage-card-row .homepage-card .categories-card-text, .homepage-card-row .categories-card .homepage-card-text, .homepage-card-row .categories-card .categories-card-text, .categories-card-row .homepage-card .homepage-card-text, .categories-card-row .homepage-card .categories-card-text, .categories-card-row .categories-card .homepage-card-text, .categories-card-row .categories-card .categories-card-text {
   font-size: 14px;
 }
 
-.homepage-card-row .one .homepage-card-image {
+.homepage-card-row .one .homepage-card-image, .categories-card-row .one .homepage-card-image {
   background-image: url("../images/icons/freeShipping.png");
 }
 
-.homepage-card-row .two .homepage-card-image {
+.homepage-card-row .two .homepage-card-image, .categories-card-row .two .homepage-card-image {
   background-image: url("../images/icons/freeShipping.png");
 }
 
-.homepage-card-row .three .homepage-card-image {
+.homepage-card-row .three .homepage-card-image, .categories-card-row .three .homepage-card-image {
   background-image: url("../images/icons/freeShipping.png");
 }
 
-.homepage-card-row .four .homepage-card-image {
+.homepage-card-row .four .homepage-card-image, .categories-card-row .four .homepage-card-image {
   background-image: url("../images/icons/freeShipping.png");
 }
 
-.homepage-card-row.card-version-one .homepage-card .homepage-card-wrapper {
+.homepage-card-row.card-version-one .homepage-card .homepage-card-wrapper, .homepage-card-row.card-version-one .homepage-card .categories-card-wrapper, .homepage-card-row.card-version-one .categories-card .homepage-card-wrapper, .homepage-card-row.card-version-one .categories-card .categories-card-wrapper, .categories-card-row .homepage-card .homepage-card-wrapper, .categories-card-row .homepage-card .categories-card-wrapper, .categories-card-row .categories-card .homepage-card-wrapper, .categories-card-row .categories-card .categories-card-wrapper {
   background-color: #f7f7f7;
   border: 1px solid #f0f0f0;
   padding: 15px;
@@ -68,6 +68,60 @@
 .homepage-card-row.card-version-two .homepage-card .homepage-card-wrapper {
   padding: 15px;
   background-color: #f7f7f7;
+}
+
+.categories-card-row .categories-card {
+  text-align: left;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 2px solid #f0f0f0;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info {
+  width: 50%;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-title a {
+  color: #3d464d;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-title a:hover {
+  color: #1a66ff;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-image-wrapper {
+  width: 40% !important;
+  display: inline-block;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-image-wrapper .categories-card-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+  max-width: 100%;
+}
+
+.one .categories-card-image {
+  background-image: url("../images/product.jpg");
+}
+
+.two .categories-card-image {
+  background-image: url("../images/product.jpg");
+}
+
+.three .categories-card-image {
+  background-image: url("../images/product.jpg");
 }
 
 @media (max-width: 991.98px) {
