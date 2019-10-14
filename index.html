@@ -322,6 +322,17 @@
                     </div>
                 </div>
                 <div class="container h-100">
+                    <div id="responsive-search-bar">
+                        <form class="top-panel-search-form w-100" action="">
+                            <input class="search-form-input" type="text" placeholder="Hledáte něco...">
+                            <div class="search-button-group">
+                                <button type="submit" class="search-form-submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <a href="#" class="btn search-close">  <i class="fas fa-times d-md-none d-inline-block"></i></a>
+                            </div>
+                        </form>
+                    </div>
                     <div class="row h-100 w-100">
                         <div class="col top-panel-logo">
                             <button class="navbar-toggler btn float-left mr-3" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -342,7 +353,7 @@
                         </div>
                         <div class="col-6 col-md-2 align-self-center text-right">
                             <a class="wishlist-btn mr-2" href=""><i class="mobile-bar-icon mr-2 fas fa-heart d-md-inline-block d-none"><div class="product-circle-number wishlist-circle-responsive">5</div></i></a>
-                            <i class="mobile-bar-icon fas fa-search d-md-none d-inline-block"></i>
+                            <a class="search-btn d-md-none d-inline-block" href="#responsive-search-bar" >  <i class="mobile-bar-icon responsive-search-trigger fas fa-search"></i></a>
                             <a class="cart-btn" href=""><i class="mobile-bar-icon fas fa-shopping-cart"><div class="product-circle-number cart-circle-responsive">1</div></i></a> 
                         </div>
                     </div>
