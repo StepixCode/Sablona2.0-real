@@ -125,6 +125,10 @@
   background-image: url("../images/product.jpg");
 }
 
+.featured-products .title-with-divider .filtres, .new-arrivals-products .title-with-divider .filtres, .latest-news .title-with-divider .filtres {
+  margin-left: 20px;
+}
+
 @media (max-width: 991.98px) {
   .featured-products .title-with-divider .filtres, .new-arrivals-products .title-with-divider .filtres, .latest-news .title-with-divider .filtres {
     position: absolute;

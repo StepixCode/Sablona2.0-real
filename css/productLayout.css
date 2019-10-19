@@ -11,6 +11,7 @@
 
 .product-row {
   margin-top: 15px;
+  padding-right: 15px;
   height: 390px;
   overflow: visible;
 }
@@ -23,6 +24,7 @@
 }
 
 .three-product-row {
+  padding-right: 15px;
   height: 830px;
   margin-top: 0;
 }
@@ -31,6 +33,10 @@
   .three-product-row {
     height: 1200px;
   }
+}
+
+.product {
+  overflow: hidden;
 }
 
 .product .card {
