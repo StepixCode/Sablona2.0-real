@@ -84,6 +84,7 @@
             display: flex;
             align-items: center;
             background-color: white;
+            padding: 2px;
             border: 2px solid $color-smoke;
             .categories-card-info{
                 width: 50%;
@@ -129,7 +130,7 @@
 }
 
 
-.featured-products{
+.featured-products,.new-arrivals-products,.latest-news{
     .title-with-divider{
         .filtres{
             @include media-breakpoint-down(md){
@@ -154,7 +155,7 @@
     }
 }
 
-#customNav-featured-products{
+#customNav-featured-products,#customNav-new-arrivals-products,#customNav-latest-news-products{
         button{
             border: none;
             background-color: $color-smoke;
@@ -167,10 +168,31 @@
             i{
                 color: $color-dark-smoke;
                 font-size: 25px;
-                line-height: 30px;
+                line-height: 28px;
             }
         } 
         button:hover i{
             color: $secondary;
         }
 }
+
+.latest-news{
+    .news-wrapper{
+        .news-info-wrapper{
+            margin-top: 15px;
+            .news-date{
+                font-size: $font-small;
+                color: $color-dark-smoke;
+                margin-bottom: 2px;
+            }
+            .news-title{
+                margin-bottom: 10px;
+                a{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+        }   
+     }
+}
+

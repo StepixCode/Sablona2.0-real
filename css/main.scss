@@ -13,3 +13,89 @@ body{
 .clearing{
     clear: both;
 }
+
+
+footer{
+    width: 100%;
+    border-top: 4px solid $color-smoke;
+}
+.footer-container{
+    padding-top: 25px;
+    .copy-row{
+        border-top: 4px solid $color-smoke;
+        padding-top: 15px;
+    }
+}
+
+
+.contact-widget{
+    div{
+        margin: 3px 0 3px 0;
+    }
+    i{
+        color: $secondary;
+        margin-right: 10px;
+    }
+}
+.list-widget{
+    a{
+        display: block;
+    }
+}
+.newsletter-widget{
+    .newsletter-form{
+        width: 100%;
+    }
+    input,button{
+        display: inline-block;
+    }
+    input{
+        width: 100%;
+        border: none;
+        text-align: center;
+        padding: 5px;
+    }
+    .btn-standard{
+        border: none;
+        width: 100%;
+    }
+
+}
+.social-networks-widget{
+    margin-top: 30px;
+    text-align: center;
+    color: $secondary;
+    font-weight: 700;
+    .icons{
+        margin-top: 10px;
+        display: block;
+        .centering{
+            width: calc(55.5px * 4 );
+            margin: auto;
+            i{
+                display: inline-block;
+                color: white;
+                padding: 15px;
+                font-size: 15px;
+                border-radius: 5000px;
+                margin: 0 2.5px 0 2.5px;
+                width: 45px;
+                height: 45px;
+                text-align: center;
+            }
+            .facebook{
+                background-color: #4267B2;
+             }
+             .youtube{
+                 background-color: #FF0000;
+             }
+             .twitter{
+                 background-color: #1DA1F2;
+             }
+             .instagram{
+                 background-color: #405DE6;
+             }
+        }  
+    }
+      
+}

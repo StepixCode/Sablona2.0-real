@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #3d464d;
 }
 
+h3 {
+  font-size: 30px;
+}
+
 .title-with-divider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,5 +78,97 @@ body {
 
 .clearing {
   clear: both;
+}
+
+footer {
+  width: 100%;
+  border-top: 4px solid #f0f0f0;
+}
+
+.footer-container {
+  padding-top: 25px;
+}
+
+.footer-container .copy-row {
+  border-top: 4px solid #f0f0f0;
+  padding-top: 15px;
+}
+
+.contact-widget div {
+  margin: 3px 0 3px 0;
+}
+
+.contact-widget i {
+  color: #3d464d;
+  margin-right: 10px;
+}
+
+.list-widget a {
+  display: block;
+}
+
+.newsletter-widget .newsletter-form {
+  width: 100%;
+}
+
+.newsletter-widget input, .newsletter-widget button {
+  display: inline-block;
+}
+
+.newsletter-widget input {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.newsletter-widget .btn-standard {
+  border: none;
+  width: 100%;
+}
+
+.social-networks-widget {
+  margin-top: 30px;
+  text-align: center;
+  color: #3d464d;
+  font-weight: 700;
+}
+
+.social-networks-widget .icons {
+  margin-top: 10px;
+  display: block;
+}
+
+.social-networks-widget .icons .centering {
+  width: calc(55.5px * 4);
+  margin: auto;
+}
+
+.social-networks-widget .icons .centering i {
+  display: inline-block;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5000px;
+  margin: 0 2.5px 0 2.5px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+.social-networks-widget .icons .centering .facebook {
+  background-color: #4267B2;
+}
+
+.social-networks-widget .icons .centering .youtube {
+  background-color: #FF0000;
+}
+
+.social-networks-widget .icons .centering .twitter {
+  background-color: #1DA1F2;
+}
+
+.social-networks-widget .icons .centering .instagram {
+  background-color: #405DE6;
 }
 /*# sourceMappingURL=main.css.map */
