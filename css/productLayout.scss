@@ -16,6 +16,9 @@
         height: ($product-card-height + 50px) * 2;
         margin-top: 0;
     }
+    @include media-breakpoint-down(sm) { 
+        height: ($product-card-height + 50px) * 4;
+    }
 }
 .three-product-row{
     padding-right: 15px;
@@ -23,6 +26,9 @@
     margin-top: 0;
     @include media-breakpoint-down(md) { 
         height: ($product-card-height + 50px) * 3;
+    }
+    @include media-breakpoint-down(sm) { 
+        height: ($product-card-height + 50px) * 3 * 2;
     }
 }
 
@@ -116,6 +122,7 @@
 //Big product (col-4)
 $big-product-card-height: $product-card-height * 2;
 .product-big{
+    height: $big-product-card-height + 65px;
     .card{
         height: $big-product-card-height + 65px;
         &:hover{

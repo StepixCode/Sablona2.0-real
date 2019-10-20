@@ -23,6 +23,12 @@
   }
 }
 
+@media (max-width: 767.98px) {
+  .product-row {
+    height: 1600px;
+  }
+}
+
 .three-product-row {
   padding-right: 15px;
   height: 830px;
@@ -32,6 +38,12 @@
 @media (max-width: 991.98px) {
   .three-product-row {
     height: 1200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .three-product-row {
+    height: 2400px;
   }
 }
 
@@ -140,6 +152,10 @@
 
 .product .card .product-hidden-bar .product-icon-group a:hover i {
   color: #737373;
+}
+
+.product-big {
+  height: 765px;
 }
 
 .product-big .card {
