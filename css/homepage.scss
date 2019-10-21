@@ -137,7 +137,7 @@
             @include media-breakpoint-down(md){
                 position: absolute;
                 top: 50px;
-                right: 5px;
+                left: 0px;
             }
             a{
                 border: 2px solid white;
@@ -157,25 +157,36 @@
 }
 
 #customNav-featured-products,#customNav-new-arrivals-products,#customNav-latest-news-products{
-        button{
-            border: none;
-            background-color: $color-smoke;
-            height: 30px;
-            width: 40px;
-            margin: 2.5px;
-            &:hover{
-                background-color: $primary;
-            }
-            i{
-                color: $color-dark-smoke;
-                font-size: 25px;
-                line-height: 28px;
-            }
-        } 
-        button:hover i{
-            color: $secondary;
+    button{
+        @include media-breakpoint-down(sm){
+            display: none;
         }
+        border: none;
+        background-color: $color-smoke;
+        height: 30px;
+        width: 40px;
+        margin: 2.5px;
+        &:hover{
+            background-color: $primary;
+        }
+        i{
+            color: $color-dark-smoke;
+            font-size: 25px;
+            line-height: 28px;
+        }
+    } 
+    button:hover i{
+        color: $secondary;
+    }
+}   
+#customNav-featured-products{
+    @include media-breakpoint-down(sm){
+        position: absolute;
+        top: 50px;
+        left: 15px;
+    }
 }
+
 
 .latest-news{
     .news-wrapper{
