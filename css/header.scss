@@ -219,7 +219,7 @@
     .cart-btn,.wishlist-btn,.search-btn{
         font-size: 16px;
         .wishlist-circle{
-            left: 100px;
+            right: 75px;
         }
         .cart-circle{
             right: 5px;
@@ -332,7 +332,7 @@
         text-align: left;
         margin: 0;
         width: 100%;
-        position: absolute;
+        position: fixed;
         height: calc(100vh);
         border: 1px solid $color-smoke;
         background-color: #00000080;
