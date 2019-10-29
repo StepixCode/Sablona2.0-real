@@ -78,9 +78,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: white;
   padding: 2px;
   border: 2px solid #f0f0f0;
@@ -92,6 +89,16 @@
   padding-left: 10px;
 }
 
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-subcats-wrapper {
+  height: 90px;
+  overflow: hidden;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-subcats-wrapper .categories-card-subcat {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-title a {
   color: #3f3d4d;
 }
@@ -100,7 +107,22 @@
   color: #1a66ff;
 }
 
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-view-all {
+  margin-bottom: 10px;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-view-all a {
+  color: #1a66ff;
+}
+
+.categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-view-all a:hover {
+  text-decoration: underline;
+}
+
 .categories-card-row .categories-card .categories-card-wrapper .categories-card-image-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 40% !important;
   display: inline-block;
 }
@@ -111,6 +133,14 @@
   background-position: center;
   height: 70px;
   max-width: 100%;
+}
+
+.categories-card-row .categories-card .categories-card-version-two {
+  height: 200px;
+}
+
+.categories-card-row .categories-card .categories-card-version-two .categories-card-image-wrapper .categories-card-image {
+  height: 120px;
 }
 
 .one .categories-card-image {

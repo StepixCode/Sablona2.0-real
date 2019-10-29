@@ -80,9 +80,9 @@
 .categories-card-row{
     .categories-card{
         text-align: left;
+        
         .categories-card-wrapper{
             display: flex;
-            align-items: center;
             background-color: white;
             padding: 2px;
             border: 2px solid $color-smoke;
@@ -90,6 +90,17 @@
                 width: 50%;
                 display: inline-block;
                 padding-left: 10px;
+                .categories-card-subcats-wrapper{
+                    $subcats_lineHeight: 18px;
+                    height: 5*$subcats_lineHeight;
+                    overflow: hidden;
+                    .categories-card-subcat{
+                        
+                        font-size: $font-small;
+                        line-height: $subcats_lineHeight;
+                       
+                    }
+                }
                 .categories-card-title{
                     a{
                        color: $secondary;
@@ -98,8 +109,19 @@
                        }
                     }
                 }
+                
+                .categories-card-view-all{
+                    margin-bottom: 10px;
+                    a{
+                        color: $color-link-hover;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
             .categories-card-image-wrapper{
+                align-self: center;
                 width: 40% !important;
                 display: inline-block;
                 .categories-card-image{
@@ -111,6 +133,14 @@
                 }
             }
         }  
+        .categories-card-version-two{
+            height: 200px;
+            .categories-card-image-wrapper{
+                .categories-card-image{
+                    height: 120px;
+                }
+            }
+        }
     }
 }
 .one{
