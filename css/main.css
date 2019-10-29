@@ -30,6 +30,10 @@ h3 {
   font-size: 30px;
 }
 
+.btn {
+  border-radius: 0;
+}
+
 .title-with-divider {
   display: -webkit-box;
   display: -ms-flexbox;

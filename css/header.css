@@ -1,6 +1,6 @@
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, .header-container-desktop .header-nav .cart-dropdown .cart-dropdown-menu .cart-dropdown-item .cart-menu-product .cart-menu-product-name h5:hover {
+.transition-all, .header-container-desktop .header-nav .big-category-dropdown .big-category-menu, .header-container-desktop .header-nav .cart-dropdown .cart-dropdown-menu .cart-dropdown-item .cart-menu-product .cart-menu-product-name h5:hover {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -92,6 +92,7 @@
 }
 
 .header-container-desktop .header-nav .dropdown .dropdown-menu {
+  position: relative;
   border-radius: 0;
   margin-top: 3.5px;
   font-weight: 500;
@@ -138,6 +139,74 @@
   min-width: 600px;
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+.header-container-desktop .header-nav .dropdown .triple-col-dropdown {
+  min-width: 900px;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .navigation-link {
+  background-color: #3f3d4d;
+  color: white;
+  font-weight: normal;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .navigation-link i {
+  margin-right: 10px;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-category-item:hover ~ .big-category-menu {
+  display: block;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-category-item {
+  -webkit-transition: 0;
+  transition: 0;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-category-item:hover {
+  color: #3f3d4d;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .menu-checkbox {
+  display: none;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .menu-checkbox:checked ~ .dropdown-menu {
+  display: block;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-menu-container-label {
+  width: 100%;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-category-menu {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 298px;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-image: url("../images/product.jpg");
+  background-size: auto 250px;
+  background-repeat: no-repeat;
+  background-position: right 50px bottom;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-category-menu:hover {
+  display: block;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .double-col-dropdown {
+  min-width: 700px;
 }
 
 .header-container-desktop .header-nav .cart-dropdown {

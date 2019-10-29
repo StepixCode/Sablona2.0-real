@@ -76,6 +76,7 @@
         .dropdown{
             display: inline-block;
             .dropdown-menu{
+                position: relative;
                 border-radius: 0;
                 margin-top: 3.5px;
                 font-weight: $nav-font-weight - 200;
@@ -117,7 +118,69 @@
                 min-width: 600px;
                 transform: translate(0);
             }
+            .triple-col-dropdown{
+                min-width: 900px;
+                transform: translate(0);
+            }
+
         }
+        .big-category-dropdown{
+            .navigation-link{
+                background-color: $secondary;
+                color: white;
+                font-weight: normal;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .big-category-item:hover ~ .big-category-menu{
+                display: block;
+            }
+            .big-category-item{
+                transition: 0;
+                &:hover{
+                    color: $secondary;
+                }
+            }
+            .menu-checkbox{
+                display: none;
+            }
+            .menu-checkbox:checked ~ .dropdown-menu{
+                display: block;
+            }
+            .big-menu-container-label{
+                width: 100%;
+            }
+            .big-category-menu{
+                display: none;
+                position: absolute;
+                top: -2px;
+                left: 298px;
+                padding: 0.5rem 0;
+                font-size: 1rem;
+                color: #212529;
+                text-align: left;
+                list-style: none;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+
+                background-image: url('../images/product.jpg');
+                background-size: auto 250px;
+                background-repeat: no-repeat;
+                background-position: right 50px bottom;
+
+
+                @extend .transition-all;
+                &:hover{
+                    display: block;
+                }
+            }
+            .double-col-dropdown{
+                min-width: 700px;
+            }
+        }
+
         .cart-dropdown{
             position: relative;
             .cart-dropdown-menu{
