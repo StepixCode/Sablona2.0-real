@@ -92,14 +92,7 @@
                 min-width: 300px;
                 .dropdown-item{
                     white-space: normal;
-                    color: transparent;
-                    &:hover{
-                        background-color: $color-smoke;
-                    }
-                }
-                .cart-dropdown-menu *{
-                    white-space: normal;
-                    color: transparent;
+
                     &:hover{
                         background-color: $color-smoke;
                     }
@@ -145,6 +138,7 @@
 
         }
         .dropdown:hover .dropdown-menu{
+            transition-delay: 0s;
             visibility: visible;
             opacity: 1;
             .dropdown-item{
