@@ -79,10 +79,9 @@
             .dropdown-menu{
                 visibility: hidden;
                 opacity: 0;
-                transition: opacity 0.5s;
+                transition: opacity 0.3s;
                 transition-delay: 0.5s;
                 display: block;
-
                 position: absolute;
                 will-change: transform;
                 top: 0px;
@@ -93,7 +92,9 @@
                 font-weight: $nav-font-weight - 200;
                 min-width: 300px;
                 .dropdown-item{
+                    transition: 0.5s;
                     white-space: normal;
+                    color: transparent;
                     &:hover{
                         background-color: $color-smoke;
                     }
@@ -141,8 +142,12 @@
         .dropdown:hover .dropdown-menu{
             visibility: visible;
             opacity: 1;
-            transition: opacity 0.5s;
+            transition: opacity 0.3s;
             transition-delay: 0.5s;
+            .dropdown-item{
+                transition: 0.3s;
+                color: $secondary;
+            }
         }
         .big-category-dropdown{
             .navigation-link{
@@ -173,11 +178,11 @@
                 color: white;
                 border: none;
                 label{
-                    color: white;
-                    @extend .transition-all;
+                    color: white !important;
                     &:hover{
                         background-color: white;
-                        color: $secondary;
+                        color: $secondary !important;
+                        
                     }
                 }
             }

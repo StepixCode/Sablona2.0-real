@@ -1,6 +1,6 @@
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, .header-container-desktop .header-nav .big-category-dropdown .big-menu label, .header-container-desktop .header-nav .big-category-dropdown .big-category-menu, .header-container-desktop .header-nav .cart-dropdown .cart-dropdown-menu .cart-dropdown-item .cart-menu-product .cart-menu-product-name h5:hover {
+.transition-all, .header-container-desktop .header-nav .big-category-dropdown .big-category-menu, .header-container-desktop .header-nav .cart-dropdown .cart-dropdown-menu .cart-dropdown-item .cart-menu-product .cart-menu-product-name h5:hover {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -95,8 +95,8 @@
 .header-container-desktop .header-nav .dropdown .dropdown-menu {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
   display: block;
@@ -113,7 +113,10 @@
 }
 
 .header-container-desktop .header-nav .dropdown .dropdown-menu .dropdown-item {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   white-space: normal;
+  color: transparent;
 }
 
 .header-container-desktop .header-nav .dropdown .dropdown-menu .dropdown-item:hover {
@@ -169,10 +172,16 @@
 .header-container-desktop .header-nav .dropdown:hover .dropdown-menu {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
+}
+
+.header-container-desktop .header-nav .dropdown:hover .dropdown-menu .dropdown-item {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #3d464d;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .navigation-link {
@@ -213,12 +222,12 @@
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .big-menu label {
-  color: white;
+  color: white !important;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .big-menu label:hover {
   background-color: white;
-  color: #3d464d;
+  color: #3d464d !important;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .big-category-menu {
