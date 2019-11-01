@@ -165,8 +165,8 @@
 }
 
 .header-container-desktop .header-nav .dropdown:hover .dropdown-menu {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
   visibility: visible;
   opacity: 1;
 }
