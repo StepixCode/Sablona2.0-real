@@ -23,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 h3 {
@@ -54,7 +54,7 @@ h3 {
 
 .btn-standard {
   background-color: #ffd333;
-  color: #3f3d4d !important;
+  color: #3d464d !important;
   font-weight: 700;
   text-align: center;
   padding: 5px;
@@ -102,7 +102,7 @@ footer {
 }
 
 .contact-widget i {
-  color: #3f3d4d;
+  color: #3d464d;
   margin-right: 10px;
 }
 
@@ -133,7 +133,7 @@ footer {
 .social-networks-widget {
   margin-top: 30px;
   text-align: center;
-  color: #3f3d4d;
+  color: #3d464d;
   font-weight: 700;
 }
 

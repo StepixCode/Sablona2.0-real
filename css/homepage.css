@@ -8,7 +8,7 @@
 .homepage-carousel .slide, .homepage-carousel .slide-one {
   background-size: cover;
   background-position: center;
-  background-color: #3f3d4d;
+  background-color: #3d464d;
   background-repeat: no-repeat;
   min-height: 400px;
 }
@@ -36,7 +36,7 @@
 .homepage-card-row .homepage-card .homepage-card-title, .homepage-card-row .homepage-card .categories-card-title, .homepage-card-row .categories-card .homepage-card-title, .homepage-card-row .categories-card .categories-card-title, .categories-card-row .homepage-card .homepage-card-title, .categories-card-row .homepage-card .categories-card-title, .categories-card-row .categories-card .homepage-card-title, .categories-card-row .categories-card .categories-card-title {
   margin-top: 10px;
   font-weight: 700;
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 .homepage-card-row .homepage-card .homepage-card-text, .homepage-card-row .homepage-card .categories-card-text, .homepage-card-row .categories-card .homepage-card-text, .homepage-card-row .categories-card .categories-card-text, .categories-card-row .homepage-card .homepage-card-text, .categories-card-row .homepage-card .categories-card-text, .categories-card-row .categories-card .homepage-card-text, .categories-card-row .categories-card .categories-card-text {
@@ -100,7 +100,7 @@
 }
 
 .categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-title a {
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 .categories-card-row .categories-card .categories-card-wrapper .categories-card-info .categories-card-title a:hover {
@@ -209,7 +209,7 @@
 .featured-products .title-with-divider .filtres a, .new-arrivals-products .title-with-divider .filtres a, .latest-news .title-with-divider .filtres a {
   border: 2px solid white;
   border-radius: 500px;
-  color: #3f3d4d;
+  color: #3d464d;
   padding: 0 10px 0 10px;
   font-weight: 700;
 }
@@ -247,7 +247,7 @@
 }
 
 #customNav-featured-products button:hover i, #customNav-new-arrivals-products button:hover i, #customNav-latest-news-products button:hover i {
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 @media (max-width: 767.98px) {

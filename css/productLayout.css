@@ -116,7 +116,7 @@
 
 .product .card .product-title h5 {
   font-size: 15px;
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 .product .card .product-title:hover h5 {
@@ -134,7 +134,7 @@
 
 .product .card .price {
   margin-top: 5px;
-  color: #3f3d4d;
+  color: #3d464d;
   font-weight: 700;
 }
 

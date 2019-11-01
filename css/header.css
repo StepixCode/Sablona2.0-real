@@ -1,6 +1,6 @@
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, .header-container-desktop .header-nav .big-category-dropdown .big-category-menu, .header-container-desktop .header-nav .cart-dropdown .cart-dropdown-menu .cart-dropdown-item .cart-menu-product .cart-menu-product-name h5:hover {
+.transition-all, .header-container-desktop .header-nav .big-category-dropdown .big-menu label, .header-container-desktop .header-nav .big-category-dropdown .big-category-menu, .header-container-desktop .header-nav .cart-dropdown .cart-dropdown-menu .cart-dropdown-item .cart-menu-product .cart-menu-product-name h5:hover {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -75,7 +75,7 @@
 }
 
 .header-container-desktop .header-nav a {
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 .header-container-desktop .header-nav .navigation-link {
@@ -93,6 +93,13 @@
 }
 
 .header-container-desktop .header-nav .dropdown .dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  display: block;
   position: absolute;
   will-change: transform;
   top: 0px;
@@ -160,11 +167,16 @@
 }
 
 .header-container-desktop .header-nav .dropdown:hover .dropdown-menu {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .navigation-link {
-  background-color: #3f3d4d;
+  background-color: #3d464d;
   color: white;
   font-weight: normal;
 }
@@ -183,7 +195,7 @@
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .big-category-item:hover {
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .menu-checkbox {
@@ -194,6 +206,21 @@
   width: 100%;
 }
 
+.header-container-desktop .header-nav .big-category-dropdown .big-menu {
+  background-color: #3d464d;
+  color: white;
+  border: none;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-menu label {
+  color: white;
+}
+
+.header-container-desktop .header-nav .big-category-dropdown .big-menu label:hover {
+  background-color: white;
+  color: #3d464d;
+}
+
 .header-container-desktop .header-nav .big-category-dropdown .big-category-menu {
   display: none;
   position: absolute;
@@ -201,7 +228,8 @@
   left: 298px;
   padding: 0.5rem 0;
   font-size: 1rem;
-  color: #212529;
+  color: #3d464d;
+  background-color: white;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -321,6 +349,7 @@
 }
 
 .header-container-desktop .cart-btn, .header-container-desktop .wishlist-btn, .header-container-desktop .search-btn, .header-container-mobile .cart-btn, .header-container-mobile .wishlist-btn, .header-container-mobile .search-btn {
+  margin-top: 5px;
   font-size: 16px;
 }
 
@@ -334,7 +363,7 @@
 
 .header-container-desktop .cart-btn .product-circle-number, .header-container-desktop .wishlist-btn .product-circle-number, .header-container-desktop .search-btn .product-circle-number, .header-container-mobile .cart-btn .product-circle-number, .header-container-mobile .wishlist-btn .product-circle-number, .header-container-mobile .search-btn .product-circle-number {
   position: absolute;
-  top: 1px;
+  top: 5px;
   width: 15px;
   height: 15px;
   background-color: white;
@@ -350,7 +379,7 @@
 
 .header-container-mobile .mobile-bar .mobile-bar-icon {
   font-size: 25px;
-  color: #3f3d4d;
+  color: #3d464d;
 }
 
 .header-container-mobile .mobile-bar .top-panel-logo {
@@ -374,6 +403,10 @@
   height: 100%;
   width: 100%;
   background-position-x: right;
+}
+
+.header-container-mobile .mobile-bar .wishlist-btn, .header-container-mobile .mobile-bar .cart-btn {
+  margin-top: 0px;
 }
 
 .header-container-mobile .mobile-bar .wishlist-btn .wishlist-circle-responsive, .header-container-mobile .mobile-bar .cart-btn .wishlist-circle-responsive {
@@ -427,7 +460,7 @@
 }
 
 .header-container-mobile .mobile-bar #responsive-search-bar form .search-button-group i {
-  color: #3f3d4d;
+  color: #3d464d;
   font-size: 20px;
   line-height: 25px;
 }
@@ -456,7 +489,7 @@
     background-color: #ffd333;
   }
   #my-nav .dropdown:hover .btn {
-    color: #3f3d4d;
+    color: #3d464d;
     font-weight: bold;
   }
   #my-nav .dropdown .dropdown-menu {
@@ -488,7 +521,7 @@
     background-color: #ffd333;
   }
   .navbar-nav .navbar-nav-header {
-    border-bottom: 3px solid #3f3d4d !important;
+    border-bottom: 3px solid #3d464d !important;
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
