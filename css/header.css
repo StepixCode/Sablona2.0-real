@@ -95,8 +95,8 @@
 .header-container-desktop .header-nav .dropdown .dropdown-menu {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
   display: block;
   position: absolute;
   will-change: transform;
@@ -165,8 +165,8 @@
 }
 
 .header-container-desktop .header-nav .dropdown:hover .dropdown-menu {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
   visibility: visible;
   opacity: 1;
 }
