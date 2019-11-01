@@ -79,7 +79,6 @@
             .dropdown-menu{
                 visibility: hidden;
                 opacity: 0;
-                transition: opacity 0.3s;
                 transition-delay: 0.5s;
                 display: block;
                 position: absolute;
@@ -92,7 +91,13 @@
                 font-weight: $nav-font-weight - 200;
                 min-width: 300px;
                 .dropdown-item{
-                    transition: 0.5s;
+                    white-space: normal;
+                    color: transparent;
+                    &:hover{
+                        background-color: $color-smoke;
+                    }
+                }
+                .cart-dropdown-menu *{
                     white-space: normal;
                     color: transparent;
                     &:hover{
@@ -142,10 +147,7 @@
         .dropdown:hover .dropdown-menu{
             visibility: visible;
             opacity: 1;
-            transition: opacity 0.3s;
-            transition-delay: 0.5s;
             .dropdown-item{
-                transition: 0.3s;
                 color: $secondary;
             }
         }
