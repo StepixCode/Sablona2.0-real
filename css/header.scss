@@ -61,12 +61,13 @@
         }
     }
     .header-nav{
-        padding: 5px;
+        height: $top-nav-height;
         background-color: $primary;
         a{
             color: $secondary;
         }
         .navigation-link{
+            padding: 8px 12px 8px 12px;
             display: inline-block;
             font-weight: $nav-font-weight;
             &:hover{
@@ -76,9 +77,13 @@
         .dropdown{
             display: inline-block;
             .dropdown-menu{
-                position: relative;
+                position: absolute;
+                will-change: transform;
+                top: 0px;
+                left: 0px;
+                transform: translate3d(0px, $top-nav-height, 0px);
                 border-radius: 0;
-                margin-top: 3.5px;
+                margin-top: -1px;
                 font-weight: $nav-font-weight - 200;
                 min-width: 300px;
                 .dropdown-item{
@@ -87,7 +92,6 @@
                         background-color: $color-smoke;
                     }
                 }
-                
                 .dropdown-category-row{
                     margin-bottom: 20px;
                     .dropdown-category-group{
@@ -114,15 +118,22 @@
                     }
                 }
             }
+            .dropdown-menu.show{
+                display: none;
+                @include media-breakpoint-down(md){
+                    display: block;
+                }
+            }
             .double-col-dropdown{
                 min-width: 600px;
-                transform: translate(0);
             }
             .triple-col-dropdown{
                 min-width: 900px;
-                transform: translate(0);
             }
 
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
         }
         .big-category-dropdown{
             .navigation-link{
@@ -133,7 +144,7 @@
                     margin-right: 10px;
                 }
             }
-            .big-category-item:hover ~ .big-category-menu{
+            .big-category-item:hover .big-category-menu{
                 display: block;
             }
             .big-category-item{
@@ -144,9 +155,6 @@
             }
             .menu-checkbox{
                 display: none;
-            }
-            .menu-checkbox:checked ~ .dropdown-menu{
-                display: block;
             }
             .big-menu-container-label{
                 width: 100%;
@@ -164,8 +172,6 @@
                 background-color: #fff;
                 background-clip: padding-box;
                 border: 1px solid rgba(0, 0, 0, 0.15);
-
-                background-image: url('../images/product.jpg');
                 background-size: auto 250px;
                 background-repeat: no-repeat;
                 background-position: right 50px bottom;
@@ -185,7 +191,6 @@
             position: relative;
             .cart-dropdown-menu{
                 left: -285px !important;
-                transform: translate3d(0, 38px, 0px) !important;
                 max-height: 600px;
                 overflow-x: hidden;
                 overflow-y: scroll;

@@ -70,7 +70,7 @@
 }
 
 .header-container-desktop .header-nav {
-  padding: 5px;
+  height: 42px;
   background-color: #ffd333;
 }
 
@@ -79,6 +79,7 @@
 }
 
 .header-container-desktop .header-nav .navigation-link {
+  padding: 8px 12px 8px 12px;
   display: inline-block;
   font-weight: 700;
 }
@@ -92,9 +93,14 @@
 }
 
 .header-container-desktop .header-nav .dropdown .dropdown-menu {
-  position: relative;
+  position: absolute;
+  will-change: transform;
+  top: 0px;
+  left: 0px;
+  -webkit-transform: translate3d(0px, 42px, 0px);
+          transform: translate3d(0px, 42px, 0px);
   border-radius: 0;
-  margin-top: 3.5px;
+  margin-top: -1px;
   font-weight: 500;
   min-width: 300px;
 }
@@ -135,16 +141,26 @@
   color: #1a66ff;
 }
 
+.header-container-desktop .header-nav .dropdown .dropdown-menu.show {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .header-container-desktop .header-nav .dropdown .dropdown-menu.show {
+    display: block;
+  }
+}
+
 .header-container-desktop .header-nav .dropdown .double-col-dropdown {
   min-width: 600px;
-  -webkit-transform: translate(0);
-          transform: translate(0);
 }
 
 .header-container-desktop .header-nav .dropdown .triple-col-dropdown {
   min-width: 900px;
-  -webkit-transform: translate(0);
-          transform: translate(0);
+}
+
+.header-container-desktop .header-nav .dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .navigation-link {
@@ -157,7 +173,7 @@
   margin-right: 10px;
 }
 
-.header-container-desktop .header-nav .big-category-dropdown .big-category-item:hover ~ .big-category-menu {
+.header-container-desktop .header-nav .big-category-dropdown .big-category-item:hover .big-category-menu {
   display: block;
 }
 
@@ -172,10 +188,6 @@
 
 .header-container-desktop .header-nav .big-category-dropdown .menu-checkbox {
   display: none;
-}
-
-.header-container-desktop .header-nav .big-category-dropdown .menu-checkbox:checked ~ .dropdown-menu {
-  display: block;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .big-menu-container-label {
@@ -195,7 +207,6 @@
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  background-image: url("../images/product.jpg");
   background-size: auto 250px;
   background-repeat: no-repeat;
   background-position: right 50px bottom;
@@ -215,8 +226,6 @@
 
 .header-container-desktop .header-nav .cart-dropdown .cart-dropdown-menu {
   left: -285px !important;
-  -webkit-transform: translate3d(0, 38px, 0px) !important;
-          transform: translate3d(0, 38px, 0px) !important;
   max-height: 600px;
   overflow-x: hidden;
   overflow-y: scroll;
