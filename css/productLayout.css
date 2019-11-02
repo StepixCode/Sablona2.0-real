@@ -5,6 +5,18 @@
   transition: all 0.3s ease-in;
 }
 
+.product-flags .flag-purple {
+  background-color: #614ba6;
+}
+
+.product-flags .flag-red {
+  background-color: #f33;
+}
+
+.product-flags .flag-blue {
+  background-color: #37f;
+}
+
 .rating-stars i {
   color: #ffd333;
 }
@@ -80,6 +92,25 @@
   .product .card:hover {
     height: 440px;
   }
+}
+
+.product .card .product-flags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 125px;
+  z-index: 10000;
+}
+
+.product .card .product-flags .flag {
+  min-width: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 3px 5px 3px 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .product .card .product-photo {

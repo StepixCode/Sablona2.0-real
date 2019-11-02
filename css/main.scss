@@ -1,6 +1,7 @@
 @import "shared/_variables.scss";
 @import "shared/_typography.scss";
 body,html{
+    scroll-behavior: smooth;
     width: 100%;
     overflow-x: hidden;
 }
@@ -12,6 +13,28 @@ body,html{
 
 .clearing{
     clear: both;
+}
+
+.back-up-arrow{
+    position: absolute;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 1000000px;
+    display: flex;
+    align-items: center;
+    background-color: $primary;
+    z-index: 10;
+    a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: $secondary;
+        font-weight: 700;
+
+    }
 }
 
 

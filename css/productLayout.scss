@@ -1,5 +1,16 @@
 @import "shared/_variables.scss";
 
+.product-flags{
+    .flag-purple{
+        background-color: #614ba6;
+    }
+    .flag-red{
+        background-color: #f33;
+    }
+    .flag-blue{
+        background-color: #37f;
+    }
+}
 
 .rating-stars{
     i{
@@ -54,6 +65,24 @@
             height: $product-card-height + 40px;
             @include media-breakpoint-down(sm) {
                 height: $product-card-height + 90px;
+            }
+        }
+        .product-flags{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 200px;
+            width: 125px;
+            z-index: 10000;
+            .flag{
+                //margin-bottom: 5px;
+                min-width: 50px;
+                text-align: center;
+                display: inline-block;
+                padding: 3px 5px 3px 5px;
+                color: white;
+                font-weight: 500;
+                font-size: 14px;
             }
         }
         .product-photo{

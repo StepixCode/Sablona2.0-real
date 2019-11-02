@@ -176,9 +176,7 @@
                 label{
                     color: white !important;
                     &:hover{
-                        background-color: white;
                         color: $secondary !important;
-                        
                     }
                 }
             }
@@ -196,9 +194,9 @@
                 background-color: #fff;
                 background-clip: padding-box;
                 border: 1px solid rgba(0, 0, 0, 0.15);
-                background-size: auto 250px;
+                background-size: 250px auto;
                 background-repeat: no-repeat;
-                background-position: right 50px bottom;
+                background-position: right 50px bottom 25px;
 
 
                 @extend .transition-all;

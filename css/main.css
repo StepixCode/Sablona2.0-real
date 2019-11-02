@@ -69,6 +69,7 @@ h3 {
 }
 
 body, html {
+  scroll-behavior: smooth;
   width: 100%;
   overflow-x: hidden;
 }
@@ -81,6 +82,32 @@ body, html {
 
 .clearing {
   clear: both;
+}
+
+.back-up-arrow {
+  position: absolute;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 1000000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffd333;
+  z-index: 10;
+}
+
+.back-up-arrow a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #3d464d;
+  font-weight: 700;
 }
 
 footer {
