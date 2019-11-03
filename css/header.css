@@ -21,6 +21,26 @@
   height: 100%;
 }
 
+.header-container-desktop .header-top-bar .language-form .select-div select {
+  color: #737373;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+  outline: none;
+}
+
+.header-container-desktop .header-top-bar .language-form .select-div select option {
+  padding: 30px;
+}
+
+.header-container-desktop .header-top-bar .language-form .select-div::after {
+  content: "";
+}
+
 .header-container-desktop .header-top-panel {
   height: 100px;
 }

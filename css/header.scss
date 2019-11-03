@@ -1,7 +1,8 @@
 @import "shared/_variables.scss";
 
-
 .header-container-desktop{
+    
+
     .header-top-bar{
         background-color: $color-light-smoke;
         height: $top-bar-height;
@@ -12,9 +13,34 @@
         .top-bar-item{
             line-height: $font-small * 2;
             display: inline-block;
-            height: 100%;
+            height: 100%;      
+            
             
         }
+        .language-form{
+            .select-div{
+                select{
+                    color: $color-dark-smoke;
+                    background-color: $color-light-smoke;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border: none;
+                    -webkit-appearance: button;
+                    appearance: button;
+                    outline: none;
+                    option{
+                        padding: 30px;
+                    }
+                }
+
+                &::after{
+
+                    content: "";
+                }
+            }
+
+        }
+
     }
     .header-top-panel{
         height: $top-panel-height;
