@@ -62,7 +62,28 @@
                                 <a class="top-bar-item-link" href="#">O nás</a>
                             </div>
                             <div class="top-bar-item">
-                                <form class="language-form">
+                                <div class="dropdown">
+                                    <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Můj účet</a>
+                                        <a class="dropdown-item" href="#">Editovat profil</a>
+                                        <a class="dropdown-item" href="#">Odhlásit se</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-bar-item">
+                                <form class="currency-form header-select-form">
+                                    <div class="select-div">
+                                        <select name="currency-select" id="currency-select">
+                                            <option value="currency-1"> Měna: CZK </span> </option>
+                                            <option value="currency-2"> Měna: EUR </option>
+                                        </select>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                            <div class="top-bar-item">
+                                <form class="language-form header-select-form">
                                     <div class="select-div">
                                         <select name="language-select" id="language-select">
                                             <option value="language-1"> Jazyk: Čeština </span> </option>
@@ -81,7 +102,7 @@
                 <div class="container h-100">
                     <div class="row h-100">
                         <div class="col-3 top-panel-logo">
-                            <a class="panel-logo-wrapper">
+                            <a href="#" class="panel-logo-wrapper">
                                 <div class="logo"></div>
                             </a>
                         </div>

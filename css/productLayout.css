@@ -256,4 +256,60 @@
 .product-big .card .product-hidden-bar .product-icon-group a i {
   font-size: 20px;
 }
+
+.drop-navi-bar i {
+  color: #737373;
+}
+
+.product-layout-heading {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.product-layout-aside .card {
+  border: 2px solid #f0f0f0;
+}
+
+.product-layout-aside .card-body {
+  padding: 0;
+}
+
+.product-layout-aside .card-body .aside-card-header {
+  padding: 20px 20px 20px 20px;
+  font-weight: 600;
+}
+
+.product-layout-aside .card-body .layout-aside-component {
+  border-top: 2px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper {
+  padding: 10px 20px 5px 20px;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .component-header {
+  font-weight: 600;
+}
+
+.checkbox-list-filtre {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.checkbox-list-filtre .chek-name-label {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.checkbox-list-filtre .check-count-label {
+  float: right;
+  font-size: 14px;
+  margin: 0;
+}
+
+.checkbox-list-filtre .disabled {
+  color: #737373;
+}
 /*# sourceMappingURL=productLayout.css.map */

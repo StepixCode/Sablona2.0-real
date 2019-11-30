@@ -212,3 +212,62 @@ $big-product-card-height: $product-card-height * 2;
         }
     }
 }
+
+
+
+.drop-navi-bar{
+    i{
+        color: $color-dark-smoke;
+    }
+}
+
+.product-layout-heading{
+    font-weight: 700;
+    font-size: 35px;
+}
+.product-layout-aside{
+    .card{
+        border: 2px solid $color-smoke;
+    }
+    .card-body{
+        padding: 0;
+        .aside-card-header{
+            padding: 20px 20px 20px 20px;
+            font-weight: 600;
+        }
+
+        .layout-aside-component{
+            border-top: 2px solid $color-smoke;
+            font-size: $font-small;
+            .component-wrapper{
+                padding: 10px 20px 5px 20px;
+                .component-header{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    
+}
+
+
+.checkbox-list-filtre{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+      
+    .chek-name-label{
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .check-count-label{
+        float: right;
+        font-size: $font-small;
+        margin: 0;
+    }
+    .disabled {
+        color: $color-dark-smoke;
+    }
+      
+}

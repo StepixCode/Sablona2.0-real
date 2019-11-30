@@ -68,6 +68,62 @@ h3 {
   background-color: #ddc980;
 }
 
+.custom-check .custom-check-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.custom-check .custom-check-container .custom-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+.custom-check .custom-check-container .custom-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #3d464d;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-check input {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-check .custom-check-container:hover input ~ .custom-check {
+  background-color: #ccc;
+}
+
+.custom-check .custom-check-container input:checked ~ .custom-check {
+  background-color: #ffd333;
+}
+
+.custom-check .custom-check-container input:checked ~ .custom-check:after {
+  display: block;
+}
+
 body, html {
   scroll-behavior: smooth;
   width: 100%;

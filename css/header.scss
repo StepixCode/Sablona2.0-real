@@ -17,7 +17,7 @@
             
             
         }
-        .language-form{
+        .header-select-form{
             .select-div{
                 select{
                     color: $color-dark-smoke;
@@ -39,6 +39,18 @@
                 }
             }
 
+        }
+        .dropdown{
+            .navigation-link{
+                color: $color-dark-smoke;
+                font-size: $font-small;
+            }
+            .dropdown-menu{
+                .dropdown-item{
+                    font-size: $font-small;
+                    line-height: $font-small;
+                }
+            }
         }
 
     }
