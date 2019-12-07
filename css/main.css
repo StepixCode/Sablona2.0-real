@@ -87,6 +87,7 @@ h3 {
   height: 15px;
   width: 15px;
   background-color: #eee;
+  border-radius: 4px;
 }
 
 .custom-check .custom-check-container .custom-check:after {
@@ -122,6 +123,21 @@ h3 {
 
 .custom-check .custom-check-container input:checked ~ .custom-check:after {
   display: block;
+}
+
+.chek-name-label {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+label {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
 }
 
 body, html {

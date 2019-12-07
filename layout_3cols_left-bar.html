@@ -568,55 +568,87 @@
                                                 <h5 class="aside-card-header">Filtry</h5>
                                                 
                                                 <form class="filtres-form" method="post">
-                                                    <div class="layout-aside-component">
-                                                        <div class="component-wrapper">
-                                                        <h6 class="component-header">Značka</h6>
-                                                            <ul class="checkbox-list-filtre">
-                                                                <li>
-                                                                    <div class="custom-check">
-                                                                        <label class="custom-check-container">
-                                                                            <input type="checkbox" name="brandCheck1" id="brandCheck1">
-                                                                            <span class="custom-check"></span>
-                                                                        </label>
-                                                                    </div>
-                                                                    
-                                                                    <label class="chek-name-label" for="brandCheck1">Nějaká značka</label>
-                                                                    <label class="check-count-label" for="brandCheck1">7</label>
-                                                                    <div class="clearing"></div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="custom-check">
-                                                                        <label class="custom-check-container">
-                                                                            <input type="checkbox" name="brandCheck2" id="brandCheck2" disabled>
-                                                                            <span class="custom-check"></span>
-                                                                        </label>
-                                                                    </div>
 
-                                                                    <label class="chek-name-label disabled" for="brandCheck2">Jiná značka</label>
-                                                                    <label class="check-count-label disabled" for="brandCheck2">16</label>
-                                                                    <div class="clearing"></div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="custom-check">
-                                                                        <label class="custom-check-container">
-                                                                            <input type="checkbox" name="brandCheck3" id="brandCheck3">
-                                                                            <span class="custom-check"></span>
-                                                                        </label>
-                                                                    </div>
+                                                    <div class="layout-aside-component pb-3">
+                                                        <label class="simple-dropdown-controll" >
+                                                            <h6 class="component-header">Značka</h6>
+                                                            <input type="checkbox" class="simple-dropdown"/>
+                                                            <div class="component-wrapper">
+                                                                <ul class="checkbox-list-filter">
+                                                                    <li>
+                                                                        <div class="custom-check">
+                                                                            <label class="custom-check-container">
+                                                                                <input type="checkbox" name="brandCheck1" id="brandCheck1">
+                                                                                <span class="custom-check"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <label class="chek-name-label" for="brandCheck1">Nějaká značka</label>                                                                   
+                                                                        <label class="check-count-label" for="brandCheck1">7</label>
+                                                                        <div class="clearing"></div>                                                                   
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="custom-check">
+                                                                            <label class="custom-check-container">
+                                                                                <input type="checkbox" name="brandCheck2" id="brandCheck2" disabled>
+                                                                                <span class="custom-check"></span>
+                                                                            </label>
+                                                                        </div>
 
-                                                                    <label class="chek-name-label" for="brandCheck3">Neznám značky</label>
-                                                                    <label class="check-count-label" for="brandCheck3">20</label>
-                                                                    <div class="clearing"></div>
-                                                                </li>
-                                                            </ul>    
-                                                        </div> 
+                                                                        <label class="chek-name-label disabled" for="brandCheck2">Jiná značka</label>
+                                                                        <label class="check-count-label disabled" for="brandCheck2">16</label>
+                                                                        <div class="clearing"></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="custom-check">
+                                                                            <label class="custom-check-container">
+                                                                                <input type="checkbox" name="brandCheck3" id="brandCheck3">
+                                                                                <span class="custom-check"></span>
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <label class="chek-name-label" for="brandCheck3">Neznám značky</label>
+                                                                        <label class="check-count-label" for="brandCheck3">20</label>
+                                                                        <div class="clearing"></div>
+                                                                    </li>
+                                                                </ul>    
+                                                            </div>
+                                                        </label>
+                                                                                                               
                                                     </div>
-                                                    <div class="layout-aside-component">
-                                                        <div class="component-wrapper">
-                                                            <h6 class="component-header">Cena</h6>
 
 
-                                                        </div>                                                           
+                                                    <div class="layout-aside-component pb-3">
+                                                        <label class="simple-dropdown-controll" >
+                                                            <h6 class="component-header">Barva</h6>
+                                                            <input type="checkbox" class="simple-dropdown"/>
+                                                            <div class="component-wrapper">
+                                                                <div class="color-filter-container">
+                                                                    <div class="custom-check color-blue">
+                                                                        <label class="custom-check-container">
+                                                                            <input type="checkbox" name="colorCheck1" id="colorCheck1">
+                                                                            <span class="custom-check"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="color-filter-container">
+                                                                    <div class="custom-check color-red">
+                                                                        <label class="custom-check-container">
+                                                                            <input type="checkbox" name="colorCheck2" id="colorCheck2">
+                                                                            <span class="custom-check"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="color-filter-container">
+                                                                    <div class="custom-check color-yellow">
+                                                                        <label class="custom-check-container">
+                                                                            <input type="checkbox" name="colorCheck3" id="colorCheck3">
+                                                                            <span class="custom-check"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>  
+                                                        </label>
+                                                                                                                 
                                                     </div>
                                                 </form>
 

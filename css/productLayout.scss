@@ -239,28 +239,43 @@ $big-product-card-height: $product-card-height * 2;
         .layout-aside-component{
             border-top: 2px solid $color-smoke;
             font-size: $font-small;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            .component-header{
+                font-weight: 600;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
             .component-wrapper{
                 padding: 10px 20px 5px 20px;
-                .component-header{
-                    font-weight: 600;
-                }
+                max-height: 100px;
+                overflow:hidden;
+                transition: all 0.2s linear;
+                
             }
         }
     }
-    
+    .simple-dropdown-controll{
+        height: 20px;
+        width: 100%;
+    }
+    .simple-dropdown{
+       display: none;
+    }
+    .simple-dropdown:checked ~ .component-wrapper {
+       max-height:0px;
+       padding-top: 0;
+       padding-bottom: 0;
+    }
 }
 
 
-.checkbox-list-filtre{
+.checkbox-list-filter{
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none;  
     
-      
-    .chek-name-label{
-        margin-left: 20px;
-        margin-bottom: 0;
-    }
     .check-count-label{
         float: right;
         font-size: $font-small;
@@ -269,5 +284,62 @@ $big-product-card-height: $product-card-height * 2;
     .disabled {
         color: $color-dark-smoke;
     }
-      
+
+     
+}
+.color-filter-container{
+    width: $color-filter-size;
+    height: $color-filter-size;
+    display: inline-block;
+    
+    .custom-check{
+        .custom-check-container {
+            .custom-check {
+                height: $color-filter-size;
+                width: $color-filter-size;
+                &:after{
+                    left: 8px;
+                    top: 5px;
+                    width: 8px;
+                    height: 12px;
+
+                }
+            }
+        }
+    }
+
+
+    .disabled {
+        color: $color-dark-smoke;
+    }
+
+    
+    $checkboxes: red,blue,yellow;
+    $colors: darkred,blue,$primary;
+    @for $i from 1 through length($checkboxes) { 
+        $color: nth($colors , $i );
+
+
+        .color-#{nth($checkboxes,$i)}{
+            .custom-check-container:hover input ~ .custom-check {
+                background-color: $color;
+            }
+            .custom-check-container input:checked ~ .custom-check {
+                background-color: $color;
+            }
+            .custom-check{
+                background-color: $color;
+                &:after{
+                    @if (lightness( $color ) > 50) {
+                        border-color: black;
+                      }
+                      @else {
+                        border-color: white;
+                      }
+                }
+            }
+        }
+        
+    }
+
 }
