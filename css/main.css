@@ -1,13 +1,13 @@
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, a, .btn-standard {
+.transition-all, a, .btn-standard, .plus-icon .plus-group .vertical {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, a, .btn-standard {
+.transition-all, a, .btn-standard, .plus-icon .plus-group .vertical {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -138,6 +138,33 @@ label {
   /* Firefox */
   -ms-user-select: none;
   /* IE10+ */
+}
+
+.plus-icon {
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  margin-top: 7px;
+  float: right;
+}
+
+.plus-icon .plus-group {
+  position: relative;
+  margin: auto;
+  width: 9px;
+  height: 12px;
+}
+
+.plus-icon .plus-group .vertical, .plus-icon .plus-group .horizontal {
+  width: 9px;
+  height: 3px;
+  background-color: #3d464d;
+}
+
+.plus-icon .plus-group .vertical {
+  position: absolute;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
 }
 
 body, html {

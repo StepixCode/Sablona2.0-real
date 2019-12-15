@@ -225,6 +225,7 @@ $big-product-card-height: $product-card-height * 2;
     font-weight: 700;
     font-size: 35px;
 }
+
 .product-layout-aside{
     .card{
         border: 2px solid $color-smoke;
@@ -244,33 +245,94 @@ $big-product-card-height: $product-card-height * 2;
             width: 100%;
             .component-header{
                 font-weight: 600;
-                margin-left: 20px;
-                margin-top: 10px;
+                margin: 10px 10px 0 10px;
+                padding: 5px 10px 5px 10px;
+                border-radius: 5px;
+                &:hover{
+                    background-color: $color-smoke;
+                }
+                .header-icon{
+                    float: right;
+                    transition: all 0.2s;
+                }
+            }
+            .component-wrapper,.subcat-wrapper{
+                overflow:hidden;
+                transition: all 0.3s;
+                
             }
             .component-wrapper{
                 padding: 10px 20px 5px 20px;
-                max-height: 100px;
-                overflow:hidden;
-                transition: all 0.2s linear;
-                
+                max-height: 2500px;
+                .cat-header-link{
+                    display: inline-block;
+                }
+                .cat-header{
+                    margin: 0;
+                    &:hover{
+                        color: $color-link-hover;
+                    }
+                }
+                .subcat-wrapper{
+                    border-left: 1px solid $color-smoke;
+                    padding: 0 0 0 10px;
+                    width: calc(100% - 10px);
+                    margin-left: 10px;
+                    max-height:0px;
+                    .cat-header{
+                        font-weight: 600;
+                    }
+                    .simple-dropdown-controll{
+                        margin-top: 8px;
+                    }
+                    .plus-icon{
+                        display: none;
+                    }
+                    .subcat-wrapper-link{
+                        display: block;
+                        padding: 3px 0 3px 0;
+                    }
+                }
             }
         }
     }
+
+    //Jednoduchý dropdown systém - chtěla by dodělat funkce vypočítávající maximální výšku (aby animace byly víc smooth)
     .simple-dropdown-controll{
         height: 20px;
         width: 100%;
+        .simple-dropdown{
+            display: none;
+         }
+         .simple-dropdown:checked ~ .component-wrapper{
+            max-height:0px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0 !important;
+            .plus-icon{
+                display: none;
+            }
+         }
+         .simple-dropdown:checked ~ .subcat-wrapper{
+             padding: 5px 0 5px 10px;
+             max-height: 1000px;
+             .plus-icon{
+                 display: block;
+             }
+         }
+         .simple-dropdown:checked ~ .component-header .header-icon{
+             transform: rotateZ(180deg);
+         }
+         .simple-dropdown:checked ~ .plus-icon .vertical{
+             transform: rotateZ(0deg);
+         }
     }
-    .simple-dropdown{
-       display: none;
-    }
-    .simple-dropdown:checked ~ .component-wrapper {
-       max-height:0px;
-       padding-top: 0;
-       padding-bottom: 0;
-    }
+    
+    
 }
 
 
+//Seznam checkboxů - filtr
 .checkbox-list-filter{
     padding: 0;
     margin: 0;
@@ -287,6 +349,8 @@ $big-product-card-height: $product-card-height * 2;
 
      
 }
+
+//Barevný filtr
 .color-filter-container{
     width: $color-filter-size;
     height: $color-filter-size;
@@ -314,7 +378,7 @@ $big-product-card-height: $product-card-height * 2;
     }
 
     
-    $checkboxes: red,blue,yellow;
+    $checkboxes: 1,2,3;
     $colors: darkred,blue,$primary;
     @for $i from 1 through length($checkboxes) { 
         $color: nth($colors , $i );

@@ -289,16 +289,67 @@
 
 .product-layout-aside .card-body .layout-aside-component .component-header {
   font-weight: 600;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin: 10px 10px 0 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-header:hover {
+  background-color: #f0f0f0;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-header .header-icon {
+  float: right;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper, .product-layout-aside .card-body .layout-aside-component .subcat-wrapper {
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .product-layout-aside .card-body .layout-aside-component .component-wrapper {
   padding: 10px 20px 5px 20px;
-  max-height: 100px;
-  overflow: hidden;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  max-height: 2500px;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-header-link {
+  display: inline-block;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-header {
+  margin: 0;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-header:hover {
+  color: #1a66ff;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .subcat-wrapper {
+  border-left: 1px solid #f0f0f0;
+  padding: 0 0 0 10px;
+  width: calc(100% - 10px);
+  margin-left: 10px;
+  max-height: 0px;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .subcat-wrapper .cat-header {
+  font-weight: 600;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .subcat-wrapper .simple-dropdown-controll {
+  margin-top: 8px;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .subcat-wrapper .plus-icon {
+  display: none;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .subcat-wrapper .subcat-wrapper-link {
+  display: block;
+  padding: 3px 0 3px 0;
 }
 
 .product-layout-aside .simple-dropdown-controll {
@@ -306,14 +357,38 @@
   width: 100%;
 }
 
-.product-layout-aside .simple-dropdown {
+.product-layout-aside .simple-dropdown-controll .simple-dropdown {
   display: none;
 }
 
-.product-layout-aside .simple-dropdown:checked ~ .component-wrapper {
+.product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper {
   max-height: 0px;
   padding-top: 0;
   padding-bottom: 0;
+  margin: 0 !important;
+}
+
+.product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper .plus-icon {
+  display: none;
+}
+
+.product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .subcat-wrapper {
+  padding: 5px 0 5px 10px;
+  max-height: 1000px;
+}
+
+.product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .subcat-wrapper .plus-icon {
+  display: block;
+}
+
+.product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .component-header .header-icon {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .plus-icon .vertical {
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
 }
 
 .checkbox-list-filter {
@@ -354,51 +429,51 @@
   color: #737373;
 }
 
-.color-filter-container .color-red .custom-check-container:hover input ~ .custom-check {
+.color-filter-container .color-1 .custom-check-container:hover input ~ .custom-check {
   background-color: darkred;
 }
 
-.color-filter-container .color-red .custom-check-container input:checked ~ .custom-check {
+.color-filter-container .color-1 .custom-check-container input:checked ~ .custom-check {
   background-color: darkred;
 }
 
-.color-filter-container .color-red .custom-check {
+.color-filter-container .color-1 .custom-check {
   background-color: darkred;
 }
 
-.color-filter-container .color-red .custom-check:after {
+.color-filter-container .color-1 .custom-check:after {
   border-color: white;
 }
 
-.color-filter-container .color-blue .custom-check-container:hover input ~ .custom-check {
+.color-filter-container .color-2 .custom-check-container:hover input ~ .custom-check {
   background-color: blue;
 }
 
-.color-filter-container .color-blue .custom-check-container input:checked ~ .custom-check {
+.color-filter-container .color-2 .custom-check-container input:checked ~ .custom-check {
   background-color: blue;
 }
 
-.color-filter-container .color-blue .custom-check {
+.color-filter-container .color-2 .custom-check {
   background-color: blue;
 }
 
-.color-filter-container .color-blue .custom-check:after {
+.color-filter-container .color-2 .custom-check:after {
   border-color: white;
 }
 
-.color-filter-container .color-yellow .custom-check-container:hover input ~ .custom-check {
+.color-filter-container .color-3 .custom-check-container:hover input ~ .custom-check {
   background-color: #ffd333;
 }
 
-.color-filter-container .color-yellow .custom-check-container input:checked ~ .custom-check {
+.color-filter-container .color-3 .custom-check-container input:checked ~ .custom-check {
   background-color: #ffd333;
 }
 
-.color-filter-container .color-yellow .custom-check {
+.color-filter-container .color-3 .custom-check {
   background-color: #ffd333;
 }
 
-.color-filter-container .color-yellow .custom-check:after {
+.color-filter-container .color-3 .custom-check:after {
   border-color: black;
 }
 /*# sourceMappingURL=productLayout.css.map */
