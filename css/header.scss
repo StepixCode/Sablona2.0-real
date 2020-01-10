@@ -163,8 +163,13 @@
             }
             .dropdown-menu.show{
                 display: none;
-                @include media-breakpoint-down(md){
+                @include media-breakpoint-down(xl){
                     display: block;
+                }
+            }
+            .dropdown-menu{
+                @include media-breakpoint-down(xl){
+                    display: none;
                 }
             }
             .double-col-dropdown{
@@ -179,11 +184,15 @@
             transition-delay: 0.3s;
             visibility: visible;
             opacity: 1;
+
+            
+
             .dropdown-item{
                 color: $secondary;
             }
         }
         .big-category-dropdown{
+
             .navigation-link{
                 background-color: $secondary;
                 color: white;
@@ -193,7 +202,7 @@
                 }
             }
             .big-category-item:hover .big-category-menu{
-                display: block;
+                //display: block;
             }
             .big-category-item{
                 transition: 0;
@@ -217,6 +226,14 @@
                         color: $secondary !important;
                     }
                 }
+                .submenu-checkbox{
+                    display: block;
+                }
+                .submenu-checkbox:checked ~ .big-category-menu{
+                    display: block;
+                    
+                }
+
             }
             .big-category-menu{
                 display: none;

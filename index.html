@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/productLayout.css">
 
+    <!--MyJS files-->
+    <script src="js/Checkbox.js"></script>
+
     <title>Hello, world!</title>
 </head>
 <body class="h-100">
@@ -129,9 +132,9 @@
                                 <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-bars"></i> Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
                                 <div class="dropdown-menu big-menu">
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Ruční nářadí
+                                        <label class="big-category-item dropdown-item" >Ruční nářadí
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(0)">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/banner.jpg');">
-                                                <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
                                                         <div class="row dropdown-category-row">
                                                             <div class="col-6 dropdown-category-group">
@@ -168,7 +171,8 @@
                                         
                                         
                                         </label>
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Zahrádní potřeby
+                                        <label class="big-category-item dropdown-item">Zahrádní potřeby
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(1)">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/product.jpg');">
                                                 <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
@@ -205,7 +209,8 @@
                                                 </label> 
                                             </div>
                                         </label>
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Power tool
+                                        <label class="big-category-item dropdown-item" >Power tool
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(2)">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/news-image2.jpg');">
                                                 <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
@@ -242,7 +247,8 @@
                                                 </label> 
                                             </div>
                                         </label>
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Ruční nářadí
+                                        <label class="big-category-item dropdown-item" >Ruční nářadí
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(3)">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/product.jpg');">
                                                 <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
