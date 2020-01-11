@@ -1,6 +1,6 @@
 /*Fonts*/
 /*Bootstrap setting*/
-.transition-all, .product .card {
+.transition-all, .product .card, .product-layout-aside .top-products .top-product .wrapper .top-product-img {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -271,6 +271,53 @@
 
 .product-layout-aside .card {
   border: 2px solid #f0f0f0;
+}
+
+.product-layout-aside .top-products .top-product {
+  font-size: 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-layout-aside .top-products .top-product .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 20px 0 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.product-layout-aside .top-products .top-product .wrapper .top-product-img {
+  height: 100px;
+  width: 100px;
+}
+
+.product-layout-aside .top-products .top-product .wrapper .top-product-img img {
+  max-width: 100%;
+}
+
+.product-layout-aside .top-products .top-product .wrapper .top-product-info {
+  margin-left: 20px;
+  display: block;
+}
+
+.product-layout-aside .top-products .top-product .wrapper .top-product-info .name {
+  color: black;
+}
+
+.product-layout-aside .top-products .top-product .wrapper .top-product-info .name:hover {
+  color: #1a66ff;
+}
+
+.product-layout-aside .top-products .top-product .wrapper .top-product-info .price {
+  padding-top: 10px;
+  color: #3d464d;
+  font-weight: 600;
+}
+
+.product-layout-aside .top-products .top-product:hover .top-product-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .product-layout-aside .card-body {

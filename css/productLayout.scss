@@ -230,6 +230,47 @@ $big-product-card-height: $product-card-height * 2;
     .card{
         border: 2px solid $color-smoke;
     }
+
+    .top-products{
+        .top-product{
+            font-size: $font-small + 1px;
+            width: 100%;
+            overflow: hidden;
+            .wrapper{
+                display: flex;
+                margin: 5px 20px 0 20px;
+                border-bottom: 2px solid $color-smoke;
+                .top-product-img{
+                    height: 100px;
+                    width: 100px;
+                    @extend .transition-all;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .top-product-info{
+                    margin-left: 20px;
+                    display: block;
+                    .name{
+                        color: black;
+                        &:hover{
+                            color: $color-link-hover;
+                        }
+                    }
+                    .price{
+                        padding-top: 10px;
+                        color: $secondary;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .top-product:hover .top-product-img{
+            transform: scale(1.2);
+        }
+
+    }
+
     .card-body{
         padding: 0;
         .aside-card-header{
@@ -307,7 +348,11 @@ $big-product-card-height: $product-card-height * 2;
                     }
                 }
             }
+
+
         }
+
+       
     }
 
     //Jednoduchý dropdown systém - chtěla by dodělat funkce vypočítávající maximální výšku (aby animace byly víc smooth)
