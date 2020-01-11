@@ -221,6 +221,10 @@
   margin-right: 10px;
 }
 
+.header-container-desktop .header-nav .big-category-dropdown .big-category-item:hover .big-category-menu {
+  display: block;
+}
+
 .header-container-desktop .header-nav .big-category-dropdown .big-category-item {
   -webkit-transition: 0;
   transition: 0;
@@ -253,7 +257,7 @@
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .big-menu .submenu-checkbox {
-  display: block;
+  display: none;
 }
 
 .header-container-desktop .header-nav .big-category-dropdown .big-menu .submenu-checkbox:checked ~ .big-category-menu {

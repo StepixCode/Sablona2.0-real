@@ -17,9 +17,11 @@
     <!--OwlCarousel-->
     <link rel="stylesheet" href="css/owlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owlCarousel/owl.theme.default.min.css">
-
-
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    
     <!--ThirdParty-->
+
 
 
     <!--MyCSS files-->
@@ -27,6 +29,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/productLayout.css">
+
+    <!--MyJS files-->
+    <script src="js/Checkbox.js"></script>
 
     <title>Hello, world!</title>
 </head>
@@ -129,9 +134,9 @@
                                 <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-bars"></i> Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
                                 <div class="dropdown-menu big-menu">
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Ruční nářadí
+                                        <label class="big-category-item dropdown-item" >Ruční nářadí
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(0,'submenu-checkbox')">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/banner.jpg');">
-                                                <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
                                                         <div class="row dropdown-category-row">
                                                             <div class="col-6 dropdown-category-group">
@@ -168,7 +173,8 @@
                                         
                                         
                                         </label>
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Zahrádní potřeby
+                                        <label class="big-category-item dropdown-item">Zahrádní potřeby
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(1,'submenu-checkbox')">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/product.jpg');">
                                                 <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
@@ -205,7 +211,8 @@
                                                 </label> 
                                             </div>
                                         </label>
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Power tool
+                                        <label class="big-category-item dropdown-item" >Power tool
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(2,'submenu-checkbox')">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/news-image2.jpg');">
                                                 <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
@@ -242,7 +249,8 @@
                                                 </label> 
                                             </div>
                                         </label>
-                                        <label for="menu-checkbox" class="big-category-item dropdown-item" onclick="void(0)">Ruční nářadí
+                                        <label class="big-category-item dropdown-item" >Ruční nářadí
+                                            <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(3,'submenu-checkbox')">
                                             <div class="big-category-menu double-col-dropdown" style="background-image: url('images/product.jpg');">
                                                 <label class="big-menu-container-label" for="menu-checkbox" onclick="void(0)">
                                                     <div class="container-fluid">
@@ -558,14 +566,15 @@
                     <div class="drop-navi-bar mt-3"><a href="#" class="drop-navi-item">Nářadí</a> <i class="fas fa-chevron-right"></i> <a href="#" class="drop-navi-item">Ruční nářadi</a></div>
                     <h3 class="product-layout-heading mt-2">Ruční nářadí</h3>
                     <div class="row mt-4">
-                        <!--Filtres-->
-                        <div class="col-4 d-lg-block d-none p-0">
+                        <!--Left-layout-->
+                        <div class="col-4 d-lg-block d-none p-0" id="left-layout-col">
+                            <div class="dark-box"></div>
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12 product-layout-aside">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="aside-card-header">Filtry</h5>
+                                                <h5 class="aside-card-header">Filtry <button class="responsive-close-left btn mobile-bar-icon d-none"> <i class="fas fa-times"></i> </button> </h5>
                                                 
                                                 <form class="filtres-form" method="post">
 
@@ -578,11 +587,11 @@
                                                                 <!--Kategorie s podkategorií-->
                                                                <label class="simple-dropdown-controll" >
                                                                     <input type="checkbox" class="simple-dropdown"/>
-                                                                    <a href="#" class="cat-header-link"><h6 class="cat-header">Kategorie s podkategorií </h6> </a> <div class="plus-icon"> <div class="plus-group"> <div class="vertical"></div><div class="horizontal"></div> </div>  </div>
+                                                                    <a href="#" class="cat-header-link"><h6 class="cat-header"> <div class="cat-img"> <img src="images/product.jpg"> </div> Kategorie s podkategorií </h6> </a> <div class="plus-icon"> <div class="plus-group"> <div class="vertical"></div><div class="horizontal"></div> </div>  </div>
                                                                     <div class="subcat-wrapper">
                                                                         <a href="#" class="subcat-wrapper-link">Nějaká úžasná podkategorie</a>
                                                                         <a href="#" class="subcat-wrapper-link">Nějaká úžasná podkategorie</a>
-                                                                        <a href="#" class="subcat-wrapper-link">Nějaká úžasná podkategorie</a>
+                                                                        <a href="#" class="subcat-wrapper-link"> <div class="cat-img"> <img src="images/product.jpg"> </div> Nějaká úžasná podkategorie</a>
                                                                         <a href="#" class="subcat-wrapper-link">Nějaká úžasná podkategorie</a>
                                                                         <a href="#" class="subcat-wrapper-link">Nějaká úžasná podkategorie</a>
                                                                         <a href="#" class="subcat-wrapper-link">Nějaká úžasná podkategorie</a>
@@ -719,7 +728,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="card mt-3">
+                                        <div class="card top-products mt-3">
                                             <div class="card-body">
                                                 <h5 class="aside-card-header">Top produkty</h5>
                                             </div>
@@ -729,9 +738,45 @@
                             </div>
                         </div>
 
-                        <!--Produc layout-->
+                        <!--Product layout-->
                         <div class="col-12 col-lg-8 p-0">
                             <div class="container-fluid">
+                                <div class="row upper-layout-bar mb-3">
+                                    <div class="col-12 col-md-6 col-lg-6">    
+                                        <div class="wrapper m-auto mx-lg-0 mx-md-0">
+                                                <button class="responsive-filter-btn mr-3 d-lg-none btn"> Filtry</button>
+
+                                                <div class="layout-style-group btn-group" role="group" aria-label="Button group">
+                                                    <button class="btn layout-style-btn">
+                                                        <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="layout-grid-16x16"><path d="M15.2 16H9.8a.8.8 0 0 1-.8-.8V9.8a.8.8 0 0 1 .8-.8h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm0-9H9.8a.8.8 0 0 1-.8-.8V.8a.8.8 0 0 1 .8-.8h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm-9 9H.8a.8.8 0 0 1-.8-.8V9.8A.8.8 0 0 1 .8 9h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm0-9H.8a.8.8 0 0 1-.8-.8V.8A.8.8 0 0 1 .8 0h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8z"></path></svg>  
+                                                    </button>
+                                                    <button class="btn layout-style-btn">
+                                                        <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="layout-grid-16x16"><path d="M15.2 16H9.8a.8.8 0 0 1-.8-.8V9.8a.8.8 0 0 1 .8-.8h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm0-9H9.8a.8.8 0 0 1-.8-.8V.8a.8.8 0 0 1 .8-.8h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm-9 9H.8a.8.8 0 0 1-.8-.8V9.8A.8.8 0 0 1 .8 9h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm0-9H.8a.8.8 0 0 1-.8-.8V.8A.8.8 0 0 1 .8 0h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8z"></path></svg>  
+                                                    </button>
+                                                    <button class="btn layout-style-btn">
+                                                        <svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="layout-grid-16x16"><path d="M15.2 16H9.8a.8.8 0 0 1-.8-.8V9.8a.8.8 0 0 1 .8-.8h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm0-9H9.8a.8.8 0 0 1-.8-.8V.8a.8.8 0 0 1 .8-.8h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm-9 9H.8a.8.8 0 0 1-.8-.8V9.8A.8.8 0 0 1 .8 9h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8zm0-9H.8a.8.8 0 0 1-.8-.8V.8A.8.8 0 0 1 .8 0h5.4a.8.8 0 0 1 .8.8v5.4a.8.8 0 0 1-.8.8z"></path></svg>  
+                                                    </button>
+                                                </div>
+        
+                                                <div class="products-displayed-text"> Zobrazeno 12 z 12 produktů </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6 pt-3 pt-lg-0 pt-md-0">
+                                        <div class="wrapper m-auto mr-lg-0 mr-md-0">
+                                            <form>
+                                                <span> Řazeno od </span>
+                                                <select name="layout-filter">
+                                                    <option value="" selected> Nejlevnější </option>
+                                                </select>
+                                                <span class="pl-3"> Zobrazit </span>
+                                                <select name="layout-filter">
+                                                    <option value="" selected> 12 </option>
+                                                </select>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
                                 <div class="row three-product-row">       
                                     <div class="col-12 col-md-6 col-lg-4 pr-0 pr-lg-3 pr-md-3 product">
                                         <div class="card">
@@ -1260,7 +1305,6 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 

@@ -215,6 +215,7 @@ $big-product-card-height: $product-card-height * 2;
 
 
 .drop-navi-bar{
+    font-size: $font-small;
     i{
         color: $color-dark-smoke;
     }
@@ -263,11 +264,24 @@ $big-product-card-height: $product-card-height * 2;
             .component-wrapper{
                 padding: 10px 20px 5px 20px;
                 max-height: 2500px;
+
+                .cat-img{
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+                    margin-right: 8px;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
                 .cat-header-link{
                     display: inline-block;
                 }
                 .cat-header{
                     margin: 0;
+                    display: inline-block;
                     &:hover{
                         color: $color-link-hover;
                     }
@@ -326,8 +340,7 @@ $big-product-card-height: $product-card-height * 2;
              transform: rotateZ(0deg);
          }
     }
-    
-    
+     
 }
 
 
@@ -405,4 +418,91 @@ $big-product-card-height: $product-card-height * 2;
         
     }
 
+}
+
+.upper-layout-bar{
+    font-size: $font-small;
+
+    .wrapper{
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+    .layout-style-btn{
+        border: 2px solid $color-smoke;
+        background-color: white;
+        padding: 4px 10px 4px 10px;
+        &:hover{
+            background-color: $primary;
+        }
+        svg{
+            fill: $color-dark-smoke;
+        }
+    }
+    .layout-style-btn:hover svg{
+        fill: $secondary;
+    }
+
+    .responsive-filter-btn{
+        font-size: $font-small;
+        font-weight: 600;
+        color: $secondary;
+        width: 150px;
+        border: 2px solid $color-smoke;
+        margin-bottom: 0;
+
+
+    }
+
+    .products-displayed-text{
+        color: $color-dark-smoke;
+    }
+    form{
+        display: flex;
+        color: $color-dark-smoke;
+        height: 100%;
+        select{
+            margin-left: 10px;
+            color: $secondary;
+            border: 2px solid $color-smoke;
+            height: 35px;
+            //padding: 5px;
+        }
+        span{
+            display: inline-block;
+            line-height: 35px;
+        }
+    }
+    
+}
+
+.layout-show{
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000000;
+    width: 350px;
+    .dark-box{
+        width: 1000vw;
+        position: absolute;
+        height: 100vh;
+        background-color: #00000080;
+    }
+    .responsive-close-left{
+        float: right;
+        padding: 0;
+        font-size: 18px;
+    }
+    .product-layout-aside{
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+        background-color: white;
+        z-index: 10000000;
+    }   
+    .top-products{
+        display: none;
+    }
 }

@@ -117,16 +117,17 @@ label{
 //Custom checkbox
 
 .plus-icon{
-    display: inline-block;
+    display: block;
+    float: right;
     width: 14px;
     height: 16px;
     margin-top: 7px;
-    float: right;
     .plus-group{
         position: relative;
         margin: auto;
         width: 9px;
         height: 12px;
+
         .vertical,.horizontal{
             width: 9px;
             height: 3px;

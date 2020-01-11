@@ -141,11 +141,11 @@ label {
 }
 
 .plus-icon {
-  display: inline-block;
+  display: block;
+  float: right;
   width: 14px;
   height: 16px;
   margin-top: 7px;
-  float: right;
 }
 
 .plus-icon .plus-group {

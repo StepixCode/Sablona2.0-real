@@ -256,6 +256,10 @@
   font-size: 20px;
 }
 
+.drop-navi-bar {
+  font-size: 14px;
+}
+
 .drop-navi-bar i {
   color: #737373;
 }
@@ -314,12 +318,25 @@
   max-height: 2500px;
 }
 
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-img img {
+  max-width: 100%;
+}
+
 .product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-header-link {
   display: inline-block;
 }
 
 .product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-header {
   margin: 0;
+  display: inline-block;
 }
 
 .product-layout-aside .card-body .layout-aside-component .component-wrapper .cat-header:hover {
@@ -474,5 +491,101 @@
 
 .color-filter-container .color-3 .custom-check:after {
   border-color: black;
+}
+
+.upper-layout-bar {
+  font-size: 14px;
+}
+
+.upper-layout-bar .wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.upper-layout-bar .layout-style-btn {
+  border: 2px solid #f0f0f0;
+  background-color: white;
+  padding: 4px 10px 4px 10px;
+}
+
+.upper-layout-bar .layout-style-btn:hover {
+  background-color: #ffd333;
+}
+
+.upper-layout-bar .layout-style-btn svg {
+  fill: #737373;
+}
+
+.upper-layout-bar .layout-style-btn:hover svg {
+  fill: #3d464d;
+}
+
+.upper-layout-bar .responsive-filter-btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3d464d;
+  width: 150px;
+  border: 2px solid #f0f0f0;
+  margin-bottom: 0;
+}
+
+.upper-layout-bar .products-displayed-text {
+  color: #737373;
+}
+
+.upper-layout-bar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #737373;
+  height: 100%;
+}
+
+.upper-layout-bar form select {
+  margin-left: 10px;
+  color: #3d464d;
+  border: 2px solid #f0f0f0;
+  height: 35px;
+}
+
+.upper-layout-bar form span {
+  display: inline-block;
+  line-height: 35px;
+}
+
+.layout-show {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000000;
+  width: 350px;
+}
+
+.layout-show .dark-box {
+  width: 1000vw;
+  position: absolute;
+  height: 100vh;
+  background-color: #00000080;
+}
+
+.layout-show .responsive-close-left {
+  float: right;
+  padding: 0;
+  font-size: 18px;
+}
+
+.layout-show .product-layout-aside {
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  background-color: white;
+  z-index: 10000000;
+}
+
+.layout-show .top-products {
+  display: none;
 }
 /*# sourceMappingURL=productLayout.css.map */
