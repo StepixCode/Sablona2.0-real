@@ -1,5 +1,7 @@
 @import "_variables.scss";
 
+.owl-carousel .owl-stage { display: flex; align-items: center; }
+
 a{
     text-decoration: none;
     color: $color-dark-smoke;
@@ -8,6 +10,9 @@ a{
         color: $color-link-hover;
         text-decoration: none;
     }
+}
+h1{
+    font-weight: 600;
 }
 h1,h2,h3,h4,h5,h6{
     color: $secondary;
@@ -33,19 +38,99 @@ h3{
 
 .btn-standard{
     background-color: $primary;
-    color: $secondary !important;
-    font-weight: 700;
+    color: $secondary;
     text-align: center;
-    padding: 5px;
+    padding: 5px 15px;
+    font-weight: 600;
     height: 35px;
     min-width: 70px;
     display: block;
     cursor: pointer;
     @extend .transition-all;
     &:hover{
-        background-color: $color-btn-hover;
+        background-color: $secondary;
+        color: white;
     }
 }
+
+//Products-layout / product-detail stuff
+.rating-stars{
+    i{
+        color: $color-rating-stars;
+    }
+}
+.availability{
+    margin-bottom: 10px;
+    display: block;
+    font-size: $font-small;
+    .green{
+        color: $color-availability;
+    }
+}
+
+//#region Custom-number-input
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  .number-input {
+    border: 2px solid $color-smoke;
+    display: inline-flex;
+  }
+  
+  .number-input,
+  .number-input * {
+    box-sizing: border-box;
+  }
+  
+  .number-input div {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    min-height: 31px;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+  
+  .number-input div:before,
+  .number-input div:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: $color-secondary;
+    transform: translate(-0%, -50%);
+  }
+  .number-input div.plus:after {
+    transform: translate(-0%, -50%) rotate(90deg);
+  }
+  
+  .number-input input[type=number] {
+    max-width: 5rem;
+    border: solid #ddd;
+    border-width: 0 2px;
+    font-size: 20px;
+    min-height: 31px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+//#endregion
 
 
 //Custom checkbox

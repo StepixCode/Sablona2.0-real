@@ -12,6 +12,15 @@
   transition: all 0.3s ease-in;
 }
 
+.owl-carousel .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 a {
   text-decoration: none;
   color: #737373;
@@ -20,6 +29,10 @@ a {
 a:hover {
   color: #1a66ff;
   text-decoration: none;
+}
+
+h1 {
+  font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,10 +67,10 @@ h3 {
 
 .btn-standard {
   background-color: #ffd333;
-  color: #3d464d !important;
-  font-weight: 700;
+  color: #3d464d;
   text-align: center;
-  padding: 5px;
+  padding: 5px 15px;
+  font-weight: 600;
   height: 35px;
   min-width: 70px;
   display: block;
@@ -65,7 +78,94 @@ h3 {
 }
 
 .btn-standard:hover {
-  background-color: #ddc980;
+  background-color: #3d464d;
+  color: white;
+}
+
+.rating-stars i {
+  color: #ffd333;
+}
+
+.availability {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+.availability .green {
+  color: #3bc03b;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 2px solid #f0f0f0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.number-input div {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2rem;
+  min-height: 31px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input div:before,
+.number-input div:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 2px;
+  background-color: #3d464d;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.number-input div.plus:after {
+  -webkit-transform: translate(0%, -50%) rotate(90deg);
+          transform: translate(0%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+  max-width: 5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 20px;
+  min-height: 31px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .custom-check .custom-check-container {

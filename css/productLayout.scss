@@ -12,11 +12,7 @@
     }
 }
 
-.rating-stars{
-    i{
-        color: $color-rating-stars;
-    }
-}
+
 
 .product-row{
     margin-top: 15px;
@@ -144,7 +140,7 @@
             .price{
                 display: none;
             }
-            .avaiilability{
+            .availability{
                 display: none;
             }
             .add-to-cart{
@@ -153,6 +149,9 @@
                 line-height: 15px;
                 font-size: $font-small;
                 display: inline-block;
+                &:hover{
+                    color: white;
+                }
             }
             .product-icon-group{
                 a{
@@ -301,17 +300,12 @@ $list-product-height: 200px;
                         }
                     }
                 }
-                .avaiilability{
-                    margin-bottom: 10px;
-                    display: block;
-                    font-size: $font-small;
-                    .green{
-                        color: lightgreen;
-                    }
-                }
                 .add-to-cart{
                     width: 100%;
                     margin-bottom: 5px;
+                }
+                .availability{
+                    display: block;
                 }
             }
         }
