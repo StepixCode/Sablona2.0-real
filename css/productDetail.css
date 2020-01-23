@@ -257,4 +257,13 @@
   margin-right: 5px;
   padding: 2px 5px;
 }
+
+.product-layout .product-advanced-wrapper .product-footer-bar .social-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=productDetail.css.map */
