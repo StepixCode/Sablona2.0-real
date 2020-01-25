@@ -12,6 +12,11 @@ $(document).ready(function(){
     });
     //#endregion
 
+    $(".info-nav-link").click(function(){        
+        $(this).children(":first").prop('checked', true);
+    });
+
+
     $(window).resize(function() {
        
         //#region  Responzivní filtry

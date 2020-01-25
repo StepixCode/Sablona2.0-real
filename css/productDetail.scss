@@ -1,6 +1,11 @@
 @import "shared/_variables";
 
-.product-layout{    
+.product-layout{   
+    h3{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    } 
     .product-images-container{
         #product-main-photo, .product-photos .col{
             border: 2px solid $color-smoke;
@@ -221,7 +226,162 @@
             }
 
         }
+    }
+    .product-detail-info{
+        .info-nav-check{
+            display: none;
+        }
 
+        .detail-info-nav{
+            text-align: center;
+            .info-nav-link{
+                margin: 0 10px;
+                .info-text{
+                    padding: 5px 20px;
+                    font-size: 20px;
+                    color: $secondary;
+                    font-weight: 600;
+                }
+                .info-nav-check:hover ~ .info-text{
+                    border-bottom: 2px solid $color-dark-smoke;
+                    background-color: $color-smoke;
+                }
+                .info-nav-check:checked ~ .info-text{
+                    border-bottom: 2px solid $primary;
+                    background-color: white;
+                }
+                
+            }    
+        }
         
+        .detail-info{
+            .info-nav-check:checked ~ .wrapper{
+                display: block;
+            }
+            .detail-info-container{
+                
+                .wrapper{
+                    display: none;
+                    border: 2px solid $color-smoke;
+                    padding: 75px;
+                    @include media-breakpoint-down(sm) { 
+                        padding: 20px;
+                    }
+                }
+                .info-block{
+                        padding-bottom: 20px;
+                        
+                        p{
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                .param-block{
+                    h4{
+                        margin-top: 30px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $secondary;
+                    }
+                    .spec-block{
+                        border-top: 1px solid $color-smoke;
+                        .spec-bar{
+                            font-weight: 600;
+                            padding: 5px 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: 1px solid $color-smoke;
+                            .title{
+                                color: $color-dark-smoke;
+                            }
+                            .value{
+                                color: $secondary;
+                            }
+                        }
+                    }
+                    
+                }
+                .review-form{
+                    .text{
+                        font-weight: 600;
+                        color: $secondary;
+
+                    }
+                    .form-elem{
+                        margin: 0 10px;
+                        @include media-breakpoint-down(md) { 
+                            margin: 0;
+                            margin-top: 8px;
+                        }
+                    }
+                    .form-bar{
+                        display: flex;
+                        margin: 20px 0;
+                        justify-content: center;
+                        @include media-breakpoint-down(md) { 
+                            display: block;
+                        }
+                        input,select{
+                            background-color: white;
+                            border: 2px solid $color-smoke;
+                            height: 30px;
+                            padding: 0 5px;
+                            color: $color-dark-smoke;
+                            @include media-breakpoint-down(md) { 
+                                width: 100%;
+                            }
+                            &::placeholder{
+                                color: $color-dark-smoke
+                            }
+                        }
+                    }
+
+                    textarea{
+                        min-width: 100%;
+                        min-height: 300px;
+                        resize: vertical;
+                        background-color: white;
+                        border: 2px solid $color-smoke;
+                    }
+                    
+                }
+                
+                
+            }
+        }
+    }
+
+
+    .owl-nav{
+        .owl-prev, .owl-next{
+            &:hover{
+                background-color: $color-smoke;
+            }
+            &.disabled{
+                opacity: 1;
+                i{
+                    opacity: 0.5;
+                }
+            }
+            i{
+                font-size: 25px;
+                padding: 5px;
+                color: $secondary;
+            }
+        }
+    }
+    .owl-dots{
+        .owl-dot{
+            span{
+                background-color: $color-smoke;
+                width: 11px;
+                height: 11px;
+            }
+            &.active{
+                span{
+                    background-color: $primary;
+                }
+            }
+        }
     }
 }
