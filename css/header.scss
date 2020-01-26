@@ -163,13 +163,17 @@
             }
             .dropdown-menu.show{
                 display: none;
-                @include media-breakpoint-down(xl){
+                /*@include media-breakpoint-down(xl){
                     display: block;
-                }
+                    opacity: 1;
+                    visibility: visible
+                }*/
             }
-            .dropdown-menu{
+            .big-menu{
                 @include media-breakpoint-down(xl){
                     display: none;
+                    visibility: hidden !important;
+                    opacity: 0 !important;
                 }
             }
             .double-col-dropdown{
@@ -180,7 +184,8 @@
             }
 
         }
-        .dropdown:hover .dropdown-menu{
+        
+        .dropdown:hover .dropdown-menu,{
             transition-delay: 0.3s;
             visibility: visible;
             opacity: 1;
@@ -191,6 +196,12 @@
                 color: $secondary;
             }
         }
+        .dropdown:hover .big-menu{
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+        }
+        
         .big-category-dropdown{
 
             .navigation-link{
@@ -213,6 +224,11 @@
             .menu-checkbox{
                 display: none;
             }
+            .menu-checkbox:checked ~ .big-menu{
+                display: block;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
             .big-menu-container-label{
                 width: 100%;
             }
@@ -231,8 +247,11 @@
                 }
                 .submenu-checkbox:checked ~ .big-category-menu{
                     display: block;
+                    opacity: 1;
+                    visibility: visible;
                     
                 }
+
 
             }
             .big-category-menu{

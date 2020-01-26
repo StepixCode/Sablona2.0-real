@@ -70,3 +70,11 @@ function resetCheckbox(number,boxName)
 
     }
 }
+function checkCheckbox(boxName,checkFalse = true)
+{
+    if(document.getElementById(boxName).checked == false && checkFalse == true)
+        document.getElementById(boxName).checked = true;
+    else
+        document.getElementById(boxName).checked = false;
+
+}

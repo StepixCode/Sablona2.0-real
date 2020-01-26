@@ -1,6 +1,41 @@
 @import "shared/_variables";
 
-.product-layout{   
+.product-layout{
+
+    .owl-nav{
+        .owl-prev, .owl-next{
+            &:hover{
+                background-color: $color-smoke;
+            }
+            &.disabled{
+                opacity: 1;
+                i{
+                    opacity: 0.5;
+                }
+            }
+            i{
+                font-size: 25px;
+                padding: 5px;
+                color: $secondary;
+            }
+        }
+    }
+    .owl-dots{
+        .owl-dot{
+            span{
+                background-color: $color-smoke;
+                width: 11px;
+                height: 11px;
+            }
+            &.active{
+                span{
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+
+
     h3{
         font-size: 25px;
         font-weight: 600;
@@ -30,6 +65,34 @@
             }
             
         }
+
+        .photos-carousel{
+            .col{
+                padding: 2px;
+            }
+            .owl-nav{
+                @include media-breakpoint-down(sm) { 
+                    display: none;
+                }
+                .owl-prev, .owl-next{
+                    position: absolute;
+                    top: 25px;
+                    background-color: $color-smoke;
+                }
+                .owl-prev{
+                    left: -20px;
+                }
+                .owl-next{
+                    right: -17px;
+                }     
+            }
+            .owl-dot{
+                @include media-breakpoint-up(md) { 
+                    display: none;
+                }
+                margin-top: 10px;
+            }
+        }
         .product-photos{
             margin-top: 15px;
             .col{
@@ -38,15 +101,15 @@
                     height: 75px;
                 }
                 a{
-                    display: block;
                     height: 100%;
                     width: 100%;
                     display: flex;
                     align-items: center;
                     img{
                         max-height: 100%;
-                        max-width: 100%;
+                        width: auto !important;
                         padding: 5px;
+                        margin: auto;
                     }
                 }
                 
@@ -350,38 +413,5 @@
             }
         }
     }
-
-
-    .owl-nav{
-        .owl-prev, .owl-next{
-            &:hover{
-                background-color: $color-smoke;
-            }
-            &.disabled{
-                opacity: 1;
-                i{
-                    opacity: 0.5;
-                }
-            }
-            i{
-                font-size: 25px;
-                padding: 5px;
-                color: $secondary;
-            }
-        }
-    }
-    .owl-dots{
-        .owl-dot{
-            span{
-                background-color: $color-smoke;
-                width: 11px;
-                height: 11px;
-            }
-            &.active{
-                span{
-                    background-color: $primary;
-                }
-            }
-        }
-    }
+    
 }

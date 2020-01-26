@@ -129,8 +129,8 @@
                     <div class="row">
                         <div class="col-10">
                             <div class="dropdown big-category-dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-bars"></i> Kategorie <i class="fas fa-chevron-down"></i> </a>
-                                <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-bars"></i> Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <input class="menu-checkbox" type="checkbox" id="menu-checkbox" name="menu-checkbox">
                                 <div class="dropdown-menu big-menu">
                                         <label class="big-category-item dropdown-item" >Ruční nářadí
                                             <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(0,'submenu-checkbox')">
@@ -167,7 +167,7 @@
                                                         </div> 
                                                     </div>
                                                 </label> 
-                                            </div>
+                                </div>
                                         
                                         
                                         </label>
@@ -289,7 +289,7 @@
                                 
                             </div>
                             <div class="dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox',false)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Nějaká položka</a>
                                     <a class="dropdown-item" href="#">Kategorie</a>
@@ -299,7 +299,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox',false)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <div class="dropdown-menu double-col-dropdown">
                                     <div class="container-fluid">
                                        <div class="row dropdown-category-row">
@@ -342,7 +342,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox',false)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Nějaká položka</a>
                                     <a class="dropdown-item" href="#">Kategorie</a>

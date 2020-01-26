@@ -140,8 +140,8 @@
                     <div class="row">
                         <div class="col-10">
                             <div class="dropdown big-category-dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-bars"></i> Kategorie <i class="fas fa-chevron-down"></i> </a>
-                                <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-bars"></i> Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <input class="menu-checkbox" type="checkbox" id="menu-checkbox" name="menu-checkbox">
                                 <div class="dropdown-menu big-menu">
                                         <label class="big-category-item dropdown-item" >Ruční nářadí
                                             <input class="submenu-checkbox" type="checkbox" onclick="resetCheckbox(0,'submenu-checkbox')">
@@ -178,7 +178,7 @@
                                                         </div> 
                                                     </div>
                                                 </label> 
-                                            </div>
+                                </div>
                                         
                                         
                                         </label>
@@ -300,7 +300,7 @@
                                 
                             </div>
                             <div class="dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox',false)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Nějaká položka</a>
                                     <a class="dropdown-item" href="#">Kategorie</a>
@@ -310,7 +310,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox',false)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <div class="dropdown-menu double-col-dropdown">
                                     <div class="container-fluid">
                                        <div class="row dropdown-category-row">
@@ -353,7 +353,7 @@
                                 </div>
                             </div>
                             <div class="dropdown">
-                                <a class="btn navigation-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
+                                <a class="btn navigation-link" onclick="checkCheckbox('menu-checkbox',false)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie <i class="fas fa-chevron-down"></i> </a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Nějaká položka</a>
                                     <a class="dropdown-item" href="#">Kategorie</a>
@@ -595,6 +595,26 @@
                                     </div>
                                     <div class="col">
                                         <a onclick="ChangeImg(this)" data-fancybox="product-photos" href="images/product.jpg">
+                                            <img  class="img-fluid" src="images/news-image.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a onclick="ChangeImg(this)" data-fancybox="product-photos" href="images/product.jpg">
+                                            <img  class="img-fluid" src="images/product.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a onclick="ChangeImg(this)" data-fancybox="product-photos" href="images/product.jpg">
+                                            <img  class="img-fluid" src="images/product.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a onclick="ChangeImg(this)" data-fancybox="product-photos" href="images/product.jpg">
+                                            <img  class="img-fluid" src="images/product.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a onclick="ChangeImg(this)" data-fancybox="product-photos" href="images/product.jpg">
                                             <img  class="img-fluid" src="images/product.jpg">
                                         </a>
                                     </div>
@@ -764,7 +784,7 @@
                             </div>
 
                             <div class="reviews detail-info-container">
-                                    <input checked id="info-nav-check-3" type="radio" class="info-nav-check" name="detail-wrapper-display" >
+                                    <input id="info-nav-check-3" type="radio" class="info-nav-check" name="detail-wrapper-display" >
                                     <div class="wrapper">
                                         <div class="info-block">
                                             <h3 class="mb-5">Uživatelské hodnocení</h3>
@@ -1531,11 +1551,15 @@
     <script>
             $('.photos-carousel').owlCarousel({
                 loop:false,
-                margin:10,
                 responsiveClass:true,
                 autoHeight:true,
-                nav: false,
-                dots: false,
+                margin: 10,
+                nav: true,
+                navText: [
+                '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                ],
+                dots: true,
                 responsive:{
                     0:{
                         items:3,
