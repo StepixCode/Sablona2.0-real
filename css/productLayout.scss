@@ -44,7 +44,7 @@
     overflow: hidden;
     .card{
         position: absolute;
-        border: 2px solid $color-smoke;
+        border: $default-border;
         border-radius: 0;
         height: $product-card-height;
         overflow: hidden;
@@ -222,7 +222,7 @@ $list-product-height: 200px;
                     @include media-breakpoint-down(md) { 
                         max-width: 200px;
                         padding: 10px;
-                        border-right: 2px solid $color-smoke;
+                        border-right: $default-border;
                     }
                     @include media-breakpoint-down(sm) { 
                         border-right: none;
@@ -256,7 +256,7 @@ $list-product-height: 200px;
                 @include media-breakpoint-down(md) { 
                     width: 100%;
                     border-right: none;
-                    border-bottom: 2px solid $color-smoke;
+                    border-bottom: $default-border;
                 }
                 @include media-breakpoint-down(sm) { 
                     height: $list-product-height * 2;
@@ -266,7 +266,7 @@ $list-product-height: 200px;
                     
                 }
                 width: 75%;
-                border-right: 2px solid $color-smoke;
+                border-right: $default-border;
                 .price{
                     display: none;
                 }
@@ -376,7 +376,7 @@ $big-product-card-height: $product-card-height * 2;
 
 .product-layout-aside{
     .card{
-        border: 2px solid $color-smoke;
+        border: $default-border;
     }
 
     .top-products{
@@ -387,7 +387,7 @@ $big-product-card-height: $product-card-height * 2;
             .wrapper{
                 display: flex;
                 margin: 5px 20px 0 20px;
-                border-bottom: 2px solid $color-smoke;
+                border-bottom: $default-border;
                 .top-product-img{
                     height: 100px;
                     width: 100px;
@@ -427,7 +427,7 @@ $big-product-card-height: $product-card-height * 2;
         }
 
         .layout-aside-component{
-            border-top: 2px solid $color-smoke;
+            border-top: $default-border;
             font-size: $font-small;
             overflow: hidden;
             position: relative;
@@ -622,7 +622,7 @@ $big-product-card-height: $product-card-height * 2;
         width: max-content;
     }
     .layout-style-btn{
-        border: 2px solid $color-smoke;
+        border: $default-border;
         background-color: white;
         padding: 4px 10px 4px 10px;
         svg{
@@ -644,7 +644,7 @@ $big-product-card-height: $product-card-height * 2;
         font-weight: 600;
         color: $secondary;
         width: 150px;
-        border: 2px solid $color-smoke;
+        border: $default-border;
         margin-bottom: 0;
 
 
@@ -660,9 +660,8 @@ $big-product-card-height: $product-card-height * 2;
         select{
             margin-left: 10px;
             color: $secondary;
-            border: 2px solid $color-smoke;
+            border: $default-border;
             height: 35px;
-            //padding: 5px;
         }
         span{
             display: inline-block;

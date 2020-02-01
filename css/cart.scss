@@ -1,0 +1,225 @@
+@import "shared/_variables.scss";
+
+.cart-section{
+    .in-cart{
+        .in-cart-grid{
+            margin-top: 20px;
+            .grid-header{
+                font-weight: 600;
+                color: $secondary;
+                font-size: $font-small;
+                background-color: $color-smoke;
+                padding: 5px;
+                border: $default-border;
+    
+            }
+            .grid-product{
+                position: relative;
+                padding: 20px 0;
+                border: $default-border;
+                border-top-width: 0;
+                @include media-breakpoint-down(sm) { 
+                    display: block;
+                    margin: 0 0 15px 0;
+                    border-top-width: 2px;
+                }
+                .remove-from-cart{
+                    position: absolute;
+                    right: 15px;
+                    z-index: 1;
+                    height: 100%;
+                    @extend .transition-all;
+                    a{
+                        color: $color-dark-smoke;
+                        padding: 5px 10px;
+                        &:hover{
+                            background-color: $color-smoke;
+                            color: $secondary;
+    
+                        }
+                    }
+                }
+                .hidden{
+                    font-weight: 600;
+                    color: $secondary;
+                    display: none;
+                    @include media-breakpoint-down(sm) { 
+                        display: block;
+                    }
+                }
+                .col{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include media-breakpoint-down(sm) { 
+                        justify-content: space-between;
+                    }
+                }
+                .product-info{
+                    overflow: hidden;
+                    @include media-breakpoint-down(sm) { 
+                        text-align: center;
+                        margin-top: 25px;
+                        border-bottom: $default-border;
+                        margin-bottom: 10px;
+                    }
+                    *{
+                        width: 100%;
+                    }
+                    .product-title{
+                        a{
+                            color: $secondary;
+                            font-weight: 500;
+                            word-break: normal;
+                            &:hover{
+                                color: $color-link-hover;
+                            }
+                        }
+                    }
+                    .product-setting{
+                        margin-top: 10px;
+                        font-size: $font-small;
+                        color: $color-dark-smoke;
+                        padding-left: 15px;
+                        @include media-breakpoint-down(sm) { 
+                            list-style: none;
+                        }
+                    }
+                }
+                .product-price{
+                    text-align: center;
+                }
+                .product-image{
+                    .wrapper{
+                        height: 100px;
+                        margin: auto;
+                        @include media-breakpoint-down(sm) { 
+                            height: 125px;
+                        }
+                        img{
+                            max-height: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .product-quantity{
+                    .number-input{
+                        input[type=number] {
+                            color: $secondary;
+                            font-weight: 500;
+                            width: 2.5rem;
+                            border: none;
+                        }
+                        div{
+                            width: 1.5rem;
+                            &:before,&::after{
+                                background-color: $color-dark-smoke;
+                                width: 0.5rem;
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .under-grid-bar{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down(sm) { 
+            display: block;
+            
+        }
+        .item{
+            display: flex;
+            @include media-breakpoint-down(sm) { 
+                margin: 10px 15px;
+                display: block;
+                input{
+                    width: 100%;
+                    border-right-width: 2px;
+                    border-bottom-width: 0;
+                    height: 35px;
+                }
+            }
+            .shopping-continue{
+                background-color: white;
+                @include media-breakpoint-down(sm) { 
+                    background-color: $color-smoke;
+                }
+                &:hover{
+                    @include media-breakpoint-down(sm) {
+                        background-color: $secondary;
+                        color: white;
+                    }
+                    background-color: $color-smoke;
+                    color: $secondary;
+                }
+            }
+        }
+        .buttons{
+            flex-direction: row-reverse;
+            @include media-breakpoint-down(sm) { 
+                margin-top: 50px;
+            }
+            .btn-standard{
+                @include media-breakpoint-down(sm) { 
+                    margin: 7px 0;
+                }
+            }
+            
+        }
+        form{
+            input{
+                padding: 0 10px;
+                border: $default-border;
+                border-right-width: 0;
+            }
+
+        }
+    }
+    .cart-card-container{
+        .row{
+            @include media-breakpoint-down(sm) { 
+                margin: 0;
+            }
+        }
+        .cart-card{
+            border: $default-border;
+            color: $secondary;
+            h3{
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+            .wrapper{
+                padding: 20px;
+                .item{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 7px 0;
+                    .left-text{
+                        font-weight: 600;
+                    }
+                }
+                .item.bor{
+                    border-bottom: $default-border;
+                    padding-bottom: 5px;
+                    margin-bottom: 15px;
+                }
+                .item.big{
+                    padding-top: 5px;
+                    margin-top: 15px;
+                    border-top: $default-border;
+                    font-size: 20px;
+                }
+                .btn-standard{
+                    margin-top: 30px;
+                    line-height: 40px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    
+}

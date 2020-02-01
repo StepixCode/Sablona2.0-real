@@ -43,7 +43,7 @@
     } 
     .product-images-container{
         #product-main-photo, .product-photos .col{
-            border: 2px solid $color-smoke;
+            border: $default-border;
         }
         #product-main-photo{
             height: 540px;
@@ -278,7 +278,7 @@
                     font-weight: 600;
                     color: $secondary;
                     background-color: $color-light-smoke;
-                    border: 2px solid $color-smoke;
+                    border: $default-border;
                     margin-right: 5px;
                     padding: 2px 5px;
                 }
@@ -325,7 +325,7 @@
                 
                 .wrapper{
                     display: none;
-                    border: 2px solid $color-smoke;
+                    border: $default-border;
                     padding: 75px;
                     @include media-breakpoint-down(sm) { 
                         padding: 20px;
@@ -386,7 +386,7 @@
                         }
                         input,select{
                             background-color: white;
-                            border: 2px solid $color-smoke;
+                            border: $default-border;
                             height: 30px;
                             padding: 0 5px;
                             color: $color-dark-smoke;
@@ -404,7 +404,7 @@
                         min-height: 300px;
                         resize: vertical;
                         background-color: white;
-                        border: 2px solid $color-smoke;
+                        border: $default-border;
                     }
                     
                 }

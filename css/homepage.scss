@@ -85,7 +85,7 @@
             display: flex;
             background-color: white;
             padding: 2px;
-            border: 2px solid $color-smoke;
+            border: $default-border;
             .categories-card-info{
                 width: 50%;
                 display: inline-block;
