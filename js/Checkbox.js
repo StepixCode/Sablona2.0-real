@@ -78,3 +78,15 @@ function checkCheckbox(boxName,checkFalse = true)
         document.getElementById(boxName).checked = false;
 
 }
+function checkCheckboxes(boxName,checkFalse = true)
+{
+    var checkboxes = document.getElementsByClassName(boxName);
+    for(var i = 0; i < checkboxes.length; i++){
+        if(checkboxes[i].checked == false && checkFalse == true)
+            checkboxes[i].checked = true;
+        else
+            checkboxes[i].checked = false;
+    }
+
+
+}
