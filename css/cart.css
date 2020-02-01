@@ -193,28 +193,6 @@
   }
 }
 
-.cart-section .under-grid-bar .item .shopping-continue {
-  background-color: white;
-}
-
-@media (max-width: 767.98px) {
-  .cart-section .under-grid-bar .item .shopping-continue {
-    background-color: #f0f0f0;
-  }
-}
-
-.cart-section .under-grid-bar .item .shopping-continue:hover {
-  background-color: #f0f0f0;
-  color: #3d464d;
-}
-
-@media (max-width: 767.98px) {
-  .cart-section .under-grid-bar .item .shopping-continue:hover {
-    background-color: #3d464d;
-    color: white;
-  }
-}
-
 .cart-section .under-grid-bar .buttons {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;

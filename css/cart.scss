@@ -143,20 +143,6 @@
                     height: 35px;
                 }
             }
-            .shopping-continue{
-                background-color: white;
-                @include media-breakpoint-down(sm) { 
-                    background-color: $color-smoke;
-                }
-                &:hover{
-                    @include media-breakpoint-down(sm) {
-                        background-color: $secondary;
-                        color: white;
-                    }
-                    background-color: $color-smoke;
-                    color: $secondary;
-                }
-            }
         }
         .buttons{
             flex-direction: row-reverse;
