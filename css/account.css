@@ -1,0 +1,205 @@
+/*Fonts*/
+/*Bootstrap setting*/
+.transition-all {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.account .account-login .account-col {
+  padding: 10px;
+}
+
+.account .account-login .account-col .wrapper {
+  border: 2px solid #f0f0f0;
+  padding: 20px;
+  height: 100%;
+}
+
+.account .account-login .account-col .wrapper .forgot {
+  color: #1a66ff;
+}
+
+.account .account-login .account-col .wrapper form {
+  margin-top: 20px;
+}
+
+.account .account-login .account-col .wrapper form label {
+  margin-bottom: 10px;
+}
+
+.account .account-login .account-col .wrapper form label input {
+  margin-top: 3px;
+}
+
+.account .account-login .account-col .wrapper form .remember {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.account .account-dashboard .account-navigation {
+  border: 2px solid #f0f0f0;
+  margin: 15px 0;
+  padding: 20px 0 0 0;
+}
+
+.account .account-dashboard .account-navigation h4 {
+  padding-left: 15px;
+}
+
+.account .account-dashboard .account-navigation .account-nav-item {
+  display: block;
+  padding: 5px 0;
+  padding-left: 25px;
+  border-left: 2px solid transparent;
+  color: #737373;
+}
+
+.account .account-dashboard .account-navigation .account-nav-item:hover {
+  background-color: #f7f7f7;
+}
+
+.account .account-dashboard .account-navigation .account-nav-item.active {
+  border-color: #ffd333;
+  font-weight: 600;
+  padding-left: 27px;
+  margin-left: -2px;
+  color: #3d464d;
+}
+
+.account .account-dashboard .account-content .content-col {
+  padding: 15px;
+}
+
+.account .account-dashboard .account-content .content-col .wrapper {
+  height: 100%;
+  padding: 20px;
+  border: 2px solid #f0f0f0;
+}
+
+.account .account-dashboard .account-content .content-col .dashboard-profile .profile-image {
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.account .account-dashboard .account-content .content-col .dashboard-profile .profile-image img {
+  border-radius: 2000px;
+}
+
+.account .account-dashboard .account-content .content-col .dashboard-profile .profile-info {
+  margin-top: 20px;
+  text-align: center;
+  color: #3d464d;
+}
+
+.account .account-dashboard .account-content .content-col .dashboard-profile .profile-info .name {
+  font-weight: 600;
+}
+
+.account .account-dashboard .account-content .content-col .dashboard-profile .profile-info .email {
+  font-size: 14px;
+}
+
+.account .account-dashboard .account-content .content-col .dashboard-profile .btn-standard {
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+.account .account-dashboard .account-content .content-col .dashboard-profile .btn-standard:hover {
+  background-color: #3d464d;
+}
+
+.account .account-dashboard .address {
+  font-size: 14px;
+  height: 100%;
+}
+
+.account .account-dashboard .address .title {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+.account .account-dashboard .address .block {
+  margin-bottom: 17px;
+}
+
+.account .account-dashboard .address .block .heading {
+  color: #737373;
+  font-size: 12px;
+}
+
+.account .account-dashboard .address .action {
+  display: inline-block;
+  color: #1a66ff;
+  margin: 5px 0;
+}
+
+.account .account-dashboard .orders {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.account .account-dashboard .orders .title {
+  border: 2px solid #f0f0f0;
+  padding: 10px 25px 5px 25px;
+}
+
+.account .account-dashboard .orders .grid {
+  border: 2px solid #f0f0f0;
+  border-top-width: 0;
+  font-size: 14px;
+}
+
+.account .account-dashboard .orders .grid .grid-heading {
+  border-bottom: 2px solid #f0f0f0;
+  padding: 10px 10px;
+}
+
+@media (max-width: 991.98px) {
+  .account .account-dashboard .orders .grid .grid-heading {
+    padding: 10px 0;
+  }
+}
+
+.account .account-dashboard .orders .grid .grid-heading .grid-item {
+  text-transform: uppercase;
+  color: #737373;
+}
+
+.account .account-dashboard .orders .grid .grid-list-item.top {
+  border: none;
+}
+
+.account .account-dashboard .orders .grid .grid-list-item {
+  border-top: 2px solid #f0f0f0;
+  border-top-width: 1px;
+}
+
+.account .account-dashboard .orders .grid .grid-list-item .grid-item {
+  padding: 10px 0;
+}
+
+@media (max-width: 991.98px) {
+  .account .account-dashboard .orders .grid .grid-list-item .grid-item {
+    padding: 10px 15px;
+  }
+}
+
+.account .account-dashboard .orders .grid .grid-list-item .grid-item a {
+  color: #1a66ff;
+}
+
+.account .account-dashboard .orders .grid .grid-list-item .grid-item.left {
+  padding: 10px 0 10px 25px;
+}
+
+@media (max-width: 991.98px) {
+  .account .account-dashboard .orders .grid .grid-list-item .grid-item.left {
+    padding: 10px 15px;
+  }
+}
+/*# sourceMappingURL=account.css.map */

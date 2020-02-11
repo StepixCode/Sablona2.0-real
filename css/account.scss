@@ -1,0 +1,177 @@
+@import "shared/_variables.scss";
+
+.account{
+    .account-login{
+        .account-col{
+            padding: 10px;
+            .wrapper{
+                border: $default-border;
+                padding: 20px;
+                height: 100%;
+                .forgot{
+                    color: $color-link-hover;
+                }
+                form{
+                    margin-top: 20px;
+                    label{
+                        margin-bottom: 10px;
+                        input{
+                            margin-top: 3px;
+                        }
+                    }
+                    .remember{
+                        margin-top: 24px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    .account-dashboard{
+        .account-navigation{
+            border: $default-border;
+            margin: 15px 0;
+            padding: 20px 0 0 0;
+            h4{
+                padding-left: 15px;
+            }
+            .account-nav-item{
+                
+                display: block;
+                padding: 5px 0;
+                padding-left: 25px;
+                border-left: 2px solid transparent;
+                color: $color-dark-smoke;
+                &:hover{
+                    background-color: $color-light-smoke;
+                }
+            }
+            .account-nav-item.active{
+                border-color: $primary;
+                font-weight: 600;
+                padding-left: 27px;
+                margin-left: -2px;
+                color: $secondary;
+            }
+        }
+        .account-content{
+            .content-col{
+                padding: 15px;
+                .wrapper{
+                    height: 100%;
+                    padding: 20px;
+                    border: $default-border;
+                }
+                .dashboard-profile{
+                    .profile-image{
+                        width: 30%;
+                        margin: auto;
+                        margin-top: 20px;
+                        img{
+                            border-radius: 2000px;
+                        }
+                    }
+                    .profile-info{
+                        margin-top: 20px;
+                        text-align: center;
+                        color: $secondary;
+                        .name{
+                            font-weight: 600;
+                        }
+                        .email{
+                            font-size: $font-small;
+                        }
+                        
+                    }
+                    .btn-standard{
+                        width: 150px;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        background-color: $color-smoke;
+                        &:hover{
+                            background-color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .address{
+            font-size: $font-small;
+            height: 100%;
+            .title{
+                font-weight: 600;
+                font-size: 17px;
+                margin: 20px 0;
+            }
+            .block{
+                margin-bottom: 17px;
+                .heading{
+                    color: $color-dark-smoke;
+                    font-size: $font-small - 2px;
+                }
+            }
+            .action{
+                display: inline-block;
+                color: $color-link-hover;
+                margin: 5px 0;
+            }
+        }
+
+        .orders{
+            border: none !important;
+            padding: 0 !important;
+            .title{
+                border: $default-border;
+                padding: 10px 25px 5px 25px;
+            }
+            .grid{
+                border: $default-border;
+                border-top-width: 0;
+                font-size: $font-small;
+                .grid-heading{
+                    border-bottom: $default-border;
+                    padding: 10px 10px;
+                    @include media-breakpoint-down(md) { 
+                        padding: 10px 0;
+                    }
+                    .grid-item{
+                        text-transform: uppercase;
+                        color: $color-dark-smoke;
+                    }
+                }
+                .grid-list-item.top{
+                    border: none;
+                }
+                .grid-list-item{
+                    border-top: $default-border;
+                    border-top-width: 1px;
+                    
+                    .grid-item{
+                        padding: 10px 0;
+                        @include media-breakpoint-down(md) { 
+                            padding: 10px 15px;
+                        }
+                        a{
+                            color: $color-link-hover;
+                        }
+                    }
+                    .grid-item.left{
+                        padding: 10px 0 10px 25px;
+                        @include media-breakpoint-down(md) { 
+                            padding: 10px 15px;
+                        }
+                    }   
+                }
+            }
+        }
+
+
+
+
+    }
+}

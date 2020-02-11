@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5,h6{
 }
 h3{
     font-size: 30px;
+    font-weight: 600;
+}
+h4{
+    font-weight: 600;
 }
 
 .btn{
@@ -173,6 +177,71 @@ input[type="number"] {
   }
 
 //#endregion
+
+
+form{
+    input{
+        padding: 0 10px;
+        border: $default-border;
+        border-right-width: 0;
+    }
+    label{
+        display: block;
+        color: $color-dark-smoke;
+        margin: 0;
+        input,select{
+            width: 100%;
+            height: 35px;
+            border: $default-border;
+            background-color: white;
+            padding-left: 10px;
+            color: $color-dark-smoke;
+            margin-bottom: 20px;
+        }
+        textarea{
+            width: 100%;
+            min-height: 100px;
+            border: $default-border;
+            resize: vertical;
+        }
+    }
+
+    .check{
+        display: none;
+    }
+    .check:checked ~ .fake-check{
+        border: 2px solid $color-smoke;
+        div{
+           opacity: 1;
+           visibility: visible;
+        }
+    }
+    .fake-check{
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border: $default-border;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            width: 10px;
+            height: 10px;
+            background-color: $color-smoke;
+        }
+        
+    }
+
+    button.btn-standard{
+        border: none;
+        box-shadow: none;
+    }
+
+
+}
 
 
 //Custom checkbox

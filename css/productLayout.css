@@ -140,11 +140,6 @@
   margin: 0;
 }
 
-.product .card .product-title h5 {
-  font-size: 15px;
-  color: #3d464d;
-}
-
 .product .card .product-title:hover h5 {
   color: #1a66ff;
 }
