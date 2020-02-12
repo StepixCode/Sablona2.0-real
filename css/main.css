@@ -402,6 +402,34 @@ label {
           transform: rotateZ(90deg);
 }
 
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+  background-color: #ffd333 !important;
+}
+
+.owl-nav .owl-prev.disabled, .owl-nav .owl-next.disabled {
+  opacity: 1;
+}
+
+.owl-nav .owl-prev.disabled i, .owl-nav .owl-next.disabled i {
+  opacity: 0.5;
+}
+
+.owl-nav .owl-prev i, .owl-nav .owl-next i {
+  font-size: 25px;
+  padding: 5px;
+  color: #3d464d !important;
+}
+
+.owl-dots .owl-dot span {
+  background-color: #f0f0f0 !important;
+  width: 11px;
+  height: 11px;
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: #ffd333 !important;
+}
+
 body, html {
   scroll-behavior: smooth;
   width: 100%;

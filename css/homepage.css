@@ -224,7 +224,6 @@
 
 #customNav-featured-products button, #customNav-new-arrivals-products button, #customNav-latest-news-products button {
   border: none;
-  background-color: #f0f0f0;
   height: 30px;
   width: 40px;
   margin: 2.5px;
@@ -236,18 +235,9 @@
   }
 }
 
-#customNav-featured-products button:hover, #customNav-new-arrivals-products button:hover, #customNav-latest-news-products button:hover {
-  background-color: #ffd333;
-}
-
 #customNav-featured-products button i, #customNav-new-arrivals-products button i, #customNav-latest-news-products button i {
-  color: #737373;
-  font-size: 25px;
   line-height: 28px;
-}
-
-#customNav-featured-products button:hover i, #customNav-new-arrivals-products button:hover i, #customNav-latest-news-products button:hover i {
-  color: #3d464d;
+  padding: 0;
 }
 
 @media (max-width: 767.98px) {

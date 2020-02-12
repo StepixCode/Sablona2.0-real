@@ -5,14 +5,18 @@
   transition: all 0.3s ease-in;
 }
 
-.account .account-login .account-col {
-  padding: 10px;
+.account .account-col, .account .content-col {
+  padding: 15px;
 }
 
-.account .account-login .account-col .wrapper {
-  border: 2px solid #f0f0f0;
-  padding: 20px;
+.account .account-col .wrapper, .account .content-col .wrapper {
   height: 100%;
+  padding: 20px;
+  border: 2px solid #f0f0f0;
+}
+
+.account .account-login .account-col {
+  padding: 10px;
 }
 
 .account .account-login .account-col .wrapper .forgot {
@@ -36,17 +40,32 @@
   margin-bottom: 20px;
 }
 
-.account .account-dashboard .account-navigation {
+.account .account-navigation {
   border: 2px solid #f0f0f0;
   margin: 15px 0;
   padding: 20px 0 0 0;
 }
 
-.account .account-dashboard .account-navigation h4 {
+@media (max-width: 991.98px) {
+  .account .account-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 25px;
+    border: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.account .account-navigation h4 {
   padding-left: 15px;
 }
 
-.account .account-dashboard .account-navigation .account-nav-item {
+.account .account-navigation .account-nav-item {
   display: block;
   padding: 5px 0;
   padding-left: 25px;
@@ -54,11 +73,25 @@
   color: #737373;
 }
 
-.account .account-dashboard .account-navigation .account-nav-item:hover {
+@media (max-width: 991.98px) {
+  .account .account-navigation .account-nav-item {
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 10px;
+  }
+}
+
+.account .account-navigation .account-nav-item:hover {
   background-color: #f7f7f7;
 }
 
-.account .account-dashboard .account-navigation .account-nav-item.active {
+@media (max-width: 991.98px) {
+  .account .account-navigation .account-nav-item:hover {
+    background-color: transparent;
+  }
+}
+
+.account .account-navigation .account-nav-item.active {
   border-color: #ffd333;
   font-weight: 600;
   padding-left: 27px;
@@ -66,14 +99,11 @@
   color: #3d464d;
 }
 
-.account .account-dashboard .account-content .content-col {
-  padding: 15px;
-}
-
-.account .account-dashboard .account-content .content-col .wrapper {
-  height: 100%;
-  padding: 20px;
-  border: 2px solid #f0f0f0;
+@media (max-width: 991.98px) {
+  .account .account-navigation .account-nav-item.active {
+    margin: 0;
+    padding: 10px;
+  }
 }
 
 .account .account-dashboard .account-content .content-col .dashboard-profile .profile-image {
@@ -112,94 +142,187 @@
   background-color: #3d464d;
 }
 
-.account .account-dashboard .address {
-  font-size: 14px;
-  height: 100%;
-}
-
-.account .account-dashboard .address .title {
-  font-weight: 600;
-  font-size: 17px;
-  margin: 20px 0;
-}
-
-.account .account-dashboard .address .block {
-  margin-bottom: 17px;
-}
-
-.account .account-dashboard .address .block .heading {
-  color: #737373;
-  font-size: 12px;
-}
-
-.account .account-dashboard .address .action {
-  display: inline-block;
-  color: #1a66ff;
-  margin: 5px 0;
-}
-
-.account .account-dashboard .orders {
+.account .orders {
   border: none !important;
   padding: 0 !important;
 }
 
-.account .account-dashboard .orders .title {
+.account .orders .title {
   border: 2px solid #f0f0f0;
   padding: 10px 25px 5px 25px;
 }
 
-.account .account-dashboard .orders .grid {
+.account .orders .grid {
   border: 2px solid #f0f0f0;
   border-top-width: 0;
   font-size: 14px;
 }
 
-.account .account-dashboard .orders .grid .grid-heading {
+.account .orders .grid .grid-heading {
   border-bottom: 2px solid #f0f0f0;
   padding: 10px 10px;
 }
 
 @media (max-width: 991.98px) {
-  .account .account-dashboard .orders .grid .grid-heading {
+  .account .orders .grid .grid-heading {
     padding: 10px 0;
   }
 }
 
-.account .account-dashboard .orders .grid .grid-heading .grid-item {
+.account .orders .grid .grid-heading .grid-item {
   text-transform: uppercase;
   color: #737373;
 }
 
-.account .account-dashboard .orders .grid .grid-list-item.top {
+.account .orders .grid .grid-list-item.top {
   border: none;
 }
 
-.account .account-dashboard .orders .grid .grid-list-item {
+.account .orders .grid .grid-list-item {
   border-top: 2px solid #f0f0f0;
   border-top-width: 1px;
 }
 
-.account .account-dashboard .orders .grid .grid-list-item .grid-item {
+.account .orders .grid .grid-list-item .grid-item {
   padding: 10px 0;
 }
 
 @media (max-width: 991.98px) {
-  .account .account-dashboard .orders .grid .grid-list-item .grid-item {
+  .account .orders .grid .grid-list-item .grid-item {
     padding: 10px 15px;
   }
 }
 
-.account .account-dashboard .orders .grid .grid-list-item .grid-item a {
+.account .orders .grid .grid-list-item .grid-item a {
   color: #1a66ff;
 }
 
-.account .account-dashboard .orders .grid .grid-list-item .grid-item.left {
+.account .orders .grid .grid-list-item .grid-item.left {
   padding: 10px 0 10px 25px;
 }
 
 @media (max-width: 991.98px) {
-  .account .account-dashboard .orders .grid .grid-list-item .grid-item.left {
+  .account .orders .grid .grid-list-item .grid-item.left {
     padding: 10px 15px;
   }
+}
+
+.account .address {
+  font-size: 14px;
+  height: 100%;
+  position: relative;
+}
+
+.account .address .address-flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  background-color: #ffd333;
+  color: #3d464d;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.account .address .title {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+.account .address .block {
+  margin-bottom: 17px;
+}
+
+.account .address .block .heading {
+  color: #737373;
+  font-size: 12px;
+}
+
+.account .address .action {
+  display: inline-block;
+  color: #1a66ff;
+  margin: 5px 0;
+}
+
+.account .address .action-bar {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account .address .action-bar .action {
+  display: block;
+  color: #1a66ff;
+  margin: 5px 0;
+}
+
+.account .address-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px dashed #f0f0f0 !important;
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .account .address-add {
+    height: 200px !important;
+  }
+}
+
+.account .address-add .plus-icon {
+  border: 2px dashed #f0f0f0;
+  border-radius: 5000px;
+  top: 20%;
+  left: calc(50% - 35px);
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+@media (max-width: 767.98px) {
+  .account .address-add .plus-icon {
+    top: 10%;
+  }
+}
+
+.account .address-add .plus-icon .plus-group {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+}
+
+.account .address-add .plus-icon .plus-group .vertical, .account .address-add .plus-icon .plus-group .horizontal {
+  width: 30px;
+  height: 4px;
+  background-color: #737373;
+}
+
+.account .address-add .btn-standard {
+  margin-top: 50px;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 767.98px) {
+  .account .address-add .btn-standard {
+    margin-top: 100px;
+  }
+}
+
+.account .address-add .btn-standard:hover {
+  background-color: #3d464d;
 }
 /*# sourceMappingURL=account.css.map */

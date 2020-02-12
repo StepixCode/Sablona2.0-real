@@ -2,39 +2,6 @@
 
 .product-layout{
 
-    .owl-nav{
-        .owl-prev, .owl-next{
-            &:hover{
-                background-color: $color-smoke;
-            }
-            &.disabled{
-                opacity: 1;
-                i{
-                    opacity: 0.5;
-                }
-            }
-            i{
-                font-size: 25px;
-                padding: 5px;
-                color: $secondary;
-            }
-        }
-    }
-    .owl-dots{
-        .owl-dot{
-            span{
-                background-color: $color-smoke;
-                width: 11px;
-                height: 11px;
-            }
-            &.active{
-                span{
-                    background-color: $primary;
-                }
-            }
-        }
-    }
-
 
     h3{
         font-size: 25px;

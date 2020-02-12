@@ -225,22 +225,15 @@
             display: none;
         }
         border: none;
-        background-color: $color-smoke;
         height: 30px;
         width: 40px;
         margin: 2.5px;
-        &:hover{
-            background-color: $primary;
-        }
+
         i{
-            color: $color-dark-smoke;
-            font-size: 25px;
             line-height: 28px;
+            padding: 0;
         }
     } 
-    button:hover i{
-        color: $secondary;
-    }
 }   
 #customNav-featured-products{
     @include media-breakpoint-down(sm){

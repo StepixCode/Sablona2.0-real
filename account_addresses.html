@@ -559,59 +559,88 @@
     <main>
         <section class="account w-100">
             <article>
-                <div class="container account-login">
+                <div class="container account-addresses">
                     <div class="drop-navi-bar mt-3"><a href="#" class="drop-navi-item">Nářadí</a> <i class="fas fa-chevron-right"></i> <a href="#" class="drop-navi-item">Ruční nářadi</a></div>
                     <h3 class="product-layout-heading mt-2">Můj účet</h3>
                     <div class="row">
-                        <div class="col-12 col-lg-6 col-md-6 account-col">
-                            <div class="wrapper">
-                                <h4>Přihlášení</h4>
-                                <form method="POST">
-                                    <label>
-                                        E-mailová adresa
-                                        <input type="email" name="email" placeholder="Váš e-mail">
-                                    </label>
-                                    <label class="m-0">
-                                        Heslo
-                                        <input type="password" name="password" placeholder="Váše heslo">
-                                    </label>
-                                    <a class="forgot" href="#">Zapomeněli jste heslo?</a>
-
-                                    <label class="remember" for="another-adress-check" onclick="checkCheckboxes('second-adress-check')"><input class="second-adress-check check" type="checkbox"> <div class="fake-check"> <div></div> </div> Pamatovat si mě </label>   
-
-
-                                    <button type="submit" class="ml-auto btn-standard">Přihlásit se</button>
-
-                                </form>
-                            </div>
-                            
-
-
+                        <div class="col-12 col-lg-3 account-navigation">
+                            <h4 class="d-none d-lg-block">Navigace</h4>
+                            <a href="dashboard.html" class="account-nav-item">Nástěnka</a>
+                            <a href="profile_edit.html" class="account-nav-item ">Profil</a>
+                            <a href="order_history.html" class="account-nav-item">Objednávky</a>
+                            <a href="account_addresses.html" class="account-nav-item active">Adresy</a>
+                            <a href="login.html" class="account-nav-item">Odhlásit se</a>
                         </div>
-                        <div class="col-12 col-lg-6 col-md-6 account-col">
-                            <div class="wrapper">
-                                <h4>Registrace</h4>
-                                <form method="POST">
-                                    <label>
-                                        E-mailová adresa
-                                        <input type="email" name="email" placeholder="Váš e-mail">
-                                    </label>
-                                    <label>
-                                        Heslo
-                                        <input type="password" name="password" placeholder="Váše heslo">
-                                    </label>
-                                    <label class="mb-0">
-                                        Heslo znovu
-                                        <input type="password" name="password-repeat" placeholder="Váše heslo">
-                                    </label>
-                                                                       
-                                    <button type="submit" class="ml-auto  btn-standard">Registrovat se</button>
+                        <div class="col account-profile-content">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 content-col">
+                                        <div class="wrapper address-add">
 
-                                </form>
+                                            <a href="#" class="plus-icon">
+                                                <div class="plus-group">
+                                                    <div class="vertical"></div>
+                                                    <div class="horizontal"></div>
+                                                </div>
+                                            </a>
+                                            <a class="btn-standard" href="#">Přidat další adresu</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 content-col">
+                                        <div class="wrapper address">
+                                            <div class="address-flag"> výchozí </div>
+                                            <h5 class="title">Někdo Kdo</h5>
+                                            <div class="block address-text">
+                                                Pekelná 666 <br>
+                                                666 42 Zapadákov
+                                            </div>
+
+                                            <div class="block phone">
+                                                <div class="heading">Telefon</div>
+                                                +420 646 260 646
+                                            </div>
+                                            <div class="block email">
+                                                <div class="heading">E-mailová adresa</div>
+                                                nejaky@uchvatny.mail
+                                            </div>
+
+                                            <div class="action-bar">
+                                                <a class="action" href="#">Upravit</a>
+                                                <a class="action" href="#">Odstranit</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 content-col">
+                                        <div class="wrapper address">
+                                            <h5 class="title">Někdo Kdo</h5>
+                                            <div class="block address-text">
+                                                Pekelná 666 <br>
+                                                666 42 Zapadákov
+                                            </div>
+
+                                            <div class="block phone">
+                                                <div class="heading">Telefon</div>
+                                                +420 646 260 646
+                                            </div>
+                                            <div class="block email">
+                                                <div class="heading">E-mailová adresa</div>
+                                                nejaky@uchvatny.mail
+                                            </div>
+
+                                            <div class="action-bar">
+                                                <a class="action" href="#">Upravit</a>
+                                                <a class="action" href="#">Odstranit</a>
+                                            </div>
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 
             </article>
         </section>

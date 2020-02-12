@@ -1,13 +1,21 @@
 @import "shared/_variables.scss";
 
 .account{
+    .account-col,.content-col{
+        padding: 15px;
+        .wrapper{
+            height: 100%;
+            padding: 20px;
+            border: $default-border;
+            
+        }        
+    }
+    
+    
     .account-login{
         .account-col{
             padding: 10px;
             .wrapper{
-                border: $default-border;
-                padding: 20px;
-                height: 100%;
                 .forgot{
                     color: $color-link-hover;
                 }
@@ -28,43 +36,56 @@
         }
     }
 
+    .account-navigation{
+        border: $default-border;
+        margin: 15px 0;
+        padding: 20px 0 0 0;
+        @include media-breakpoint-down(md) { 
+            display: flex;
+            padding: 0 25px;
+            border: none;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        h4{
+            padding-left: 15px;
+        }
+        .account-nav-item{
+            
+            display: block;
+            padding: 5px 0;
+            padding-left: 25px;
+            border-left: 2px solid transparent;
+            color: $color-dark-smoke;
+            @include media-breakpoint-down(md) { 
+                border: none;
+                border-bottom: 2px solid $color-smoke;
+                padding: 10px;
+            }
+            &:hover{
+                background-color: $color-light-smoke;
+                @include media-breakpoint-down(md) { 
+                    background-color: transparent;
+                }
+            }
+        }
+        .account-nav-item.active{
+            border-color: $primary;
+            font-weight: 600;
+            padding-left: 27px;
+            margin-left: -2px;
+            color: $secondary;
+            @include media-breakpoint-down(md) { 
+                margin: 0;
+                padding: 10px;
+            }
+        }
+    }
     
 
     .account-dashboard{
-        .account-navigation{
-            border: $default-border;
-            margin: 15px 0;
-            padding: 20px 0 0 0;
-            h4{
-                padding-left: 15px;
-            }
-            .account-nav-item{
-                
-                display: block;
-                padding: 5px 0;
-                padding-left: 25px;
-                border-left: 2px solid transparent;
-                color: $color-dark-smoke;
-                &:hover{
-                    background-color: $color-light-smoke;
-                }
-            }
-            .account-nav-item.active{
-                border-color: $primary;
-                font-weight: 600;
-                padding-left: 27px;
-                margin-left: -2px;
-                color: $secondary;
-            }
-        }
         .account-content{
             .content-col{
-                padding: 15px;
-                .wrapper{
-                    height: 100%;
-                    padding: 20px;
-                    border: $default-border;
-                }
                 .dashboard-profile{
                     .profile-image{
                         width: 30%;
@@ -99,79 +120,143 @@
                 }
             }
         }
+    }
 
-        .address{
+    .orders{
+        border: none !important;
+        padding: 0 !important;
+        .title{
+            border: $default-border;
+            padding: 10px 25px 5px 25px;
+        }
+        .grid{
+            border: $default-border;
+            border-top-width: 0;
             font-size: $font-small;
-            height: 100%;
-            .title{
-                font-weight: 600;
-                font-size: 17px;
-                margin: 20px 0;
-            }
-            .block{
-                margin-bottom: 17px;
-                .heading{
+            .grid-heading{
+                border-bottom: $default-border;
+                padding: 10px 10px;
+                @include media-breakpoint-down(md) { 
+                    padding: 10px 0;
+                }
+                .grid-item{
+                    text-transform: uppercase;
                     color: $color-dark-smoke;
-                    font-size: $font-small - 2px;
                 }
             }
+            .grid-list-item.top{
+                border: none;
+            }
+            .grid-list-item{
+                border-top: $default-border;
+                border-top-width: 1px;
+                
+                .grid-item{
+                    padding: 10px 0;
+                    @include media-breakpoint-down(md) { 
+                        padding: 10px 15px;
+                    }
+                    a{
+                        color: $color-link-hover;
+                    }
+                }
+                .grid-item.left{
+                    padding: 10px 0 10px 25px;
+                    @include media-breakpoint-down(md) { 
+                        padding: 10px 15px;
+                    }
+                }   
+            }
+        }
+    }
+
+    .address{
+        font-size: $font-small;
+        height: 100%;
+        position: relative;
+        .address-flag{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            text-transform: uppercase;
+            background-color: $primary;
+            color: $secondary;
+            padding: 5px;
+            font-size: 10px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 17px;
+            margin: 20px 0;
+        }
+        .block{
+            margin-bottom: 17px;
+            .heading{
+                color: $color-dark-smoke;
+                font-size: $font-small - 2px;
+            }
+        }
+        .action{
+            display: inline-block;
+            color: $color-link-hover;
+            margin: 5px 0;
+        }
+        .action-bar{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
             .action{
-                display: inline-block;
+                display: block;
                 color: $color-link-hover;
                 margin: 5px 0;
             }
         }
-
-        .orders{
-            border: none !important;
-            padding: 0 !important;
-            .title{
-                border: $default-border;
-                padding: 10px 25px 5px 25px;
+    }
+    .address-add{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed $color-smoke !important;
+        position: relative;
+        @include media-breakpoint-down(sm) { 
+            height: 200px !important;
+        }
+        .plus-icon{
+            border: 2px dashed $color-smoke;
+            border-radius: 5000px;
+            top: 20%;
+            left: calc(50% - 35px);
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            @include media-breakpoint-down(sm) { 
+                top: 10%;
             }
-            .grid{
-                border: $default-border;
-                border-top-width: 0;
-                font-size: $font-small;
-                .grid-heading{
-                    border-bottom: $default-border;
-                    padding: 10px 10px;
-                    @include media-breakpoint-down(md) { 
-                        padding: 10px 0;
-                    }
-                    .grid-item{
-                        text-transform: uppercase;
-                        color: $color-dark-smoke;
-                    }
+            .plus-group{
+                position: absolute;
+                top: calc(50% - 5px);
+                left: calc(50% - 15px);
+                width: 30px;
+                height: 30px;
+                .vertical,.horizontal{
+                    width: 30px;
+                    height: 4px;
+                    background-color: $color-dark-smoke;
                 }
-                .grid-list-item.top{
-                    border: none;
-                }
-                .grid-list-item{
-                    border-top: $default-border;
-                    border-top-width: 1px;
-                    
-                    .grid-item{
-                        padding: 10px 0;
-                        @include media-breakpoint-down(md) { 
-                            padding: 10px 15px;
-                        }
-                        a{
-                            color: $color-link-hover;
-                        }
-                    }
-                    .grid-item.left{
-                        padding: 10px 0 10px 25px;
-                        @include media-breakpoint-down(md) { 
-                            padding: 10px 15px;
-                        }
-                    }   
-                }
+            }
+            
+            
+        }
+        .btn-standard{
+            margin-top: 50px;
+            background-color: $color-smoke;
+            @include media-breakpoint-down(sm) { 
+                margin-top: 100px;
+            }
+            &:hover{
+                background-color: $secondary;
             }
         }
-
-
-
-
     }
 }

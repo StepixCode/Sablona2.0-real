@@ -559,59 +559,81 @@
     <main>
         <section class="account w-100">
             <article>
-                <div class="container account-login">
+                <div class="container account-profile">
                     <div class="drop-navi-bar mt-3"><a href="#" class="drop-navi-item">Nářadí</a> <i class="fas fa-chevron-right"></i> <a href="#" class="drop-navi-item">Ruční nářadi</a></div>
                     <h3 class="product-layout-heading mt-2">Můj účet</h3>
                     <div class="row">
-                        <div class="col-12 col-lg-6 col-md-6 account-col">
-                            <div class="wrapper">
-                                <h4>Přihlášení</h4>
-                                <form method="POST">
-                                    <label>
-                                        E-mailová adresa
-                                        <input type="email" name="email" placeholder="Váš e-mail">
-                                    </label>
-                                    <label class="m-0">
-                                        Heslo
-                                        <input type="password" name="password" placeholder="Váše heslo">
-                                    </label>
-                                    <a class="forgot" href="#">Zapomeněli jste heslo?</a>
-
-                                    <label class="remember" for="another-adress-check" onclick="checkCheckboxes('second-adress-check')"><input class="second-adress-check check" type="checkbox"> <div class="fake-check"> <div></div> </div> Pamatovat si mě </label>   
-
-
-                                    <button type="submit" class="ml-auto btn-standard">Přihlásit se</button>
-
-                                </form>
-                            </div>
-                            
-
-
+                        <div class="col-12 col-lg-3 account-navigation">
+                            <h4 class="d-none d-lg-block">Navigace</h4>
+                            <a href="dashboard.html" class="account-nav-item">Nástěnka</a>
+                            <a href="profile_edit.html" class="account-nav-item active">Profil</a>
+                            <a href="order_history.html" class="account-nav-item">Objednávky</a>
+                            <a href="account_addresses.html" class="account-nav-item">Adresy</a>
+                            <a href="login.html" class="account-nav-item">Odhlásit se</a>
                         </div>
-                        <div class="col-12 col-lg-6 col-md-6 account-col">
-                            <div class="wrapper">
-                                <h4>Registrace</h4>
-                                <form method="POST">
-                                    <label>
-                                        E-mailová adresa
-                                        <input type="email" name="email" placeholder="Váš e-mail">
-                                    </label>
-                                    <label>
-                                        Heslo
-                                        <input type="password" name="password" placeholder="Váše heslo">
-                                    </label>
-                                    <label class="mb-0">
-                                        Heslo znovu
-                                        <input type="password" name="password-repeat" placeholder="Váše heslo">
-                                    </label>
-                                                                       
-                                    <button type="submit" class="ml-auto  btn-standard">Registrovat se</button>
+                        <div class="col account-profile-content">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 content-col">
+                                        <div class="wrapper profile-edit">
+                                           <h4>Upravit profil</h4>
 
-                                </form>
+                                           <form method="POST" class="mt-3">
+                                               <label>
+                                                   Jméno
+                                                   <input type="text" name="firstname" value="Někdo">
+                                               </label>
+                                               <label>
+                                                   Přijmení
+                                                   <input type="text" name="lastname" value="Kdo">
+                                               </label>
+                                               <label>
+                                                   E-mailová adresa
+                                                   <input type="email" name="email" value="nejaky@uchvatny.mail">
+                                               </label>
+                                               <label>
+                                                   Telefoní číslo
+                                                   <input type="number" name="phone" value="646260646">
+                                               </label>
+
+                                               <button class="mt-2 ml-auto btn-standard">Uložit</button>
+                                           </form>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 content-col">
+                                        <div class="wrapper password-edit">
+                                            <h4>Změnit heslo</h4>
+
+                                            <form method="POST" class="mt-3">
+                                               <label>
+                                                   Stávající heslo
+                                                   <input type="password" name="password-old" placeholder="Stávající heslo">
+                                               </label>
+                                               <label>
+                                                    Nové heslo
+                                                    <input type="password" name="password-old" placeholder="Nové heslo">
+                                                </label>
+                                                <label>
+                                                   Nové heslo znovu
+                                                   <input type="password" name="password-old" placeholder="Nové heslo znovu">
+                                                </label>
+
+                                                <label class="invisible">
+                                                   design
+                                                   <input readonly>
+                                                </label>
+
+                                               <button class="mt-2 ml-auto btn-standard">Změnit</button>
+                                           </form>
+
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 
             </article>
         </section>
