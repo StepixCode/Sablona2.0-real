@@ -567,12 +567,12 @@
         </div>
     </header>
     <main>
-        <section class="product-detail w-100">
+        <section class="product-detail product-detail-alt w-100">
             <article class="product-detail-header">
                 <div class="container">
                     <div class="drop-navi-bar mt-3"><a href="#" class="drop-navi-item">Nářadí</a> <i class="fas fa-chevron-right"></i> <a href="#" class="drop-navi-item">Ruční nářadi</a></div>
                     <div class="row mt-5">
-                        <div class="product-images-container mb-5 col-12 col-lg-6">
+                        <div class="product-images-container mb-5 col-12 col-lg-5">
                             <div id="product-main-photo">
                                 <a id="main-img-link" data-fancybox="product-photos" href="images/product.jpg"><img id="main-img" class="img-fluid" src="images/product.jpg"></a>
                             </div>
@@ -623,75 +623,125 @@
                             
                             
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="product-basic-wrapper">
-                                <h1 class="product-title">Nějaký absolutně perfektní název skvělého produktu</h1>
-                                <div class="ratings mb-2 mt-4">
-                                    <span class="rating-stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </span>
-                                    <a href="#">7 Hodnocení</a>
-                                    <a href="#">/ Napsat hodnocení</a>
-                                </div>
-                                <div class="product-info">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ullam aspernatur perferendis magnam veritatis repellendus, reprehenderit odio cumque? Aliquid suscipit eligendi laborum repudiandae iusto animi explicabo odit. In, quisquam laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas dolorum nam itaque corporis ipsam pariatur rem, deserunt molestiae nisi minus similique nihil eveniet libero porro sapiente. Placeat, nam ducimus.
-                                </div>
-                            </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="container-fluid p-0">
+                                <div class="row p-0">
+                                    <div class="col-12 col-lg-7">
+                                        
+                                        <div class="product-basic-wrapper">
+                                            <div class="product-heading-alt">
+                                                <h1 class="product-title">Nějaký absolutně perfektní název skvělého produktu</h1>
+                                                <div class="icons d-none d-lg-block">
+                                                    <i class="fas fa-heart"></i>
+                                                    <i class="fas fa-chart-bar"></i>
+                                                </div>
+                                            </div>
+                                            
+                                                
+                                            
+                                            <div class="ratings mb-2 mt-4">
+                                                <span class="rating-stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                                <a href="#">7 Hodnocení</a>
+                                                <a href="#">/ Napsat hodnocení</a>
+                                            </div>
+                                            <div class="product-info">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ullam aspernatur perferendis magnam veritatis repellendus, reprehenderit odio cumque? Aliquid suscipit eligendi laborum repudiandae iusto animi explicabo odit. In, quisquam laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas dolorum nam itaque corporis ipsam pariatur rem, deserunt molestiae nisi minus similique nihil eveniet libero porro sapiente. Placeat, nam ducimus.
+                                            </div>
 
-                            <div class="product-special-info-bar mt-4">
-                                <div class="availability"> Dostupnost <span class="green"> Skladem </span> </div>
-                                <div class="brand"> Značka: Pezeus </div>
-                                <div class="code"> Kód: 8965/87 </div>
-                            </div>
+                                            <ul class="product-list-info d-none d-lg-block">
+                                                <li>Rychlost: 750 RPM</li>
+                                                <li>Typ Baterie: Li-Ion</li>
+                                                <li>Výdrž baterie: 2Ah</li>
+                                            </ul>
 
-                            <div class="product-advanced-wrapper">
-                                <div class="price my-3"> 5,000.00 CZK </div>
-                                
-                                <form class="product-settings" method="POST">
-                                    <span> BARVA </span>
-                                    <div class="product-select color-select">
-                                        <label class="color"><input disabled class="check" name="color-check" type="radio"><div class="outer red"> <div class="inner red"></div> </div>  </label> 
-                                        <label class="color"><input  class="check" name="color-check" type="radio"><div class="outer yellow"> <div class="inner yellow"></div> </div>  </label> 
-                                        <label class="color"><input  class="check" name="color-check" type="radio"><div class="outer grey"> <div class="inner grey"></div> </div>  </label> 
-                                    </div>
-                                    <span> MATERIÁL </span>
-                                    <div class="product-select material-select">
-                                        <label class="material"> <input class="material-check" type="checkbox" onclick="resetCheckbox(0,'material-check')"> <div class="btn btn-standard"> Smrkové dřevo </div></label>
-                                        <label class="material"> <input disabled class="material-check" type="checkbox" onclick="resetCheckbox(1,'material-check')"> <div class="btn btn-standard"> Nerezová ocel </div></label>
-                                        <label class="material"> <input class="material-check" type="checkbox" onclick="resetCheckbox(2,'material-check')"> <div class="btn btn-standard"> Plast </div></label>
-                                    </div>
-                                    <span>Množství</span> <br>
-                                    <div class="add-to-cart-bar">
-                                        <div class="number-input">
-                                            <div onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></div>
-                                            <input class="quantity" min="1" name="quantity" value="1" type="number">
-                                            <div onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></div>
+
+
                                         </div>
 
-                                        <div class="btn btn-standard add-to-cart-btn"> <i class="fas fa-shopping-cart d-block d-lg-none d-md-none"></i> <span class="d-none d-lg-block d-md-block"> Přidat do košíku </span> </div>
-                                        <div class="icons">
-                                            <i class="fas fa-heart"></i>
-                                            <i class="fas fa-chart-bar"></i>
+
+
+                                        <div class="product-special-info-bar mt-4">
+                                            <div class="availability"> Dostupnost: <span class="green"> Skladem </span> </div>
+                                            <div class="brand"> Značka: Pezeus </div>
+                                            <div class="code"> Kód: 8965/87 </div>
+                                        </div>          
+                                       
+            
+                                        <div class="product-footer-bar d-none d-lg-flex">
+                                            <div class="tags-bar">
+                                                <div class="tag">Power tools</div>
+                                                <div class="tag">Brusky</div>
+                                            </div>
+                                            <div class="social-bar">
+                                                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+
+                                    <div class="col-12 col-lg-5 right-alt-col">
+                                        <div class="product-special-info-bar mt-4 d-none d-lg-block">
+                                            <div class="availability"> Dostupnost: <span class="green"> Skladem </span> </div>
+                                        </div>
+            
+                                        <div class="product-advanced-wrapper">
+                                            <div class="price my-3"> 5,000.00 CZK </div>
+                                            
+                                            <form class="product-settings" method="POST">
+                                                <span> BARVA </span>
+                                                <div class="product-select color-select">
+                                                    <label class="color"><input disabled class="check" name="color-check" type="radio"><div class="outer red"> <div class="inner red"></div> </div>  </label> 
+                                                    <label class="color"><input  class="check" name="color-check" type="radio"><div class="outer yellow"> <div class="inner yellow"></div> </div>  </label> 
+                                                    <label class="color"><input  class="check" name="color-check" type="radio"><div class="outer grey"> <div class="inner grey"></div> </div>  </label> 
+                                                </div>
+                                                <span> MATERIÁL </span>
+                                                <div class="product-select material-select">
+                                                    <label class="material"> <input class="material-check" type="checkbox" onclick="resetCheckbox(0,'material-check')"> <div class="btn btn-standard"> Smrkové dřevo </div></label>
+                                                    <label class="material"> <input disabled class="material-check" type="checkbox" onclick="resetCheckbox(1,'material-check')"> <div class="btn btn-standard"> Nerezová ocel </div></label>
+                                                    <label class="material"> <input class="material-check" type="checkbox" onclick="resetCheckbox(2,'material-check')"> <div class="btn btn-standard"> Plast </div></label>
+                                                </div>
+                                                <span>Množství</span> <br>
+                                                <div class="add-to-cart-bar">
+                                                    <div class="number-input">
+                                                        <div onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></div>
+                                                        <input class="quantity" min="1" name="quantity" value="1" type="number">
+                                                        <div onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></div>
+                                                    </div>
+            
+                                                    <div class="btn btn-standard add-to-cart-btn"> 
+                                                        <i class="fas fa-shopping-cart d-block d-lg-none d-md-none"></i> 
+                                                        <span class="d-none d-lg-block d-md-block"> Přidat do košíku </span> 
+                                                    </div>
+                                                    <div class="icons d-block d-lg-none">
+                                                        <i class="fas fa-heart"></i>
+                                                        <i class="fas fa-chart-bar"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="product-footer-bar d-flex d-lg-none">
+                                                    <div class="tags-bar">
+                                                        <div class="tag">Power tools</div>
+                                                        <div class="tag">Brusky</div>
+                                                    </div>
+                                                    <div class="social-bar">
+                                                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
-                                </form>
 
-                                <div class="product-footer-bar">
-                                    <div class="tags-bar">
-                                        <div class="tag">Power tools</div>
-                                        <div class="tag">Brusky</div>
-                                    </div>
-                                    <div class="social-bar">
-                                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
-                                    </div>
+
+
+
                                 </div>
-
+                                   
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -784,8 +834,8 @@
                             </div>
 
                             <div class="reviews detail-info-container">
-                                    <input id="info-nav-check-3" onclick="productDetailCarousel()" type="radio" class="info-nav-check" name="detail-wrapper-display" >
-                                    <div class="wrapper">
+                                    <input id="info-nav-check-3" type="radio" class="info-nav-check" onclick="productDetailCarousel()" name="detail-wrapper-display" >
+                                    <div class="wrapper reviews-wrapper">
                                         <div class="info-block">
                                             <h3 class="mb-5">Uživatelské hodnocení</h3>
 
