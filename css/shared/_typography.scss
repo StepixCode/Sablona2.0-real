@@ -300,9 +300,10 @@ form{
         display: block;
     }
 }
-.chek-name-label{
-    margin-left: 20px;
-    margin-bottom: 0;
+.custom-check-label-line{
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 label{
     cursor: pointer;

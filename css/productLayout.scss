@@ -100,6 +100,9 @@
         }
         .product-title{
             margin: 0;
+            h5{
+                font-size: 16px;
+            }
         }
         .product-title:hover h5{
             color: $color-link-hover;
@@ -273,7 +276,7 @@ $list-product-height: 200px;
                     color: $color-dark-smoke;
                     max-height: 85px;
                     overflow: hidden;
-                    margin: 0;
+                    //margin: 0;
                     padding: 0;
                 }
             }
@@ -442,7 +445,7 @@ $big-product-card-height: $product-card-height * 2;
                 }
             }
             .component-wrapper,.subcat-wrapper{
-                overflow:hidden;
+                //overflow:hidden;
                 transition: all 0.3s;
                 
             }
@@ -476,12 +479,15 @@ $big-product-card-height: $product-card-height * 2;
                     padding: 0 0 0 10px;
                     width: calc(100% - 10px);
                     margin-left: 10px;
-                    max-height:0px;
+                    max-height: 0;
+                    overflow: hidden;
+                    
                     .cat-header{
                         font-weight: 600;
                     }
                     .simple-dropdown-controll{
                         margin-top: 8px;
+                        
                     }
                     .plus-icon{
                         display: none;
@@ -503,14 +509,24 @@ $big-product-card-height: $product-card-height * 2;
     .simple-dropdown-controll{
         height: 20px;
         width: 100%;
+        display: inline-block;
         .simple-dropdown{
             display: none;
          }
          .simple-dropdown:checked ~ .component-wrapper{
-            max-height:0px;
+            max-height: 0;
+            overflow: hidden;
+            line-height: 0;
+            height: 0;
             padding-top: 0;
             padding-bottom: 0;
             margin: 0 !important;
+            *{
+                max-height: 0;
+                overflow: hidden;
+                line-height: 0;
+                height: 0;
+            }
             .plus-icon{
                 display: none;
             }
@@ -518,6 +534,7 @@ $big-product-card-height: $product-card-height * 2;
          .simple-dropdown:checked ~ .subcat-wrapper{
              padding: 5px 0 5px 10px;
              max-height: 1000px;
+
              .plus-icon{
                  display: block;
              }

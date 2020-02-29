@@ -140,6 +140,10 @@
   margin: 0;
 }
 
+.product .card .product-title h5 {
+  font-size: 16px;
+}
+
 .product .card .product-title:hover h5 {
   color: #1a66ff;
 }
@@ -370,7 +374,6 @@
   color: #737373;
   max-height: 85px;
   overflow: hidden;
-  margin: 0;
   padding: 0;
 }
 
@@ -547,7 +550,6 @@
 }
 
 .product-layout-aside .card-body .layout-aside-component .component-wrapper, .product-layout-aside .card-body .layout-aside-component .subcat-wrapper {
-  overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -587,7 +589,8 @@
   padding: 0 0 0 10px;
   width: calc(100% - 10px);
   margin-left: 10px;
-  max-height: 0px;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .product-layout-aside .card-body .layout-aside-component .component-wrapper .subcat-wrapper .cat-header {
@@ -610,6 +613,7 @@
 .product-layout-aside .simple-dropdown-controll {
   height: 20px;
   width: 100%;
+  display: inline-block;
 }
 
 .product-layout-aside .simple-dropdown-controll .simple-dropdown {
@@ -617,10 +621,20 @@
 }
 
 .product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper {
-  max-height: 0px;
+  max-height: 0;
+  overflow: hidden;
+  line-height: 0;
+  height: 0;
   padding-top: 0;
   padding-bottom: 0;
   margin: 0 !important;
+}
+
+.product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper * {
+  max-height: 0;
+  overflow: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper .plus-icon {

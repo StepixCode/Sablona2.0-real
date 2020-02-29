@@ -115,6 +115,9 @@
             }
             .product-select{
                 margin-bottom: 10px;
+                label{
+                    display: inline-block;
+                }
             }
 
             //#region color-filters

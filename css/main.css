@@ -360,9 +360,14 @@ form button.btn-standard {
   display: block;
 }
 
-.chek-name-label {
-  margin-left: 20px;
-  margin-bottom: 0;
+.custom-check-label-line {
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 label {

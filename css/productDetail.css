@@ -147,6 +147,10 @@
   margin-bottom: 10px;
 }
 
+.product-layout .product-advanced-wrapper .product-settings .product-select label {
+  display: inline-block;
+}
+
 .product-layout .product-advanced-wrapper .product-settings .color-select {
   height: 50px;
 }
