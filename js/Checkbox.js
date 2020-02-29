@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    
+    var defaultLayout;
     $(".layout-grid").addClass("active");
 
     //#region  Reszponzivní filtry
@@ -41,14 +41,24 @@ function responsiveLayout(){
 
 //#region Typ layoutu
 $(".layout-grid").click(function(){
-    $(".product-layout-row").addClass("three-product-row");
+    
+    if(!$(".product-layout-row").hasClass('layout-4')){
+        $(".product-layout-row").addClass("three-product-row");
+        $('.product').attr('class','col-12 col-md-6 col-lg-4 pr-0 pr-lg-3 pr-md-3 product');
+    }else{
+        $('.product').attr('class','col-12 col-md-6 col-lg-3 pr-0 pr-lg-3 pr-md-3 product');
+    }
+    
     $(".product-layout-row").removeClass("list-product-row");
-    $('.product').attr('class','col-12 col-md-6 col-lg-4 pr-0 pr-lg-3 pr-md-3 product');
     $(this).addClass("active");
     $(".layout-list").removeClass("active");
 });
 $(".layout-list").click(function(){
-    $(".product-layout-row").removeClass("three-product-row");
+    
+    if(!$(".product-layout-row").hasClass('layout-4')){
+        $(".product-layout-row").removeClass("three-product-row");
+    }
+
     $(".product-layout-row").addClass("list-product-row");
     $('.product').attr('class','product');
     $('.product').addClass('col-12');

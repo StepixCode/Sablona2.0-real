@@ -312,6 +312,18 @@ $list-product-height: 200px;
     }
 }
 
+.list-product-row.layout-4{
+    
+    height: $list-product-height * 4.5;
+    padding-right: 0;
+    @include media-breakpoint-down(md) { 
+        height: $list-product-height * 8.5;
+    }
+    @include media-breakpoint-down(sm) { 
+        height: $list-product-height * 12.5;
+    }
+}
+
 //Big product (col-4)
 $big-product-card-height: $product-card-height * 2;
 .product-big{

@@ -410,6 +410,23 @@
   display: block;
 }
 
+.list-product-row.layout-4 {
+  height: 900px;
+  padding-right: 0;
+}
+
+@media (max-width: 991.98px) {
+  .list-product-row.layout-4 {
+    height: 1700px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .list-product-row.layout-4 {
+    height: 2500px;
+  }
+}
+
 .product-big {
   height: 765px;
 }
