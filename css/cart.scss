@@ -218,16 +218,7 @@
 .checkout{
     .customer-data{
         border: $default-border;
-        .line{
-            display: flex;
-            justify-content: space-between;
-            label{
-                flex: 1;
-            }
-            .left{
-                margin-right: 20px;
-            }
-        }        
+             
         .main-data,.shipping-details{
             padding: 20px;
         }
@@ -243,6 +234,10 @@
         
 
     }
+    
+}
+
+.checkout,.transport-payment{
     .right-panel{
         font-size: $font-small;
         border: $default-border;
@@ -279,4 +274,112 @@
             padding: 8px 0;
         }
     }
+    .line{
+        display: flex;
+        justify-content: space-between;
+        label{
+            flex: 1;
+        }
+        .left{
+            margin-right: 20px;
+        }
+    }   
+}
+
+.transport-payment{
+    
+    $color-select-size: 25px;
+    
+    .color{
+        flex: 1 50px !important;
+        .check{
+            display: none;
+        }
+        .check:checked ~ .outer .inner{
+            width:  $color-select-size - 14px;
+            height: $color-select-size - 14px;
+            margin: 5px;
+        }
+        .check:disabled ~ .outer .inner{
+            position: absolute;
+            top: -5px;
+            left: 8px;
+            width: 25%;
+            height: 150%;
+            transform: rotateZ(45deg);
+            border-radius: 0;
+        }
+        .inner{
+            width:  $color-select-size - 4px;
+            height: $color-select-size - 4px;
+            border-radius: 5000px;
+            transition: all 0.15s;
+        }
+        .outer{
+            width: $color-select-size;
+            height: $color-select-size;
+            background-color: white;
+            border: 2px solid;
+            border-radius: 5000px;
+            position: relative;
+        }
+
+        .inner.primary{
+            background-color: $primary;
+        }
+        .outer.primary{
+            border-color: $primary;
+        }        
+    }
+
+    
+
+    .transport-data{
+        h4{
+            margin-bottom: 30px;
+        }
+        .shipping-data{
+            border-bottom: $default-border;
+            .line{
+                .left{
+                    flex: 1 60%;
+                }
+                .right{
+                    flex: 1 50%;
+                }
+                .w-color-radio{
+                    flex: 2 100%;
+                }
+                margin-top: 20px;
+                .transport-company-logo-wrapper{
+                    max-width: 100px;
+                    padding: 5px;
+                }
+            }
+        }
+        .shipping-data,.payment-data{
+            margin: 30px 0;
+            padding-bottom: 20px;
+            .line{
+                .w-color-radio{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    span{
+                        flex: 2 75%;
+                    }
+                }
+                margin-top: 20px;
+                .transport-company-logo-wrapper{
+                    max-width: 100px;
+                    padding: 5px;
+                }
+            }
+        } 
+        .payment-data{
+            @include media-breakpoint-down(sm){
+                border-bottom: $default-border;
+            }
+        }     
+    }    
 }

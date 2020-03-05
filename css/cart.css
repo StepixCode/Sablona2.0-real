@@ -283,25 +283,6 @@
   border: 2px solid #f0f0f0;
 }
 
-.checkout .customer-data .line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.checkout .customer-data .line label {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.checkout .customer-data .line .left {
-  margin-right: 20px;
-}
-
 .checkout .customer-data .main-data, .checkout .customer-data .shipping-details {
   padding: 20px;
 }
@@ -318,13 +299,13 @@
   display: block;
 }
 
-.checkout .right-panel {
+.checkout .right-panel, .transport-payment .right-panel {
   font-size: 14px;
   border: 2px solid #f0f0f0;
   padding: 20px;
 }
 
-.checkout .right-panel .line.header {
+.checkout .right-panel .line.header, .transport-payment .right-panel .line.header {
   margin-top: 25px;
   margin-bottom: 15px;
   padding-bottom: 5px;
@@ -332,11 +313,11 @@
   border-bottom: 2px solid #f0f0f0;
 }
 
-.checkout .right-panel .line.product {
+.checkout .right-panel .line.product, .transport-payment .right-panel .line.product {
   color: #737373;
 }
 
-.checkout .right-panel .line {
+.checkout .right-panel .line, .transport-payment .right-panel .line {
   color: #3d464d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,21 +331,166 @@
   margin-bottom: 7px;
 }
 
-.checkout .right-panel .line .product-name {
+.checkout .right-panel .line .product-name, .transport-payment .right-panel .line .product-name {
   width: 60%;
 }
 
-.checkout .right-panel .line .left {
+.checkout .right-panel .line .left, .transport-payment .right-panel .line .left {
   font-weight: 600;
 }
 
-.checkout .right-panel .line.big {
+.checkout .right-panel .line.big, .transport-payment .right-panel .line.big {
   font-size: 20px;
 }
 
-.checkout .right-panel .sub-price {
+.checkout .right-panel .sub-price, .transport-payment .right-panel .sub-price {
   border: 2px solid #f0f0f0;
   border-width: 2px 0;
   padding: 8px 0;
+}
+
+.checkout .line, .transport-payment .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout .line label, .transport-payment .line label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.checkout .line .left, .transport-payment .line .left {
+  margin-right: 20px;
+}
+
+.transport-payment .color {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 50px !important;
+          flex: 1 50px !important;
+}
+
+.transport-payment .color .check {
+  display: none;
+}
+
+.transport-payment .color .check:checked ~ .outer .inner {
+  width: 11px;
+  height: 11px;
+  margin: 5px;
+}
+
+.transport-payment .color .check:disabled ~ .outer .inner {
+  position: absolute;
+  top: -5px;
+  left: 8px;
+  width: 25%;
+  height: 150%;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  border-radius: 0;
+}
+
+.transport-payment .color .inner {
+  width: 21px;
+  height: 21px;
+  border-radius: 5000px;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.transport-payment .color .outer {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 5000px;
+  position: relative;
+}
+
+.transport-payment .color .inner.primary {
+  background-color: #ffd333;
+}
+
+.transport-payment .color .outer.primary {
+  border-color: #ffd333;
+}
+
+.transport-payment .transport-data h4 {
+  margin-bottom: 30px;
+}
+
+.transport-payment .transport-data .shipping-data {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.transport-payment .transport-data .shipping-data .line {
+  margin-top: 20px;
+}
+
+.transport-payment .transport-data .shipping-data .line .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 60%;
+          flex: 1 60%;
+}
+
+.transport-payment .transport-data .shipping-data .line .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+}
+
+.transport-payment .transport-data .shipping-data .line .w-color-radio {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 100%;
+          flex: 2 100%;
+}
+
+.transport-payment .transport-data .shipping-data .line .transport-company-logo-wrapper {
+  max-width: 100px;
+  padding: 5px;
+}
+
+.transport-payment .transport-data .shipping-data, .transport-payment .transport-data .payment-data {
+  margin: 30px 0;
+  padding-bottom: 20px;
+}
+
+.transport-payment .transport-data .shipping-data .line, .transport-payment .transport-data .payment-data .line {
+  margin-top: 20px;
+}
+
+.transport-payment .transport-data .shipping-data .line .w-color-radio, .transport-payment .transport-data .payment-data .line .w-color-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.transport-payment .transport-data .shipping-data .line .w-color-radio span, .transport-payment .transport-data .payment-data .line .w-color-radio span {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 75%;
+          flex: 2 75%;
+}
+
+.transport-payment .transport-data .shipping-data .line .transport-company-logo-wrapper, .transport-payment .transport-data .payment-data .line .transport-company-logo-wrapper {
+  max-width: 100px;
+  padding: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .transport-payment .transport-data .payment-data {
+    border-bottom: 2px solid #f0f0f0;
+  }
 }
 /*# sourceMappingURL=cart.css.map */
