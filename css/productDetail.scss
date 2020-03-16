@@ -452,3 +452,64 @@
     }
     
 }
+
+.product-detail,.product-detail-alt{
+
+
+    .alt-reviews-container{
+        //lze upravit
+        margin: 100px 0;
+        .alt-reviews-col{
+            margin-bottom: 40px;
+            .reviews-wrapper.complete-reviews{
+                text-align: center;
+                font-size: 14px;
+                .reviews-number{
+                    font-size: 50px;
+                }
+                i{
+                    font-size: 25px;
+                }
+            }
+            .reviews-wrapper.summrary-reviews{
+                .summrary-line{
+                    display: flex;
+                    align-items: center;
+                    i{
+                        margin-left: 5px;
+                        color: rgb(255, 211, 51);
+                    }
+                    .progress{
+                        flex: 1 100%;
+                        margin: 0 15px;
+                        border-radius: 0;
+                        height: 5px;
+                    }
+                }
+            }
+            .reviews-wrapper.customers-reviews{
+                display: flex;
+                justify-content: center;
+                @include media-breakpoint-down(sm){
+                    justify-content: flex-start;
+                }
+                .info-box{
+                    margin-bottom: 20px;
+                    .heading{
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                    .info{
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                    }
+                }
+            }
+            .reviews-wrapper.write-reviews{
+                i{
+                    color: rgb(115, 115, 115);
+                }
+            }
+        }
+    }
+}

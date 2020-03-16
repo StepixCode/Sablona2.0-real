@@ -1,0 +1,71 @@
+@import "shared/_variables";
+
+.contactUs{
+    .contactUs-box{
+        border: $default-border;
+        padding: 40px 20px 40px 20px;
+        .line{
+            display: flex;
+            *{
+                flex: 1 50%;
+            }
+            .left{
+                margin-right: 20px;
+            }
+        }
+    }
+    .contactUs-box.alt{
+        border: $default-border;
+    }
+}
+
+.faq{
+    .faq-category{
+        border: $default-border;
+        padding: 40px 30px;
+        margin: 0;
+        .faq-answer{
+            .answer-content{
+                font-size: $font-small;
+            }
+        }
+    }
+}
+
+.error-404{
+    .error-title{
+        margin-top: 75px;
+        margin-bottom: 50px;
+        font-size: 75px;
+        color: darken($color: $color-smoke, $amount: 2) ;
+    }
+    .error-subtitle{
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+    .error-text{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .btn-standard{
+        max-width: 300px;
+        margin: auto;
+        margin-top: 10px;
+        background-color: $color-smoke;
+    }
+    .line{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        margin-top: 30px;
+        label{
+            flex: 1 75%;
+        }
+        button{
+            margin: 0;
+            flex: 1 25%;
+            background-color: $primary;
+            
+        }
+    }
+}

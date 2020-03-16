@@ -48,6 +48,11 @@ h4 {
   font-weight: 600;
 }
 
+h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .btn {
   border-radius: 0;
 }
@@ -83,8 +88,8 @@ h4 {
 }
 
 .btn-standard:hover {
-  background-color: #3d464d;
-  color: white;
+  background-color: #3d464d !important;
+  color: white !important;
 }
 
 .review {
