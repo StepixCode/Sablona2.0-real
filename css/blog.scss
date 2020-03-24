@@ -1,0 +1,238 @@
+@import "shared/_variables.scss";
+
+.blog{
+    .news-wrapper{
+        padding-bottom: 50px;
+        .news-content{
+            max-height: 4.2em;
+            line-height: 1.4em;
+            overflow: hidden;
+        }
+    }
+
+    .blog-layout{
+        h5{
+            font-weight: 600;
+        }
+        .social-networks-widget{
+            padding-bottom: 10px;
+            .centering{
+                margin: 0;
+                text-align: left;
+                i{
+                    border-radius: 0;
+                    width: 30px;
+                    height: 30px;
+                    padding: 7px;
+                }
+            }
+        }
+
+        .layout-item{
+            border: $default-border;
+            margin-bottom: 30px;
+            .wrapper{
+                padding: 20px;
+                .last-post-item{
+                    .news-wrapper{
+                        display: flex;
+                        padding-bottom: 5px;
+                        .news-image-wrapper{
+                            flex: 1 40%;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .news-info-wrapper{
+                            flex: 1 60%;
+                            padding-left: 15px;
+                            .news-title{
+                                line-height: 1.2em;
+                                a{
+                                    font-size: 14px;
+                                    margin-bottom: 5px;
+                                    font-weight: 600;
+                                    color: $secondary;
+                                    &:hover{
+                                        color: $color-link-hover;
+                                    }
+                                }
+                                
+                            }
+
+                        }
+                    }
+                }
+                .last-comment{
+                    margin-top: 30px;
+                    .name{
+                        color: $color-dark-smoke;
+                        font-weight: 600;
+                        .underline{
+                            width: 100%;
+                            height: 3px;
+                            background-color: $color-smoke;
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .content{
+                        line-height: 1.4em;
+                        max-height: 4.2em;
+                        overflow: hidden;
+                        margin-bottom: 10px;
+                    }
+                    .info-line{
+                        display: flex;
+                        justify-content: space-between;
+                        color: $color-dark-smoke;
+                        line-height: 1.2em;
+                        font-size: $font-small;
+                        .time{
+                            flex: 1 50%;
+                        }
+                        .onWhat{
+                            flex: 1 50%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            max-height: 2em;
+                        }
+                    }
+                }
+                .tag{
+                    border: $default-border;
+                    padding: 5px;
+                    color: $secondary;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+                    font-size: $font-small;
+                    display: inline-block;
+                }
+            }
+        }
+        .layout-item.special{
+            border: 0;
+            background-color: $color-smoke;
+        }
+
+    }
+
+
+
+//#region Category-dropdown-menu
+.component-header{
+    font-weight: 600;
+    margin: 10px 10px 0 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: $color-smoke;
+    }
+    .header-icon{
+        float: right;
+        transition: all 0.2s;
+    }
+}
+.component-wrapper,.subcat-wrapper{
+    //overflow:hidden;
+    transition: all 0.3s;
+    
+}
+.component-wrapper{
+    max-height: 2500px;
+
+    .cat-img{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        margin-right: 8px;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .cat-header-link{
+        display: inline-block;
+    }
+    .cat-header{
+        margin: 0;
+        display: inline-block;
+        font-size: 16px;
+        &:hover{
+            color: $color-link-hover;
+        }
+    }
+    .subcat-wrapper{
+        border-left: 1px solid $color-smoke;
+        padding: 0 0 0 10px;
+        width: calc(100% - 10px);
+        margin-left: 10px;
+        max-height: 0;
+        overflow: hidden;
+        
+        .cat-header{
+            font-weight: 600;
+        }
+        .simple-dropdown-controll{
+            margin-top: 8px;
+            
+        }
+        .plus-icon{
+            display: none;
+        }
+        .subcat-wrapper-link{
+            display: block;
+            padding: 3px 0 3px 0;
+        }
+    }
+}
+
+
+
+
+//Jednoduchý dropdown systém - chtěla by dodělat funkce vypočítávající maximální výšku (aby animace byly víc smooth)
+.simple-dropdown-controll{
+height: 20px;
+width: 100%;
+position: relative;
+display: inline-block;
+.simple-dropdown{
+display: none;
+}
+.simple-dropdown:checked ~ .component-wrapper{
+max-height: 0;
+overflow: hidden;
+line-height: 0;
+height: 0;
+padding-top: 0;
+padding-bottom: 0;
+margin: 0 !important;
+*{
+    max-height: 0;
+    overflow: hidden;
+    line-height: 0;
+    height: 0;
+}
+.plus-icon{
+    display: none;
+}
+}
+.simple-dropdown:checked ~ .subcat-wrapper{
+ padding: 5px 0 5px 10px;
+ max-height: 1000px;
+
+ .plus-icon{
+     display: block;
+ }
+}
+.simple-dropdown:checked ~ .component-header .header-icon{
+ transform: rotateZ(180deg);
+}
+.simple-dropdown:checked ~ .plus-icon .vertical{
+ transform: rotateZ(0deg);
+}
+}
+
+
+//#endregion
+}

@@ -1,0 +1,282 @@
+/*Fonts*/
+/*Bootstrap setting*/
+.transition-all {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.blog .news-wrapper {
+  padding-bottom: 50px;
+}
+
+.blog .news-wrapper .news-content {
+  max-height: 4.2em;
+  line-height: 1.4em;
+  overflow: hidden;
+}
+
+.blog .blog-layout h5 {
+  font-weight: 600;
+}
+
+.blog .blog-layout .social-networks-widget {
+  padding-bottom: 10px;
+}
+
+.blog .blog-layout .social-networks-widget .centering {
+  margin: 0;
+  text-align: left;
+}
+
+.blog .blog-layout .social-networks-widget .centering i {
+  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+}
+
+.blog .blog-layout .layout-item {
+  border: 2px solid #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.blog .blog-layout .layout-item .wrapper {
+  padding: 20px;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-post-item .news-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-post-item .news-wrapper .news-image-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 40%;
+          flex: 1 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-post-item .news-wrapper .news-info-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 60%;
+          flex: 1 60%;
+  padding-left: 15px;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-post-item .news-wrapper .news-info-wrapper .news-title {
+  line-height: 1.2em;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-post-item .news-wrapper .news-info-wrapper .news-title a {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #3d464d;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-post-item .news-wrapper .news-info-wrapper .news-title a:hover {
+  color: #1a66ff;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-comment {
+  margin-top: 30px;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-comment .name {
+  color: #737373;
+  font-weight: 600;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-comment .name .underline {
+  width: 100%;
+  height: 3px;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-comment .content {
+  line-height: 1.4em;
+  max-height: 4.2em;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-comment .info-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #737373;
+  line-height: 1.2em;
+  font-size: 14px;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-comment .info-line .time {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+}
+
+.blog .blog-layout .layout-item .wrapper .last-comment .info-line .onWhat {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-height: 2em;
+}
+
+.blog .blog-layout .layout-item .wrapper .tag {
+  border: 2px solid #f0f0f0;
+  padding: 5px;
+  color: #3d464d;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.blog .blog-layout .layout-item.special {
+  border: 0;
+  background-color: #f0f0f0;
+}
+
+.blog .component-header {
+  font-weight: 600;
+  margin: 10px 10px 0 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.blog .component-header:hover {
+  background-color: #f0f0f0;
+}
+
+.blog .component-header .header-icon {
+  float: right;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.blog .component-wrapper, .blog .subcat-wrapper {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.blog .component-wrapper {
+  max-height: 2500px;
+}
+
+.blog .component-wrapper .cat-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.blog .component-wrapper .cat-img img {
+  max-width: 100%;
+}
+
+.blog .component-wrapper .cat-header-link {
+  display: inline-block;
+}
+
+.blog .component-wrapper .cat-header {
+  margin: 0;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.blog .component-wrapper .cat-header:hover {
+  color: #1a66ff;
+}
+
+.blog .component-wrapper .subcat-wrapper {
+  border-left: 1px solid #f0f0f0;
+  padding: 0 0 0 10px;
+  width: calc(100% - 10px);
+  margin-left: 10px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.blog .component-wrapper .subcat-wrapper .cat-header {
+  font-weight: 600;
+}
+
+.blog .component-wrapper .subcat-wrapper .simple-dropdown-controll {
+  margin-top: 8px;
+}
+
+.blog .component-wrapper .subcat-wrapper .plus-icon {
+  display: none;
+}
+
+.blog .component-wrapper .subcat-wrapper .subcat-wrapper-link {
+  display: block;
+  padding: 3px 0 3px 0;
+}
+
+.blog .simple-dropdown-controll {
+  height: 20px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.blog .simple-dropdown-controll .simple-dropdown {
+  display: none;
+}
+
+.blog .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  line-height: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 !important;
+}
+
+.blog .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper * {
+  max-height: 0;
+  overflow: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.blog .simple-dropdown-controll .simple-dropdown:checked ~ .component-wrapper .plus-icon {
+  display: none;
+}
+
+.blog .simple-dropdown-controll .simple-dropdown:checked ~ .subcat-wrapper {
+  padding: 5px 0 5px 10px;
+  max-height: 1000px;
+}
+
+.blog .simple-dropdown-controll .simple-dropdown:checked ~ .subcat-wrapper .plus-icon {
+  display: block;
+}
+
+.blog .simple-dropdown-controll .simple-dropdown:checked ~ .component-header .header-icon {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.blog .simple-dropdown-controll .simple-dropdown:checked ~ .plus-icon .vertical {
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+/*# sourceMappingURL=blog.css.map */

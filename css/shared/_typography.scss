@@ -320,10 +320,10 @@ label{
 
 .plus-icon{
     display: block;
-    float: right;
     width: 14px;
     height: 16px;
     margin-top: 7px;
+    float: right;
     .plus-group{
         position: relative;
         margin: auto;
@@ -375,3 +375,34 @@ label{
         }
     }
 }
+
+
+//#region NEWS
+.news-wrapper{
+    .news-image-wrapper{
+        overflow: hidden;
+        img{
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2);
+                transition: 1s;
+            }
+        }
+    }
+    .news-info-wrapper{
+        margin-top: 15px;
+        .news-date{
+            font-size: $font-small;
+            color: $color-dark-smoke;
+            margin-bottom: 2px;
+        }
+        .news-title{
+            margin-bottom: 10px;
+            a{
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }   
+ }
+//#endregion

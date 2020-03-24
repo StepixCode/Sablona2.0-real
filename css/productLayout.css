@@ -628,9 +628,9 @@
 }
 
 .product-layout-aside .simple-dropdown-controll {
-  height: 20px;
   width: 100%;
   display: inline-block;
+  position: relative;
 }
 
 .product-layout-aside .simple-dropdown-controll .simple-dropdown {
@@ -665,6 +665,7 @@
 
 .product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .subcat-wrapper .plus-icon {
   display: block;
+  height: 100%;
 }
 
 .product-layout-aside .simple-dropdown-controll .simple-dropdown:checked ~ .component-header .header-icon {

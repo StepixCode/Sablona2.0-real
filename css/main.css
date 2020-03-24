@@ -387,10 +387,10 @@ label {
 
 .plus-icon {
   display: block;
-  float: right;
   width: 14px;
   height: 16px;
   margin-top: 7px;
+  float: right;
 }
 
 .plus-icon .plus-group {
@@ -438,6 +438,41 @@ label {
 
 .owl-dots .owl-dot.active span {
   background-color: #ffd333 !important;
+}
+
+.news-wrapper .news-image-wrapper {
+  overflow: hidden;
+}
+
+.news-wrapper .news-image-wrapper img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.news-wrapper .news-image-wrapper img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.news-wrapper .news-info-wrapper {
+  margin-top: 15px;
+}
+
+.news-wrapper .news-info-wrapper .news-date {
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 2px;
+}
+
+.news-wrapper .news-info-wrapper .news-title {
+  margin-bottom: 10px;
+}
+
+.news-wrapper .news-info-wrapper .news-title a {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 body, html {

@@ -498,8 +498,7 @@ $big-product-card-height: $product-card-height * 2;
                         font-weight: 600;
                     }
                     .simple-dropdown-controll{
-                        margin-top: 8px;
-                        
+                        margin-top: 8px;                        
                     }
                     .plus-icon{
                         display: none;
@@ -519,9 +518,9 @@ $big-product-card-height: $product-card-height * 2;
 
     //Jednoduchý dropdown systém - chtěla by dodělat funkce vypočítávající maximální výšku (aby animace byly víc smooth)
     .simple-dropdown-controll{
-        height: 20px;
         width: 100%;
         display: inline-block;
+        position: relative;
         .simple-dropdown{
             display: none;
          }
@@ -549,6 +548,7 @@ $big-product-card-height: $product-card-height * 2;
 
              .plus-icon{
                  display: block;
+                 height: 100%;
              }
          }
          .simple-dropdown:checked ~ .component-header .header-icon{
