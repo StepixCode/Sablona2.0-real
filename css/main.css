@@ -475,6 +475,41 @@ label {
   font-weight: 700;
 }
 
+.pag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination {
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pagination .item {
+  padding: 10px;
+}
+
+.pagination .item.active {
+  background-color: #ffd333;
+}
+
+.pagination .item.active:hover {
+  background-color: #ffd333;
+}
+
+.pagination .item, .pagination .arrow {
+  color: #3d464d;
+}
+
+.pagination .item:hover, .pagination .arrow:hover {
+  background-color: #f0f0f0;
+}
+
 body, html {
   scroll-behavior: smooth;
   width: 100%;

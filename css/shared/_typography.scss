@@ -406,3 +406,30 @@ label{
     }   
  }
 //#endregion
+
+.pag-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.pagination{
+    display: inline;
+    font-size: 18px;
+    font-weight: 700;
+
+    .item{
+        padding: 10px;
+        
+    }
+    .item.active{
+        background-color: $primary;
+        &:hover{
+            background-color: $primary;
+        }
+    }
+    .item,.arrow{
+        color: $secondary;
+        &:hover{
+            background-color: $color-smoke;
+        }
+    }
+}

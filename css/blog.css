@@ -5,6 +5,101 @@
   transition: all 0.3s ease-in;
 }
 
+.blog.list .news-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .blog.list .news-wrapper {
+    display: block;
+  }
+}
+
+.blog.list .news-wrapper .news-image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+}
+
+.blog.list .news-wrapper .news-info-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+  margin: 0;
+  margin-left: 30px;
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .blog.list .news-wrapper .news-info-wrapper {
+    margin: 0;
+    margin-top: 35px;
+  }
+}
+
+.blog.list .news-wrapper .news-info-wrapper .btn-standard {
+  position: absolute;
+  bottom: 0;
+  max-width: 150px;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 767.98px) {
+  .blog.list .news-wrapper .news-info-wrapper .btn-standard {
+    position: relative;
+    margin-top: 30px;
+  }
+}
+
+.blog.list .news-wrapper .news-info-wrapper .news-content {
+  max-height: 2.8em;
+}
+
+@media (max-width: 767.98px) {
+  .blog.list .news-wrapper .news-info-wrapper .news-content {
+    max-height: 4.2em;
+  }
+}
+
+.blog.classic .news-wrapper {
+  padding-bottom: 80px;
+}
+
+.blog.classic .news-wrapper .news-info-wrapper {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.blog.classic .news-wrapper .news-info-wrapper .news-date {
+  font-size: 16px;
+}
+
+.blog.classic .news-wrapper .news-info-wrapper .news-title {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.blog.classic .news-wrapper .news-info-wrapper .news-title a {
+  font-size: 20px;
+}
+
+.blog.classic .news-wrapper .news-info-wrapper .news-content {
+  margin-bottom: 20px;
+}
+
+.blog.classic .news-wrapper .news-info-wrapper .btn-standard {
+  max-width: 150px;
+  background-color: #f0f0f0;
+}
+
 .blog .news-wrapper {
   padding-bottom: 50px;
 }

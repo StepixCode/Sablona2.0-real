@@ -1,5 +1,74 @@
 @import "shared/_variables.scss";
 
+.blog.list{
+    .news-wrapper{
+        display: flex;
+        
+        @include media-breakpoint-down(sm){
+            display: block;
+        }
+        .news-image-wrapper{
+            display: flex;
+            align-items: center;
+            flex: 1 50%;
+        }
+        .news-info-wrapper{
+            flex: 1 50%;
+            margin: 0;
+            margin-left: 30px;
+            position: relative;
+            @include media-breakpoint-down(sm){
+                margin: 0;
+                margin-top: 35px;
+            }
+            .btn-standard{
+                position: absolute;
+                bottom: 0;
+                max-width: 150px;
+                background-color: $color-smoke;
+                @include media-breakpoint-down(sm){
+                    position: relative;
+                    margin-top: 30px;
+                }
+            }
+            .news-content{
+                max-height: 2.8em;
+                @include media-breakpoint-down(sm){
+                   max-height: 4.2em;
+                }
+            }
+        }
+    }
+}
+
+.blog.classic{
+    .news-wrapper{
+        .news-info-wrapper{
+            margin-top: 30px;
+            padding: 0 20px;
+            .news-date{
+                font-size: 16px;
+            }
+            .news-title{
+                margin-bottom: 20px;
+                margin-top: 10px;
+                a{
+                    font-size: 20px;
+                }
+            }
+            .news-content{
+                margin-bottom: 20px;
+            }
+            .btn-standard{
+                max-width: 150px;
+                background-color: $color-smoke;
+            }
+        }
+        padding-bottom: 80px;
+    }
+    
+}
+
 .blog{
     .news-wrapper{
         padding-bottom: 50px;
