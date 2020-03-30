@@ -63,7 +63,7 @@
   position: absolute;
   border: 2px solid #f0f0f0;
   border-radius: 0;
-  height: 350px;
+  height: 316px;
   overflow: hidden;
 }
 
@@ -148,6 +148,22 @@
   color: #1a66ff;
 }
 
+.product .card .reviews {
+  height: 24px;
+}
+
+@media (min-width: 992px) {
+  .product .card .reviews {
+    height: 48px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .product .card .reviews {
+    height: 24px;
+  }
+}
+
 .product .card .reviews .rating-stars i {
   font-size: 14px;
 }
@@ -157,10 +173,42 @@
   font-size: 14px;
 }
 
-.product .card .price {
+.product .card .price-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 5px;
+}
+
+.product .card .price-bar .default-price {
+  color: #737373;
+  position: relative;
+}
+
+.product .card .price-bar .default-price .line-through {
+  height: 2px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.product .card .price {
   color: #3d464d;
   font-weight: 700;
+}
+
+.product .card .product-availability {
+  font-size: 10px;
+}
+
+.product .card .product-availability.available {
+  color: #3bc03b;
 }
 
 .product .card .product-info-list {
@@ -168,16 +216,33 @@
 }
 
 .product .card .visible {
-  height: 328px;
+  height: 290px;
 }
 
 @media (max-width: 767.98px) {
   .product .card .visible {
-    height: 378px;
+    height: 340px;
   }
 }
 
 .product .card .product-hidden-bar {
+  position: relative;
+  height: 70px;
+}
+
+.product .card .product-hidden-bar .descript {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  line-height: 1.4em;
+  max-height: 2.8em;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.product .card .product-hidden-bar .product-buy-bar {
+  position: absolute;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,6 +252,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .product .card .product-hidden-bar .price {
