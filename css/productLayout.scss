@@ -132,9 +132,10 @@
             .default-price{
                 color: $color-dark-smoke; 
                 position: relative;
+                font-size: $font-small;
                 .line-through{
                     height: 2px;
-                    width: 100%;
+                    width: 60px;
                     background-color: $color-red;
                     position: absolute;
                     top: 10px;
@@ -147,7 +148,7 @@
             font-weight: 700;
         }
         .product-availability{
-            font-size: $font-small - 4;
+            font-size: $font-small - 2;
         }
         .product-availability.available{
             color: $color-availability;
@@ -170,15 +171,18 @@
                 line-height: 1.4em;
                 max-height: 2.8em;
                 overflow: hidden;
-                font-size: $font-small;
+                font-size: $font-small - 2;
             }
             .product-buy-bar{
                 position: absolute;
-                bottom: 0;
+                bottom: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
+            }
+            .price-bar{
+                display: none;
             }
             .price{
                 display: none;
@@ -251,10 +255,14 @@ $list-product-height: 200px;
                 }
             }
             .card-body{
+                padding-top: 0;
                 display: flex;
                 @include media-breakpoint-down(md) { 
                     display: block;
                 }
+            }
+            .main-bar{
+                display: none;
             }
             
             .product-photo{
@@ -292,7 +300,9 @@ $list-product-height: 200px;
                     
                 }
             }
-            
+            .descript{
+                display: none;
+            }
             .visible{
                 display: flex;
                 align-items:center; 
@@ -323,19 +333,31 @@ $list-product-height: 200px;
                     overflow: hidden;
                     //margin: 0;
                     padding: 0;
+                    
+                }
+                .product-availability{
+                    display: none;
                 }
             }
             .product-hidden-bar{
+                position: relative;
                 display: block;
                 width: 25%;
                 padding: 20px;
+                height: 100%;
                 @include media-breakpoint-down(md) { 
                     height: $list-product-height;
                     width: 100%;
                 }
+                .price-bar{
+                    display: block;
+                }
                 .price{
                     display: block;
-                    margin-bottom: 25px;
+                }
+                .product-buy-bar{
+                    display: block;
+                    max-width: calc(100% - 40px);
                 }
                 .product-icon-group{
                     @include media-breakpoint-down(md) { 
@@ -370,7 +392,7 @@ $list-product-height: 200px;
 }
 
 //Big product (col-4)
-$big-product-card-height: $product-card-height * 2;
+$big-product-card-height: ($product-card-height * 2) - 35px;
 .product-big{
     height: $big-product-card-height + 65px;
     .card{
